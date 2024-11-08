@@ -1,0 +1,10 @@
+body{
+    margin: auto;
+    padding: auto;
+    background-color: #efefef;
+}
+
+.imagen    {
+    display: grid; 
+    place-items: center;
+}
