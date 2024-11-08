@@ -1,0 +1,238 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "usuario": "Admin",
+      "contraseña": "admin123",
+      "email": "Admin@gmail.com",
+      "telefono": 3816171790,
+      "rol": "admin"
+    },
+    {
+      "id": "2",
+      "usuario": "Pepito",
+      "contraseña": "pepito123",
+      "email": "Pepito@gmail.com",
+      "telefono": 3816171790,
+      "rol": "user",
+      "login": "false"
+    },
+    {
+      "id": "0c0f",
+      "email": "facubazan992009@gmail.com",
+      "usuario": "Facu",
+      "telefono": "3213432",
+      "contraseña": "czxv34231",
+      "role": "user"
+    }
+  ],
+  "vendedores": [
+    {
+      "id": "1",
+      "nombre": "Facundo",
+      "apellido": "Bazan",
+      "email": "FacundoB@gmail.com",
+      "telefono": 3816282727
+    },
+    {
+      "id": "2",
+      "nombre": "Julian",
+      "apellido": "Fernandez",
+      "email": "JulianF@gmail.com",
+      "telefono": 3816281717
+    },
+    {
+      "id": "3",
+      "nombre": "Juan",
+      "apellido": "Lescano",
+      "email": "JuanL@gmail.com",
+      "telefono": 3816282727
+    },
+    {
+      "id": "4",
+      "nombre": "Tomas",
+      "apellido": "Ruiz",
+      "email": "TomasR@gmail.com",
+      "telefono": 3816282727
+    },
+    {
+      "id": "5",
+      "nombre": "Nicolas",
+      "apellido": "Varela",
+      "email": "NicoV@gmail.com",
+      "telefono": 3816282727
+    }
+  ],
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Samsung Galaxy A15",
+      "marca": "Samsung",
+      "descripcion": [
+        "Samsung Galaxy A15",
+        "Fotografía profesional en tu bolsillo: Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.",
+        "Experiencia visual increíble: Mirá tus series y películas favoritas con la mejor definición a través de su pantalla AMOLED de 6.67. Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.",
+        "Mayor rendimiento: Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.",
+        "Desbloqueo facial y dactilar: áxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido."
+      ],
+      "caracteristicas": [
+        "Dispositivo liberado para que elijas la compañía telefónica que prefieras.",
+        "Pantalla super AMOLED de 6.5.",
+        "Tiene 3 cámaras traseras de 50Mpx/5Mpx/2Mpx.",
+        "Cámara delantera de 13Mpx.",
+        "Procesador MediaTek Helio G99 Octa-Core de 2.2GHz con 4GB de RAM.",
+        "Batería de 5000mAh.",
+        "Memoria interna de 128GB.",
+        "Resistente a las salpicaduras.",
+        "Con reconocimiento facial y sensor de huella dactilar.",
+        "Resistente al polvo"
+      ],
+      "precio": 20000,
+      "stock": 50,
+      "img": ""
+    },
+    {
+      "id": "2",
+      "nombre": "Samsung Galaxy A35",
+      "marca": "Samsung",
+      "descripcion": [
+        "Samsung Galaxy A35",
+        "Capacidad y eficiencia: Con su potente procesador y memoria RAM de 8 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.",
+        "Capacidad de almacenamiento ilimitada: Olvidate de borrar. Con su memoria interna de 256 GB podrás descargar todos los archivos y aplicaciones que necesites, guardar fotos y almacenar tus películas, series y videos favoritos para reproducirlos cuando quieras."
+      ],
+      "caracteristicas": [
+        "Memoria RAM: 8 GB",
+        " Dispositivo liberado para que elijas la compañía telefónica que prefieras.",
+        "Compatible con redes 5G.",
+        "Memoria interna de 256GB."
+      ],
+      "precio": 50000,
+      "stock": 45,
+      "img": ""
+    },
+    {
+      "id": "3",
+      "nombre": "Xiaomi POCO M6 Pro",
+      "marca": "Xiaomi",
+      "descripcion": [
+        "Xiaomi POCO M6 Pro",
+        "Fotografía profesional en tu bolsillo: Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.",
+        "Experiencia visual increíble: Mirá tus series y películas favoritas con la mejor definición a través de su pantalla AMOLED de 6.67. Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.",
+        "Capacidad y eficiencia: Con su potente procesador y memoria RAM de 8 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.",
+        "Desbloqueo facial y dactilar: Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.",
+        "Batería de duración superior: ¡Desenchufate! Con la súper batería de 5100 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas."
+      ],
+      "caracteristicas": [
+        "Memoria RAM: 12 GB",
+        "Dispositivo liberado para que elijas la compañía telefónica que prefieras.",
+        "Pantalla de 6.67",
+        "Tiene 3 cámaras traseras de 64Mpx/8Mpx/2Mpx.",
+        "Cámara delantera de 16Mpx.",
+        "Batería de 5000mAh.",
+        "Memoria interna de 512GB.",
+        "Resistente a las salpicaduras.",
+        "Con reconocimiento facial y sensor de huella dactilar.",
+        "Resistente al polvo"
+      ],
+      "precio": 900000,
+      "stock": 65,
+      "img": ""
+    },
+    {
+      "id": "4",
+      "nombre": "Xiaomi Note 13 Pro",
+      "marca": "Xiaomi",
+      "descripcion": [
+        "Xiaomi Redmi Note 13 PRO 12/512GB 4G",
+        "Dual SIM | Nano-SIM",
+        "Redes: GSM/HSPA/LTE",
+        "Pantalla: 6.67 pulgadas | Resolución 1080 x 2400 píxeles | AMOLED, 1B de colores, 120 Hz, 500 nits (típico), 1000 nits (HBM), 1300 nits (pico)",
+        "Sistema operativo: Android 13, MIUI 14",
+        "Procesador: Mediatek Helio G99 Ultra",
+        "Memoria RAM: 12 GB",
+        "Memoria ROM: 512 GB",
+        "Cámara principal: 200 MP, f/1,7, 23 mm (ancho), 1/1,4, 0,56 µm, PDAF multidireccional, OIS | 8 MP, f/2,2, 118° (ultra gran angular) | 2 MP, f/2,4, (macro)",
+        "Cámara frontal: 16MP, f/2.4, (gran angular)",
+        "Conectividad: Wi-Fi 802.11 a/b/g/n/ac, Bluetooth 5.2",
+        "Sensores: Huella digital (debajo de la pantalla, óptica), acelerómetro, giroscopio, brújula",
+        "GPS: Sí, GPS, GLONASS, GALILEO, BDS",
+        "USB: SB tipo C 2.0",
+        "Batería: 5000 mAh | 67W cableado",
+        "Medidas: 16.11 x 7.5 x 0.8 cm | Peso: 188 gr"
+      ],
+      "caracteristicas": [
+        " Dispositivo liberado para que elijas la compañía telefónica que prefieras.",
+        "Pantalla de 6 in.",
+        "Cámara delantera de 16Mpx.",
+        "Batería de 5000mAh.",
+        "Memoria interna de 512GB.",
+        "Resistente a las salpicaduras.",
+        "Con reconocimiento facial y sensor de huella dactilar.",
+        "Resistente al polvo y a las caídas."
+      ],
+      "precio": 950000,
+      "stock": 35,
+      "img": ""
+    },
+    {
+      "id": "5",
+      "nombre": "Apple iPhone 14",
+      "marca": "Apple",
+      "descripcion": [
+        "Fotografía profesional en tu bolsillo, descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.",
+        "La pantalla tiene las esquinas redondeadas. Si se mide en forma de rectángulo, la pantalla tiene 6.06 pulgadas en diagonal. El área real de visualización es menor.",
+        "La funcionalidad Emergencia SOS usa conexión celular o llamadas por Wi-Fi.",
+        "La duración de la batería varía según el uso y la configuración.",
+        "Se requiere un plan de datos. 5G está disponible en algunos mercados y a través de operadores específicos. Las velocidades varían según las condiciones del lugar y el operador.",
+        " El iPhone 14 es resistente a las salpicaduras, al agua y al polvo, y fue probado en condiciones de laboratorio controladas, con una clasificación IP68 según la norma IEC 60529 (hasta 30 minutos a una profundidad máxima de 6 metros). La resistencia a las salpicaduras, al agua y al polvo no es una condición permanente, y podría disminuir como consecuencia del uso normal. No intentes cargar un iPhone mojado; consulta el manual del usuario para ver las instrucciones de limpieza y secado. La garantía no cubre daños producidos por líquidos.",
+        "Algunas funcionalidades podrían no estar disponibles en todos los países o áreas."
+      ],
+      "caracteristicas": [
+        "Memoria RAM: 4 GB",
+        "Pantalla Super Retina XDR de 6.1 pulgadas.",
+        "Sistema avanzado de cámaras para tomar mejores fotos en cualquier condición de luz.",
+        "Modo Cine ahora en 4K Dolby Vision de hasta 30cps.",
+        "Modo Acción para lograr videos estables, aún con cámara en mano.",
+        "Detección de Choques, una funcionalidad de seguridad que pide ayuda cuando tú no puedes.",
+        "Batería para todo el día y hasta 26 horas de reproducción de vídeo.",
+        "A15 Bionic, con GPU e 5 núcleos para un rendimiento fuera de serie. Red 5G ultrarrápida.",
+        "Ceramic Shield y resistencia al agua, características de durabilidad líderes en la industria.",
+        "iOS 16 ofrece aún más opciones de personalización y más formas de comunicarse y compartir."
+      ],
+      "precio": 1950000,
+      "stock": 35,
+      "img": ""
+    },
+    {
+      "id": "6",
+      "nombre": "Apple iPhone 16 Pro",
+      "marca": "Apple",
+      "descripcion": [
+        "Imponente diseño de titanio. Control de la Cámara. 4K Dolby Vision a 120 cps. Y el chip A18 Pro.",
+        "IMPONENTE DISEÑO DE TITANIO — El iPhone 16 Pro tiene un diseño de titanio resistente y ligero con una pantalla Super Retina XDR más grande, de 6.3 pulgadas.¹ Es increíblemente duradero gracias al Ceramic Shield de última generación, que es dos veces más resistente que cualquier vidrio de smartphone.",
+        "CONTROL DE LA CÁMARA — Con esta nueva funcionalidad podrás acceder fácilmente a las herramientas de la cámara, como el zoom o la profundidad de campo, para que no se te escape ni un momento.",
+        "CAPTURAS SOÑADAS — La cámara Fusion de 48 MP te permite grabar en 4K Dolby Vision a 120 cps para llevar tus videos a otro nivel. Y con la cámara ultra gran angular de 48 MP, tus fotos macro y panorámicas van a tener un nivel de detalle sorprendente.",
+        "ESTILOS FOTOGRÁFICOS — La nueva generación de Estilos Fotográficos te da más libertad creativa para que cada foto tenga tu toque personal. Y gracias a los avances en nuestro procesamiento de imágenes, ahora puedes revertir cualquier estilo en cualquier momento.",
+        "LA POTENCIA DEL CHIP A18 PRO — Este chip es el genio detrás de Apple Intelligence, gracias a su Neural Engine más rápido, su CPU y su GPU mejorados, y un gran salto en el ancho de banda de memoria. También te permite disfrutar funcionalidades avanzadas de foto y video, y juegos AAA.",
+        "UN SALTO ENORME EN BATERÍA — El iPhone 16 Pro es tan potente y eficiente que puede ofrecerte hasta 33 horas de reproducción de video.² Acopla un cargador MagSafe para obtener una carga inalámbrica más rápida o carga a través de la entrada USB-C.",
+        "PERSONALIZA TU IPHONE — Con iOS 18 puedes cambiar el color de los íconos de la pantalla de inicio a tu gusto. Encuentra tus tomas favoritas en un flash en la rediseñada app Fotos. Y agrega divertidos efectos animados a cualquier palabra, frase o emoji en iMessage.",
+        "FUNCIONALIDADES ESENCIALES DE SEGURIDAD — Con Detección de Choques, el iPhone puede detectar si sufres un accidente grave de auto y pedir ayuda cuando tú no puedes."
+      ],
+      "caracteristicas": [
+        "Memoria RAM: 4 GB",
+        "Pantalla Super Retina XDR de 6.1 pulgadas.",
+        "Sistema avanzado de cámaras para tomar mejores fotos en cualquier condición de luz.",
+        "Modo Cine ahora en 4K Dolby Vision de hasta 30cps.",
+        "Modo Acción para lograr videos estables, aún con cámara en mano.",
+        "Detección de Choques, una funcionalidad de seguridad que pide ayuda cuando tú no puedes.",
+        "Batería para todo el día y hasta 26 horas de reproducción de vídeo.",
+        "A15 Bionic, con GPU e 5 núcleos para un rendimiento fuera de serie. Red 5G ultrarrápida.",
+        "Ceramic Shield y resistencia al agua, características de durabilidad líderes en la industria.",
+        "iOS 16 ofrece aún más opciones de personalización y más formas de comunicarse y compartir."
+      ],
+      "precio": 1950000,
+      "stock": 35,
+      "img": ""
+    }
+  ]
+}
