@@ -17,101 +17,103 @@
 </head>
 <body>
     <header>
+
         <nav class="navbar navbar-expand-lg">
-            <div class="container"> 
-                <a class="navbar-brand" href="/index.html"> 
-                    <img src="./assets/mercado-libre-logo.svg" class="logoMercadoLibre" alt="Logo Game Zone">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-                    <div class="navbar-nav">
-                        <form class="d-flex position-relative" role="search" style="width: 511px;">
-                            <input class="form-control" type="search" placeholder="Buscar productos, marcas y más..."
-                                aria-label="Search" style="padding-right: 40px;">
-                            <button class="btn btnSearch" type="submit"
-                                style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
-                                <i class="fa-solid fa-magnifying-glass iconoSearch"></i>
-                            </button>
-                        </form>
-                    </div>
-                    <div> 
-                        <a class="navbar-brand" href="/index.html">
-                            <img src="./assets/D_NQ_780412-MLA80111423909_102024-OO.webp" style="width: 340px;"
-                                alt="Promo Disney +">
-                        </a>
+            <div class="container d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="/index.html"> 
+                        <img src="./assets/mercado-libre-logo.svg" class="logoMercadoLibre" alt="Logo Mercado Libre" style="width: 150px;">
+                    </a>
+
+                    <!-- Formulario de búsqueda -->
+                    <form class="d-flex position-relative mx-auto formBuscador" role="search" style="width: 588px;">
+                        <input class="form-control" type="search" placeholder="Buscar productos, marcas y más..."
+                            aria-label="Search" style="padding-right: 40px;">
+                        <button class="btn btnSearch" type="submit"
+                            style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+                            <i class="fa-solid fa-magnifying-glass iconoSearch"></i>
+                        </button>
+                    </form>
+        
+                    <!-- Imagen promocional -->
+                    <a class="navbar-brand promoDisney d-none d-lg-block" href="/index.html">
+                        <img src="./assets/D_NQ_780412-MLA80111423909_102024-OO.webp" style="width: 340px;" alt="Promo Disney +">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+        
+                <!-- Menú de enlaces y opciones de cuenta -->
+                <div class="collapse navbar-collapse w-100 mt-3" id="navbarContent">
+                    <div class="d-flex justify-content-between w-100">
+
+                        <ul class="navbar-nav linksNavbar">
+                            <!-- Categorías -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categorías
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Vehiculos</a></li>
+                                    <li><a class="dropdown-item" href="#">Inmuebles</a></li>
+                                    <li><a class="dropdown-item" href="#">Supermercado</a></li>
+                                    <li><a class="dropdown-item" href="#">Tecnología</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
+                                    <li><a class="dropdown-item" href="#">Herramientas</a></li>
+                                    <li><a class="dropdown-item" href="#">Moda</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Cupones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Supermercado</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Moda</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Mercado Play</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Vender</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Ayuda</a></li>
+                        </ul>
+
+                        <ul class="navbar-nav ms-auto linksCuenta">
+                            <li class="nav-item"><a class="nav-link" href="#">Creá tu cuenta</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Ingresa</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Mis compras</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </nav>
 
-
-        <nav class="navbar navbar-expand-lg navBar2">
-            <div class="container">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Categorías
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Vehiculos</a></li>
-                                <li><a class="dropdown-item" href="#">Inmuebles</a></li>
-                                <li><a class="dropdown-item" href="#">Supermercado</a></li>
-                                <li><a class="dropdown-item" href="#">Tecnología</a></li>
-                                <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
-                                <li><a class="dropdown-item" href="#">Herramientas</a></li>
-                                <li><a class="dropdown-item" href="#">Moda</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ofertas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cupones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Supermercado</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Moda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mercado Play</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Vender</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ayuda</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Creá tu cuenta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ingresa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mis compras</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
     </header>
 
     <main>
 
     </main>
+
+    <!-- =============== FOOTER INICIO =============== -->
+    
     <footer>
-        
+        <hr style="color: #999999;">
+        <div class="container">         
+            <ul class="linksFooter">
+                <li><a href="#">Trábaja con nosotros</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Cómo ciudamos tu privacidad</a></li>
+                <li><a href="#">Accesibilidad</a></li>
+                <li><a href="#">Información al usuario financiero</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Defensa del consumidor</a></li>
+                <li><a href="#">Información sobre seguros</a></li>
+                <li><a href="#">Libro de quejas online</a></li>
+            </ul>
+        </div>       
     </footer>
+
+    <!-- =============== FOOTER FIN =============== -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
