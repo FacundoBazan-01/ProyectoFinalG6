@@ -7,8 +7,36 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #EDEDED;
 }
 
 footer{
     margin-top: auto;
+}
+
+
+.encabezado{
+    background-color: #FFF159;
+    height: 70px;
+    padding: 0px;
+}
+
+.img-nav{
+    margin-left: 15%;
+}
+
+.icono-nav{
+    margin-right: 15%;
+}
+
+.card-register{
+    margin-top: 100px;
+}
+
+.card-body{
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
 }
