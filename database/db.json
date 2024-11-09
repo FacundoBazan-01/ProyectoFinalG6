@@ -24,6 +24,14 @@
       "telefono": "3213432",
       "contraseña": "czxv34231",
       "role": "user"
+    },
+    {
+      "id": "f79b",
+      "email": "facubazan99209@gmail.com",
+      "usuario": "Facundo",
+      "telefono": "32312",
+      "contraseña": "fa",
+      "role": "user"
     }
   ],
   "vendedores": [
