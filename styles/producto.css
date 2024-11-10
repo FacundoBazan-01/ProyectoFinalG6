@@ -74,12 +74,24 @@ footer{
     border: none;
 }
 
-.card-img{
-    margin-left: 20px;
+.card-img1{
+    margin: 20px;
+}
+
+
+
+
+.divImg{
+    padding: 0px;
 }
 
 .img-chica{
     border: 1.5px solid gray;
     border-radius: 10%;
-    
 }
+
+.img-chica:hover{
+    border: 2px solid blue;
+    border-radius: 10%;
+}
+
