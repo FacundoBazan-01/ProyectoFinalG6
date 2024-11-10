@@ -10,6 +10,10 @@ body{
     min-height: 100vh;
 }
 
+main{
+    background-color: #EDEDED;
+}
+
 footer{
     margin-top: auto;
 }
@@ -64,4 +68,18 @@ footer{
 
 .iconoSearch {
     color: #999;
+}
+
+.img-prod{
+    border: none;
+}
+
+.card-img{
+    margin-left: 20px;
+}
+
+.img-chica{
+    border: 1.5px solid gray;
+    border-radius: 10%;
+    
 }
