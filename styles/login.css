@@ -58,6 +58,10 @@ h1 {
     margin-bottom: 20px;
     text-align: left;
 }
+.input-contraseña {
+    margin-bottom: 20px;
+    text-align: left;
+}
 
 .input-group label {
     display: block;
@@ -65,8 +69,23 @@ h1 {
     color: #666;
     margin-bottom: 5px;
 }
+.input-contraseña label{
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
 
 .input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+.input-contraseña input {
     width: 100%;
     padding: 12px;
     border-radius: 5px;
