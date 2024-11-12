@@ -16,102 +16,412 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
+
+    <!-- =============== HEADER INICIO =============== -->
+
     <header>
+
         <nav class="navbar navbar-expand-lg">
-            <div class="container"> 
-                <a class="navbar-brand" href="/index.html"> 
-                    <img src="./assets/mercado-libre-logo.svg" class="logoMercadoLibre" alt="Logo Game Zone">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-                    <div class="navbar-nav">
-                        <form class="d-flex position-relative" role="search" style="width: 511px;">
-                            <input class="form-control" type="search" placeholder="Buscar productos, marcas y más..."
-                                aria-label="Search" style="padding-right: 40px;">
-                            <button class="btn btnSearch" type="submit"
-                                style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
-                                <i class="fa-solid fa-magnifying-glass iconoSearch"></i>
-                            </button>
-                        </form>
-                    </div>
-                    <div> 
-                        <a class="navbar-brand" href="/index.html">
-                            <img src="./assets/D_NQ_780412-MLA80111423909_102024-OO.webp" style="width: 340px;"
-                                alt="Promo Disney +">
-                        </a>
+            <div class="container d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="/index.html"> 
+                        <img src="./assets/mercado-libre-logo.svg" class="logoMercadoLibre" alt="Logo Mercado Libre" style="width: 150px;">
+                    </a>
+
+                    <!-- Formulario de búsqueda -->
+                    <form class="d-flex position-relative mx-auto formBuscador" role="search" style="width: 588px;">
+                        <input class="form-control" type="search" placeholder="Buscar productos, marcas y más..."
+                            aria-label="Search" style="padding-right: 40px;">
+                        <button class="btn btnSearch" type="submit"
+                            style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+                            <i class="fa-solid fa-magnifying-glass iconoSearch"></i>
+                        </button>
+                    </form>
+        
+                    <!-- Imagen promocional -->
+                    <a class="navbar-brand promoDisney d-none d-lg-block" href="/index.html">
+                        <img src="./assets/D_NQ_780412-MLA80111423909_102024-OO.webp" style="width: 340px;" alt="Promo Disney +">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+        
+                <!-- Menú de enlaces y opciones de cuenta -->
+                <div class="collapse navbar-collapse w-100 mt-3" id="navbarContent">
+                    <div class="d-flex justify-content-between w-100">
+
+                        <ul class="navbar-nav linksNavbar">
+                            <!-- Categorías -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categorías
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./html/error404.html">Vehìculos</a></li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Celulares</a></li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Electrodomésticos</a></li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Herramientas</a></li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Accesorios para Vehículos</a></li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Moda</a></li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Deportes y Fitness</a></li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Articulos de Belleza</a></li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Hogar, Muebles y Jardín</a></li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Computación</a></li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Inmuebles</a></li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Electrónica, Audio y Video</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="./html/error404.html">Ofertas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./html/error404.html">Cupones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./html/error404.html">Supermercado</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./html/error404.html">Moda</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./html/error404.html">Mercado Play</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./html/error404.html">Vender</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./html/error404.html">Ayuda</a></li>
+                        </ul>
+
+                        <ul class="navbar-nav ms-auto linksCuenta">
+                            <li class="nav-item"><a class="nav-link" href="./html/registro.html">Creá tu cuenta</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./html/iniciaSesion.html">Ingresa</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Mis compras</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </nav>
 
-
-        <nav class="navbar navbar-expand-lg navBar2">
-            <div class="container">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Categorías
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Vehiculos</a></li>
-                                <li><a class="dropdown-item" href="#">Inmuebles</a></li>
-                                <li><a class="dropdown-item" href="#">Supermercado</a></li>
-                                <li><a class="dropdown-item" href="#">Tecnología</a></li>
-                                <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
-                                <li><a class="dropdown-item" href="#">Herramientas</a></li>
-                                <li><a class="dropdown-item" href="#">Moda</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ofertas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cupones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Supermercado</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Moda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mercado Play</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Vender</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ayuda</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Creá tu cuenta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ingresa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mis compras</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
     </header>
+
+    <!-- =============== HEADER FIN =============== -->
+
+
+    <!-- =============== MAIN INICIO =============== -->
 
     <main>
 
+        <!-- Carousel -->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/Carousel 1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Carousel 2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Carousel 3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Carousel 4.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Sección Promoción -->
+
+        <section class="container mt-5">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-xl-2 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                    <div class="card cardPromoción">
+                        <h5 class="card-title ms-3 mt-2">Envío gratis</h5>
+                        <div class="card-body text-center">
+                            <img src="./assets/1 Envío.png" alt="Envío gratis" class="img-fluid">
+                            <p class="mt-3">Beneficio por ser tu primera compra.</p>
+                            <a href="./html/error404.html" class="btn btnCardPromoción">Mostrar productos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                    <div class="card cardPromoción mt-sm-custom">
+                        <h5 class="card-title ms-3 mt-2">Menos de $20.000</h5>
+                        <div class="card-body text-center">
+                            <img src="./assets/2 Descubrí precios.png" alt="Descubrí precios" class="img-fluid">
+                            <p class="mt-3">Descubrí productos con precios bajos.</p>
+                            <a href="./html/error404.html" class="btn btnCardPromoción ">Mostrar productos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                    <div class="card cardPromoción mt-md-0 mt-3 mt-sm-custom">
+                        <h5 class="card-title ms-3 mt-2">Medios de pago</h5>
+                        <div class="card-body text-center">
+                            <img src="./assets/3 Medios de pago.png" alt="Medios de pago" class="img-fluid">
+                            <p class="mt-3">Pagá tus compras de forma rápida y segura.</p>
+                            <a href="./html/error404.html" class="btn btnCardPromoción">Conocer medios</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                    <div class="card cardPromoción mt-xl-0 mt-3 mt-sm-custom">
+                        <h5 class="card-title ms-3 mt-2">Compra protegida</h5>
+                        <div class="card-body text-center">
+                            <img src="./assets/4 Compra protegida.png" alt="Compra protegida" class="img-fluid">
+                            <p class="mt-3">Podés devolver tu compra gratis.</p>
+                            <a href="./html/error404.html" class="btn btnCardPromoción">Cómo funciona</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                    <div class="card cardPromoción mt-xl-0 mt-3 mt-sm-custom">
+                        <h5 class="card-title ms-3 mt-2">Más vendidos</h5>
+                        <div class="card-body text-center">
+                            <img src="./assets/5 Más vendidos.png" alt="Más vendidos" class="img-fluid">
+                            <p class="mt-3">Explorá los productos que son tendencia.</p>
+                            <a href="./html/error404.html" class="btn btnCardPromoción">Ir a Más vendidos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                    <div class="card cardPromoción mt-xl-0 mt-3 mt-sm-custom">
+                        <h5 class="card-title ms-3 mt-2">Tiendas oficiales</h5>
+                        <div class="card-body text-center">
+                            <img src="./assets/6 Tiendas oficiales.png" alt="Tiendas oficiales" class="img-fluid">
+                            <p class="mt-3">Encontrá tus marcas preferidas.</p>
+                            <a href="./html/error404.html" class="btn btnCardPromoción">Mostrar tiendas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Subscripción a Disney + -->
+
+        <section class="container mt-5">
+            <div class="row">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="card cardSubscripcion w-100">
+                        <div class="d-flex align-items-center justify-content-between tituloSubscripcion rounded-top">
+                            <h5 class="card-title">Suscribite al nivel 6 por $5.999/mes</h5>
+                            <button class="btn btnSubscripcion">Suscribirse</button>
+                        </div>
+                        
+                        <div class="spanSubscripcion">
+                            <span>Conseguí los mejores beneficios en Mercado Libre</span>
+                        </div>
+                        <div class="row cardBodySubscripcion">
+                            <div class="col-xl-6 d-flex align-items-center">
+                                <img src="./assets/Disney.png" class="border border-1 rounded-1" alt="" style="height: 56px; width: 56px;">
+                                <p class="ms-3 mb-0">Disney+ incluido</p>
+                            </div>
+                            <div class="col-xl-6 d-flex align-items-center mt-xl-0 mt-3">
+                                <img src="./assets/Envío Card.png" class="border border-1 rounded-1" alt="" style="height: 56px; width: 56px;">
+                                <p class="ms-3 mb-0">Envíos gratis y rápidos desde $30.000 y 45% OFF en envíos desde $6.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Categorías -->
+
+        <section class="container mt-5">
+            <div class="row">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="card containerCategorias">
+                        <div class="d-flex align-items-center justify-content-start">
+                            <h2 class="card-title">Categorías</h2>
+                            <a href="./html/error404.html">Mostrar todas las categorías</a>
+                        </div>
+                        <div class="row justify-content-center mt-4">
+                            <!-- Fila 1 -->
+                            <div class="col-xl-3 d-flex align-items-center cardCategorias">
+                                <img src="./assets/Categorías/1-Autos.png" alt="Autos, Motos y Otros">
+                                <a href="./html/error404.html" class="ms-3 mb-0 linkCategoria">Autos, Motos y Otros</a>
+                            </div>
+
+                            <div class="col-xl-3 d-flex align-items-center cardCategorias">
+                                <img src="./assets/Categorías/2-Celulares.png" alt="Celulares y Teléfonos">
+                                <a href="./html/error404.html" class="ms-3 mb-0 linkCategoria">Celulares y Teléfonos</a>
+                            </div>
+
+                            <div class="col-xl-3 d-flex align-items-center cardCategorias">
+                                <img src="./assets/Categorías/3-Electrodomésticos.png" alt="Electrodomésticos">
+                                <a href="./html/error404.html" class="ms-3 mb-0 linkCategoria">Electrodomésticos</a>
+                            </div>
+
+                            <div class="col-xl-3 d-flex align-items-center cardCategorias">
+                                <img src="./assets/Categorías/4-Herramientas.png" alt="Herramientas">
+                                <a href="./html/error404.html" class="ms-3 mb-0 linkCategoria">Herramientas</a>
+                            </div>
+
+                            <!-- Fila 2 -->
+                            <div class="col-xl-3 d-flex align-items-center cardCategorias">
+                                <img src="./assets/Categorías/5-AccesoriosVehículos.png" alt="Accesorios para Vehículos">
+                                <a href="./html/error404.html" class="ms-3 mb-0 linkCategoria">Accesorios para Vehículos</a>
+                            </div>
+
+                            <div class="col-xl-3 d-flex align-items-center cardCategorias">
+                                <img src="./assets/Categorías/6-Ropa.png" alt="Ropa y Accesorios">
+                                <a href="./html/error404.html" class="ms-3 mb-0 linkCategoria">Ropa y Accesorios</a>
+                            </div>
+
+                            <div class="col-xl-3 d-flex align-items-center cardCategorias">
+                                <img src="./assets/Categorías/7-Fitness.png" alt="Deportes y Fitness">
+                                <a href="./html/error404.html" class="ms-3 mb-0 linkCategoria">Deportes y Fitness</a>
+                            </div>
+
+                            <div class="col-xl-3 d-flex align-items-center cardCategorias">
+                                <img src="./assets/Categorías/8-Art.Belleza.png" alt="Articulos de Belleza">
+                                <a href="./html/error404.html" class="ms-3 mb-0 linkCategoria">Articulos de Belleza</a>
+                            </div>
+
+                            <!-- Fila 3 -->
+                            <div class="col-xl-3 d-flex align-items-center cardCategorias">
+                                <img src="./assets/Categorías/9-Muebles.png" alt="Hogar, Muebles y Jardín">
+                                <a href="./html/error404.html" class="ms-3 mb-0 linkCategoria">Hogar, Muebles y Jardín</a>
+                            </div>
+
+                            <div class="col-xl-3 d-flex align-items-center cardCategorias">
+                                <img src="./assets/Categorías/10-Computación.png" alt="Computación">
+                                <a href="./html/error404.html" class="ms-3 mb-0 linkCategoria">Computación</a>
+                            </div>
+
+                            <div class="col-xl-3 d-flex align-items-center cardCategorias">
+                                <img src="./assets/Categorías/11-Inmuebles.png" alt="Inmuebles">
+                                <a href="./html/error404.html" class="ms-3 mb-0 linkCategoria">Inmuebles</a>
+                            </div>
+
+                            <div class="col-xl-3 d-flex align-items-center cardCategorias">
+                                <img src="./assets/Categorías/12-ElectrónicaAudio.png" alt="Electrónica, Audio y Video">
+                                <a href="./html/error404.html" class="ms-3 mb-0 linkCategoria">Electrónica, Audio y Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Sección Info Mercado Libre -->
+
+        <section class="container-fluid mt-5 sectionInfo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-sm-12 d-flex flex-column align-items-center justify-content-center cardInfo">
+                        <img src="/assets/Info 1.png" alt="" class="img-fluid">
+                        <h2>Elegí cómo pagar</h2>
+                        <p>Podés pagar con tarjeta, débito, efectivo o con Cuotas sin Tarjeta.</p>
+                        <a href="">Cómo pagar tus compras</a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-12 d-flex flex-column align-items-center justify-content-center cardInfo">
+                        <img src="/assets/Info 2.png" alt="" class="img-fluid">
+                        <h2>Envío gratis por ser tu primera compra</h2>
+                        <p>Aprovecha este beneficio en millones de productos.</p>
+                        <a href="">Ir a productos</a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-12 d-flex flex-column align-items-center justify-content-center cardInfo">
+                        <img src="/assets/Info 3.png" alt="" class="img-fluid">
+                        <h2>Seguridad, de principio a fin</h2>
+                        <p>¿No te gusta? ¡Devolvelo! En Mercado Libre, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
+                        <a href="">Cómo te protegemos</a>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <!-- Sección Cancelar compra y Normas -->
+
+        <section class="container-fluid sectionComprasNormas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-6 col-sm-12 d-flex flex-column align-items-center justify-content-center cardComprasNormas">
+                        <p>Botón de arrepentimiento</p>
+                        <a href="./html/error404.html">Cancelar una compra</a>
+                        <a href="./html/error404.html">Cancelar una suscripción</a>
+                        <a href="./html/error404.html">Cancelar un seguro o garantía</a>
+                    </div>
+                    <div class="col-12 col-xl-6 col-sm-12 d-flex flex-column align-items-center justify-content-center cardComprasNormas">
+                        <p>Conoce las normas que aplican cuando compras</p>
+                        <a href="./html/error404.html">Ver contratos de adhesión - Ley N.º 24.240 de Defensa del Consumidor</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Ayuda -->
+
+        <section class="container-fluid sectionAyuda">
+            <div class="container">
+                <div class="row justify-content-end align-items-center flex-lg-row flex-column">
+                    <!-- Email de ayuda -->
+                    <div class="col-auto ">
+                        <a href="./html/error404.html" class="d-flex align-items-center">
+                            <i class="fa-regular fa-envelope me-2"></i>ayuda@mercadolibre.com.ar
+                        </a>
+                    </div>
+                    <!-- Imagen Seguro -->
+                    <div class="col-auto ">
+                        <img src="./assets/Seguro.png" style="width: 290px;" alt="Superintendencia de seguros de la nación">
+                    </div>
+                    <!-- Imagen Usuario Financiero -->
+                    <div class="col-auto ">
+                        <img src="./assets/Usuario Financiero.png" style="width: 148px;" alt="Usuario Financiero">
+                    </div>
+                    <!-- Imagen Data Fiscal -->
+                    <div class="col-auto ">
+                        <img src="./assets/Data Fiscal.png" alt="Data Fiscal">
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- =============== MAIN FIN =============== -->
+
+
+    <!-- =============== FOOTER INICIO =============== -->
+    
     <footer>
+        <hr style="color: #999999;">
+        <div class="container">
+            <ul class="linksFooter row">
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Trábaja con nosotros</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Términos y condiciones</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Promociones</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Cómo cuidamos tu privacidad</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Información sobre seguros</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Información al usuario financiero</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Ayuda</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Defensa del consumidor</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Accesibilidad</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Libro de quejas online</a></li>
+            </ul>
+            <div class="textFooter">Copyright © 1999-2024 MercadoLibre S.R.L.</div>
+            <div class="textFooter" style="margin-bottom: 10px;">Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA</div>
+        </div>
+        
+            
         
     </footer>
+
+    <!-- =============== FOOTER FIN =============== -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
