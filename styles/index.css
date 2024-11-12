@@ -10,14 +10,12 @@ body{
     min-height: 100vh;
 }
 
+/* =============== NAV BAR INICIO =============== */
+
 .navbar {
     background-color: #ffe600 !important;
     padding: 8px 10px 12px 10px;
     box-sizing: border-box;
-}
-
-.navBar2 {
-    font-size: 13px;
 }
 
 .logoMercadoLibre {
@@ -63,6 +61,344 @@ body{
     color: #999;
 }
 
+.dropdown-menu {
+    background-color: #333333;
+    border: none; 
+}
+
+.dropdown-item {
+    background-color: transparent; 
+    color: #ffffff; 
+    font-size: 14px;
+}
+
+.linksNavbar {
+    font-size: 14px;
+}
+
+.linksCuenta {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+    .formBuscador {
+        display: none !important;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .formBuscador {
+        margin-left: 165px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .promoDisney {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .linksNavbar {
+        margin-left: 250px;
+    }
+}
+
+/* =============== NAV BAR FIN =============== */
+
+
+/* =============== MAIN INICIO =============== */
+
+main {
+    background-color: #ebebeb;
+}
+
+/* -- Carousel -- */
+
+.carousel-indicators, .carousel-control-prev, .carousel-control-next {
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.carousel:hover .carousel-indicators,
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    opacity: 1;
+}
+
+@media (max-width: 991px) {
+    .carousel-indicators {
+        display: none; 
+    }
+}
+
+/* -- Sección Promoción -- */
+
+.cardPromoción {
+    background-color: #fff;
+    width: 171px;
+    height: 300px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cardPromoción .card-title {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.cardPromoción img {
+    max-width: 100%;
+    height: 100px;
+    width: 100px;
+}
+
+.cardPromoción p {
+    font-size: 13px;
+}
+
+.btnCardPromoción {
+    font-weight: 500;
+    font-size: 12px;
+    color: #3483fa;
+    background-color: rgba(65, 137, 230, 0.15);
+    padding: 1px 14px;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.btnCardPromoción:hover {
+    color: #3483fa;
+    background-color: rgba(65, 137, 230, 0.20);
+}
+
+@media (max-width: 575.98px) { 
+    .mt-sm-custom {
+        margin-top: 1rem !important;
+    }
+}
+
+/* -- Sección Subscripción a Disney + -- */
+
+.cardSubscripcion {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.cardSubscripcion .tituloSubscripcion {
+    padding: 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #333;
+    background: linear-gradient(
+        90deg, #a90f90 55%,#0c1a51
+    );
+}
+
+.btnSubscripcion {
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btnSubscripcion:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.spanSubscripcion {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cardBodySubscripcion {
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* -- Sección Categorìas -- */
+
+.containerCategorias {
+    padding: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.containerCategorias h2 {
+    font-size: 20px;
+}
+
+.containerCategorias a {
+    color: #3483fa;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-bottom: 3px;
+}
+
+.cardCategorias {
+    width: 268px;
+    height: 98px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin: 8px 8px; 
+}
+
+.cardCategorias img {
+    height: 54px;
+}
+
+.cardCategorias .linkCategoria {
+    color: #000000;
+    font-size: 16px;
+}
+
+/* -- Sección Info Mercado Libre -- */
+
+.sectionInfo {
+    background-color: #fff;
+}
+
+.cardInfo {
+    box-sizing: border-box;
+    padding: 35px 45px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.cardInfo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.cardInfo h2 {
+    color: #4b4b4b;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cardInfo p {
+    color: #737373;
+    font-size: 15px;
+    
+}
+
+.cardInfo a {
+    color: #3483fa;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.cardInfo a:hover {
+    color: #136ef7;
+}
+
+.cardInfo:nth-child(1)::after,
+.cardInfo:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1px;
+    height: 65px;
+    background-color: #e2e2e2;
+    margin-top: -32.5px;
+}
+
+@media (max-width: 992px) {
+    .cardInfo:nth-child(1)::after,
+    .cardInfo:nth-child(2)::after {
+        display: none;
+    }
+}
+
+/* -- Sección Cancelar compra y Normas -- */
+
+.sectionComprasNormas {
+    background-color: #fff;
+    padding: 52px 12px 12px;
+    padding-bottom: 26px;
+}
+
+.cardComprasNormas {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 6px;
+    padding: 16px;
+    width: calc(50% - 20px); 
+    margin: 0 10px; 
+}
+
+.cardComprasNormas p {
+    color: #737373;
+    font-size: 16px;
+}
+
+.cardComprasNormas a {
+    color: #3483fa;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .cardComprasNormas {
+        width: 100%;
+        margin: 10px 0; 
+    }
+}
+
+/* -- Sección Ayuda -- */
+
+.sectionAyuda {
+    background-color: #fff;
+    padding: 52px 12px 12px;
+    padding-bottom: 26px;
+}
+
+.sectionAyuda a {
+    color: #737373;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    .sectionAyuda {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .sectionAyuda .col-auto {
+        margin-top: 10px;
+    }
+}
+
+/* =============== MAIN FIN =============== */
+
+
+/* =============== FOOTER INICIO =============== */
+
 footer{
     margin-top: auto;
 }
+
+.linksFooter a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
+}
+
+.linksFooter {
+    list-style: none;
+}
+
+.textFooter {
+    font-size: 12px;
+    color: #999999;
+    margin-left: 30px;
+}
+
+/* =============== FOOTER FIN =============== */
