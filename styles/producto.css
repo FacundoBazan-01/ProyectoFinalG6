@@ -93,3 +93,18 @@ footer{
     border-radius: 10%;
 }
 
+.cantVendida{
+    font-size: 14px;
+    color: rgba(0, 0, 0, .55);
+}
+
+.corazonFav{
+    color: #3483fa;
+    font-size: 22px;
+}
+
+.card-Product-titulo{
+    font-size: 22px;
+    color: rgba(0, 0, 0, .9);
+    text-align: left;
+}

@@ -97,7 +97,9 @@
       ],
       "precio": 20000,
       "stock": 50,
-      "img": ""
+      "img": "",
+      "productFav": false,
+      "productCar":false
     },
     {
       "id": "2",
@@ -116,7 +118,9 @@
       ],
       "precio": 50000,
       "stock": 45,
-      "img": ""
+      "img": "",
+      "productFav": false,
+      "productCar":false
     },
     {
       "id": "3",
@@ -144,7 +148,9 @@
       ],
       "precio": 900000,
       "stock": 65,
-      "img": ""
+      "img": "",
+      "productFav": false,
+      "productCar":false
     },
     {
       "id": "4",
@@ -180,7 +186,9 @@
       ],
       "precio": 950000,
       "stock": 35,
-      "img": ""
+      "img": "",
+      "productFav": false,
+      "productCar":false
     },
     {
       "id": "5",
@@ -209,7 +217,9 @@
       ],
       "precio": 1950000,
       "stock": 35,
-      "img": ""
+      "img": "",
+      "productFav": false,
+      "productCar":false
     },
     {
       "id": "6",
@@ -240,7 +250,9 @@
       ],
       "precio": 1950000,
       "stock": 35,
-      "img": ""
+      "img": "",
+      "productFav": false,
+      "productCar":false
     }
   ]
 }

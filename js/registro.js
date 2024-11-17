@@ -42,6 +42,7 @@ const enviarDatos = async () => {
             telefono: telef,
             contraseña: pass,
             role: "user",
+            login:false,
             };
 
             let respone = await axios.post("http://localhost:3001/usuarios",usuarioNuevo);
