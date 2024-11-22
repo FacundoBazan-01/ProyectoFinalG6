@@ -219,6 +219,45 @@ main {
 
 /* -- Sección Categorìas -- */
 
+.sectionProductos {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.cardProductos {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cardProductos img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cardProductos h3 {
+    margin: 8px 0;
+}
+
+.cardProductos p {
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+/* -- Sección Categorìas -- */
+
 .containerCategorias {
     padding: 20px;
     margin-left: 12px;
