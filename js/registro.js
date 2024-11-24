@@ -37,11 +37,12 @@ const enviarDatos = async () => {
       }
       if (bandera === true) {
             let usuarioNuevo = {
-            email: email,
             usuario: user,
-            telefono: telef,
             contraseña: pass,
+            email: email,
+            telefono: telef,
             role: "user",
+            login:false,
             };
 
             let respone = await axios.post("http://localhost:3001/usuarios",usuarioNuevo);

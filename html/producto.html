@@ -115,7 +115,8 @@
         <div> <!-- Div padre de todo el main -->
             <div><!-- Div para las letras que estan arriba de las imagenes --></div>
             <div><!-- Div que va a contener todo el contenido interior -->
-                <div class="card card-img1"><!-- Div para separa la img e info del producto de la seccion compra -->
+                <div class="card card-img1" style="width: 1300px;">
+                    <!-- Div para separa la img e info del producto de la seccion compra -->
                     <div class="row ">
                         <div class="col-8 ">
                             <!-- Div que va a contener toda la info del proctudo (IMG y Datos) -->
@@ -123,34 +124,13 @@
                                 <div class="container text-center">
                                     <div class="row">
                                         <div class="col-2 my-3 divImg">
-                                            <div>
-                                                <div>
-                                                    <img src="https://castillo.vtexassets.com/arquivos/ids/157018/Celular-Samsung-Galaxy-A23-128GB-Negro--.jpg?v=638359092429670000"
-                                                        width="60px" class=" img-chica my-2">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="">
-                                                    <img src="https://castillo.vtexassets.com/arquivos/ids/157018/Celular-Samsung-Galaxy-A23-128GB-Negro--.jpg?v=638359092429670000"
-                                                        width="60px" class=" img-chica">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="">
-                                                    <img src="https://castillo.vtexassets.com/arquivos/ids/157018/Celular-Samsung-Galaxy-A23-128GB-Negro--.jpg?v=638359092429670000"
-                                                        width="60px" class=" img-chica my-2">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <img src="https://castillo.vtexassets.com/arquivos/ids/157018/Celular-Samsung-Galaxy-A23-128GB-Negro--.jpg?v=638359092429670000"
-                                                        width="60px" class=" img-chica">
-                                                </div>
+                                            <div id="divImgChica">
+                                                
                                             </div>
                                         </div>
                                         <div class="col-10 divImg">
                                             <div id="carouselExample" class="carousel slide">
-                                                <div class="carousel-inner">
+                                                <div class="carousel-inner" id="divCarosuel">
                                                     <div class="carousel-item active">
                                                         <img src="https://castillo.vtexassets.com/arquivos/ids/157018/Celular-Samsung-Galaxy-A23-128GB-Negro--.jpg?v=638359092429670000"
                                                             alt="...">
@@ -179,21 +159,291 @@
                                     </div>
                                 </div>
                                 <div class="card-body"> <!-- Posiblemente para poner la info del producto -->
+                                    <hr>
+                                    <div class="my-5">
+                                        <section>
+                                            <div>
+                                                <h2 style="color: rgba(0, 0, 0, .9); font-size: 24px;">Caracteristicas
+                                                    del Producto</h2>
+                                            </div>
+                                            <div id="divCaractProduct">
 
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <hr>
+                                    <div class="my-5">
+                                        <div>
+                                            <h2 style="color: rgba(0, 0, 0, .9); font-size: 24px;">Descripcion del
+                                                Producto</h2>
+                                        </div>
+                                        <div class="my-5" id="divDescripProduct">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 ">
+                        <div class="col-4">
                             <!-- Va a contener el precio, medios de pago y datos del vendedor -->
-                            <div class="container text-center">
+                            <div class="container text-center" style="width: 380px; margin: 0px;">
                                 <div class="row">
-                                    <div class="col-12">
-                                        <div class="card mb-3">
+                                    <div class="col-12 my-4 d-flex">
+                                        <div class="card" style="width: 350px;">
                                             <div class="card-body">
-                                                <h5 class="card-title">Special title treatment</h5>
-                                                <p class="card-text">With supporting text below as a natural lead-in to
-                                                    additional content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                <!-- Encabezado del detalle de precio -->
+                                                <div class="d-flex justify-content-between">
+                                                    <span class="cantVendida">Nuevo | +5 mil vendidos</span>
+                                                    <div> <button type="button" id="addFav"
+                                                            style="background-color: #FFFFFF; border: none;"><i
+                                                                class="bi bi-heart corazonFav"></i></button> </div>
+                                                </div>
+                                                <!-- Nombre producto -->
+                                                <div id="divNameProduct">
+
+                                                </div>
+                                                <!-- Precio -->
+                                                <div>
+                                                    <div id="divPrecioProduct">
+                                                        <div class="d-flex">
+                                                         
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <a href="../html/error404.html"
+                                                                style="font-size: 14px; text-decoration: none;">Ver los
+                                                                medios de pago</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="my-3">
+                                                    <div>
+                                                        <p
+                                                            style="margin-bottom: 0px; color: #00a650; font-size: 16px; text-align: left;">
+                                                            Llega mañana</p>
+                                                        <p
+                                                            style="color: rgba(0,0,0,.55); font-size: 14px; text-align: left; margin-bottom: 0px;">
+                                                            Comprando dentro de las proximas <span
+                                                                style="color: black;">24 hs</span></p>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a href="../html/error404.html"
+                                                            style="font-size: 14px; text-decoration: none;">Mas formas
+                                                            de entraga</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="my-3">
+                                                    <div>
+                                                        <p
+                                                            style="margin-bottom: 0px; color: #00a650; font-size: 16px; text-align: left;">
+                                                            Devolucion gratis</p>
+                                                        <p
+                                                            style="color: rgba(0,0,0,.55); font-size: 14px; text-align: left; margin-bottom: 0px;">
+                                                            Tenes 30 dias desde que lo recibiste</p>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a href="../html/error404.html"
+                                                            style="font-size: 14px; text-decoration: none;">Conocer
+                                                            mas</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="my-3">
+                                                    <div>
+                                                        <p
+                                                            style="font-size: 16px; color: rgba(0, 0, 0, .9); text-align: left; margin: 0px; font-weight: 500;">
+                                                            Color:</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-around my-1">
+                                                        <button type="button"
+                                                            class="btn btn-danger btnColorProduct"></button>
+                                                        <button type="button"
+                                                            class="btn btn-dark  btnColorProduct"></button>
+                                                        <button type="button"
+                                                            class="btn btn-success  btnColorProduct"></button>
+                                                        <button type="button"
+                                                            class="btn btn-primary  btnColorProduct"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="my-4">
+                                                    <p
+                                                        style="text-align: left; color: rgba(0, 0, 0, .9); font-size: 16px; font-weight: bold;">
+                                                        Stock Disponible</p>
+                                                    <div id="divCantidadProduct">
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-grid gap-2">
+                                                    <button class="btn  btnCompra" type="button" id="empezarCompra"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                        Comprar ahora
+                                                    </button>
+                                                    <div class="modal fade" id="staticBackdrop"
+                                                        data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                                                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h1 class="modal-title fs-5"
+                                                                        id="staticBackdropLabel">Elige tu forma de pago
+                                                                    </h1>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal" aria-label="Close">
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <!-- Cuerpo modal -->
+                                                                    <!-- Cantidad a comprar -->
+                                                                    <h4
+                                                                        style="text-align: left; color: rgba(0, 0, 0, .9); margin: 0px; font-size: 19px;">
+                                                                        Elige la cantidad que deseas comprar:</h4>
+                                                                    <div class="my-2">
+                                                                        <input type="number" id="cantidadAComprar"
+                                                                            class="form-control">
+                                                                    </div>
+                                                                    <!-- Medios de pago -->
+                                                                    <h4
+                                                                        style="text-align: left; color: rgba(0, 0, 0, .9); margin: 0px; font-size: 19px;">
+                                                                        Medios de pago:</h4>
+                                                                    <div class="form-check d-flex my-2">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="flexRadioDefault" id="efectivo">
+                                                                        <label class="form-check-label mx-2"
+                                                                            for="efectivo">
+                                                                            Efectivo
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check d-flex">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="flexRadioDefault" id="tarjetaCre">
+                                                                        <label class="form-check-label mx-2"
+                                                                            for="tarjetaCre">
+                                                                            Tarjeta de Credito
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="my-2" id="inputTarjetaCre">
+                                                                    </div>
+                                                                    <div class="form-check d-flex">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="flexRadioDefault" id="tarjetaDeb">
+                                                                        <label class="form-check-label mx-2"
+                                                                            for="tarjetaDeb">
+                                                                            Tarjeta de Debito
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="my-2" id="inputTarjetaDeb">
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Botones para comprar -->
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-bs-dismiss="modal">Salir</button>
+                                                                    <button type="button" id="addCompra"
+                                                                        class="btn btn-primary">Aceptar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btnAddCarrito" type="button" id="addCar">Agregar al Carrito</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 my-4 d-flex">
+                                        <div class="card" style="width: 350px;">
+                                            <div class="card-body">
+                                                <div>
+                                                    <div class="d-flex" id="divVendedorName">
+
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <p style="font-size: 12px;"><span
+                                                                style="font-weight: 600; font-size: 12px;">+100
+                                                            </span>productos</p>
+                                                        <p style="font-size: 12px; margin-left: 5px;"><span
+                                                                style="font-weight: 600; font-size: 12px;">+1000
+                                                            </span>seguidores </p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <p
+                                                            style="font-size: 14px; text-align: left; color: #00a650; font-weight: 600; margin: 0px;">
+                                                            MercadoLider Platinum</p>
+                                                        <p
+                                                            style="color: rgba(0, 0, 0, .55); font-size: 12px; text-align: left;">
+                                                            ¡Uno de los mejores del sitio!</p>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="d-flex" style="list-style: none; padding: 0px;">
+                                                            <li
+                                                                style="background: #f23d4f; height: 8px; opacity: .15; width: 60px;">
+                                                            </li>
+                                                            <li style="background: #f73; height: 8px; opacity: .15; width: 60px;"
+                                                                class="mx-2"></li>
+                                                            <li
+                                                                style="background: #ffe600; height: 8px; opacity: .15; width: 60px;">
+                                                            </li>
+                                                            <li style="background: #aadb1e; height: 8px; opacity: .15; width: 60px;"
+                                                                class="mx-2"></li>
+                                                            <li
+                                                                style="background: #00a650; height: 8px; opacity: 1; width: 60px;">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <div class="container text-center">
+                                                            <div class="row align-items-start">
+                                                                <div class="col">
+                                                                    <p
+                                                                        style="font-size: 14px; font-weight: 550; margin-bottom: 0px;">
+                                                                        +10mil</p>
+                                                                    <p
+                                                                        style="color: rgba(0, 0, 0, .55); font-size: 12px;">
+                                                                        Ventas concretadas</p>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <i class="bi bi-chat-text"
+                                                                        style="color: #00a650;"></i>
+                                                                    <p
+                                                                        style="color: rgba(0, 0, 0, .55); font-size: 12px;">
+                                                                        Brinda buena atencion</p>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <i class="bi bi-alarm" style="color: #00a650;"></i>
+                                                                    <p
+                                                                        style="color: rgba(0, 0, 0, .55); font-size: 12px;">
+                                                                        Despacha sus productos a tiempo</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="d-grid gap-2">
+                                                            <button class="btn btnVendedor" type="button">Ir a pagina
+                                                                del vendedor</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 my-4 d-flex">
+                                        <div class="card" style="width: 350px;">
+                                            <div class="card-body">
+                                                <div class="d-flex">
+                                                    <img src="../assets/Medios de pago Product.png" alt=""
+                                                        class="img-fluid">
+
+                                                </div>
+                                                <div class="d-flex">
+                                                    <a href="../html/error404.html"
+                                                        style="font-size: 14px; text-decoration: none;">Conoce mas
+                                                        medios de pagos</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -205,7 +455,38 @@
             </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <hr style="color: #999999;">
+        <div class="container">
+            <ul class="linksFooter row">
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Trábaja con
+                        nosotros</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Términos y
+                        condiciones</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Promociones</a>
+                </li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Cómo cuidamos tu
+                        privacidad</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Información sobre
+                        seguros</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Información al
+                        usuario financiero</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Ayuda</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Defensa del
+                        consumidor</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Accesibilidad</a>
+                </li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Libro de quejas
+                        online</a></li>
+            </ul>
+            <div class="textFooter">Copyright © 1999-2024 MercadoLibre S.R.L.</div>
+            <div class="textFooter" style="margin-bottom: 10px;">Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios,
+                CABA</div>
+        </div>
+
+
+
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
