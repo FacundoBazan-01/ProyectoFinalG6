@@ -1,0 +1,181 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffe600;
+    border: 0;
+}
+
+/* Contenedor principal */
+.login-container {
+    display: flex;
+    align-items: start;
+    height: 100%;
+    margin-top: 40px;
+    justify-content: center;
+    
+    
+}
+
+/* Caja del formulario */
+.login-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los grupos de inputs */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.input-contraseña {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.input-contraseña label{
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+.input-contraseña input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Efecto en los campos de input cuando están en foco */
+.input-group input:focus {
+    outline: none;
+    border-color: #00A6D6; /* Color azul Mercado Libre */
+}
+
+/* Botón de inicio de sesión */
+#login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: white; /* Color amarillo Mercado Libre */
+    border: none;
+    color: #0066ff; 
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#continuar-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3483fa; /* Color amarillo Mercado Libre */
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#continuar-btn:hover {
+    background-color:#03317c; /* Color amarillo más oscuro al pasar el mouse */
+}
+
+#login-btn:hover {
+    background-color: #d6dce6; /* Color amarillo más oscuro al pasar el mouse */
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;;
+    border: 0;
+}
+
+#iniciarSesion-btn{
+    width: 100%;
+    padding: 12px;
+    background-color: white; 
+    border-radius: #333;
+    color: black; 
+    font-size:"Google Sans", arial, sans-serif ;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.div-h1{
+    margin-right: 10px;
+}
+#problemaSeguridad-btn{
+    width: 100%;
+    padding: 12px;
+    background-color: white; 
+    border: none;
+    color: black; 
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#problemaSeguridad-btn:hover{
+    background-color: #d6dce6
+
+}
+.div-ingresaEmail{
+    display: flex;
+    padding: 300px 50px;
+    width: 100%;
+    flex-direction: column;
+}
+#iniciarSesion-btn:hover{
+    background-color: #dadce0
+}
