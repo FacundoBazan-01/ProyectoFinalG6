@@ -90,8 +90,8 @@
       "precio": 20000,
       "stock": 50,
       "img": "",
-      "produtoFav": false,
-      "produtoCar": false,
+      "produtFav": false,
+      "produtCar": false,
       "productWatch": false
     },
     {
@@ -112,8 +112,8 @@
       "precio": 50000,
       "stock": 45,
       "img": "https://i.imgur.com/JkDRgaj.jpg",
-      "produtoFav": false,
-      "produtoCar": false,
+      "produtFav": false,
+      "produtCar": false,
       "productWatch": false
     },
     {
@@ -143,8 +143,8 @@
       "precio": 900000,
       "stock": 65,
       "img": "",
-      "produtoFav": false,
-      "produtoCar": false,
+      "produtFav": false,
+      "produtCar": false,
       "productWatch": false
     },
     {
@@ -182,8 +182,8 @@
       "precio": 950000,
       "stock": 35,
       "img": "",
-      "produtoFav": false,
-      "produtoCar": false,
+      "produtFav": false,
+      "produtCar": false,
       "productWatch": false
     },
     {
@@ -248,8 +248,8 @@
       "precio": 1950000,
       "stock": 35,
       "img": "",
-      "produtoFav": false,
-      "produtoCar": false,
+      "produtFav": false,
+      "produtCar": false,
       "productWatch": false
     },
     {
@@ -271,8 +271,8 @@
       "precio": 85.499,
       "stock": 45,
       "img": "",
-      "produtoFav": false,
-      "produtoCar": false,
+      "produtFav": false,
+      "produtCar": false,
       "productWatch": false
     },
     {
@@ -295,8 +295,8 @@
       "precio": 104.384,
       "stock": 15,
       "img": "",
-      "produtoFav": false,
-      "produtoCar": false,
+      "produtFav": false,
+      "produtCar": false,
       "productWatch": false
     },
     {
@@ -319,8 +319,8 @@
       "precio": 75.9,
       "stock": 10,
       "img": "",
-      "produtoFav": false,
-      "produtoCar": false,
+      "produtFav": false,
+      "produtCar": false,
       "productWatch": false
     },
     {
@@ -370,8 +370,8 @@
       "precio": 179.999,
       "stock": 12,
       "img": "",
-      "produtoFav": false,
-      "produtoCar": false,
+      "produtFav": false,
+      "produtCar": false,
       "productWatch": false
     },
     {
@@ -395,8 +395,8 @@
       "precio": 101.6,
       "stock": 23,
       "img": "",
-      "produtoFav": false,
-      "produtoCar": false,
+      "produtFav": false,
+      "produtCar": false,
       "productWatch": false
     }
   ]
