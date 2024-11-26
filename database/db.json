@@ -97,7 +97,7 @@
       "precio": 20000,
       "stock": 50,
       "img": "",
-      "productFav": false,
+      "productFav":false,
       "productCar":false,
       "productWatch":false
     },

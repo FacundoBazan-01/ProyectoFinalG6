@@ -20,6 +20,7 @@ async function acceder(event) {
                 console.log(usuario);
              if(email === usuario.email&& password === usuario.contraseña){
                 contador = 0;
+                usuario.login = true
                window.location.href ="../index.html"
                 console.log(contador);
                 
