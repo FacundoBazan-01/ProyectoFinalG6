@@ -41,23 +41,26 @@ const enviarDatos = async () => {
             contraseña: pass,
             email: email,
             telefono: telef,
-            role: "user",
+            rol: "user",
             login:false,
             };
 
-            let respone = await axios.post("http://localhost:3001/usuarios",usuarioNuevo);
-            if (respone) {
-                Swal.fire({
-                    title: "Bienvenido!",
-                    text: "Tu usuario fue creado correctamente!",
-                    icon: "success",
-                });
+            if (usuarioNuevo) {
+              Swal.fire({
+                title: "Bienvenido!",
+                text: "Tu usuario fue creado correctamente!",
+                icon: "success",
+              });
             } else {
-                Swal.fire({
-                    icon: "error",
-                    title: "Oops...",
-                    text: "El usuario no se pudo crear intentalo de nuevo!",
-            });
+              Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "El usuario no se pudo crear intentalo de nuevo!",
+              });
+            }
+            let respone = await axios.post("http://localhost:3001/usuarios",usuarioNuevo);
+            if(respone){
+              window.location.href="../html/login.html"
             }
       }
       

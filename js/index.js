@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/productos';
+const API_URL = 'http://localhost:3001/productos';
 
 // Función para establecer productoEnVista en false para todos los productos
 const inicializarProductos = async () => {
