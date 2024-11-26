@@ -61,6 +61,14 @@ const mostrarDatosDivs = async () => {
       }
     );
 
+    productoEnVista.img.map((dato)=>{
+      divCarosuel.innerHTML += `
+      <div class="carousel-item active">
+        <img src="${dato} "alt="...">
+      </div>
+      `
+    })
+
     productoEnVista.caracteristicas.map((dato) =>{
       divCaractProduct.innerHTML +=`
       <ul>

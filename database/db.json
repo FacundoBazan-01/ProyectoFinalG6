@@ -96,7 +96,7 @@
       ],
       "precio": 20000,
       "stock": 50,
-      "img": "",
+      "img": ["https://www.casadelaudio.com/Image/0/750_750-156-SAM-909_(2).png","https://tienda.personal.com.ar/images/720/webp/Samsung_Galaxy_A15_Blue_Black_5b0e3e23d8.png","https://shop.samsung.com/latin/cac/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/s/m/sm-a155_ep-ta800nbegmx.png"],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -124,7 +124,7 @@
       ],
       "precio": 50000,
       "stock": 45,
-      "img": "https://i.imgur.com/JkDRgaj.jpg",
+      "img": ["https://www.casadelaudio.com/Image/0/750_750-156-SAM-945%20(1)1.png","https://www.casadelaudio.com/Image/0/750_750-156-SAM-945_(2).png","https://www.casadelaudio.com/Image/0/750_750-156-SAM-945_(7).png"],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -155,7 +155,7 @@
       ],
       "precio": 900000,
       "stock": 65,
-      "img": ["https://castillo.vtexassets.com/arquivos/ids/157018/Celular-Samsung-Galaxy-A23-128GB-Negro--.jpg?v=638359092429670000","https://castillo.vtexassets.com/arquivos/ids/157018/Celular-Samsung-Galaxy-A23-128GB-Negro--.jpg?v=638359092429670000","https://castillo.vtexassets.com/arquivos/ids/157018/Celular-Samsung-Galaxy-A23-128GB-Negro--.jpg?v=638359092429670000"],
+      "img": ["https://tutiendabancor.com/media/catalog/product/cache/9c08c714c8eb7e564db9a133e4630037/1/7/17304638162e29e1add823bb91085b7cfcae262588.webp.jpg","https://www.maxmovil.com/media/catalog/product/cache/2c055c968235f5bf43b443aee4bb62c6/x/i/xiaomi_poco_m6_pro_purpura_3_.jpg","https://tutiendabancor.com/media/catalog/product/cache/9c08c714c8eb7e564db9a133e4630037/1/7/17304638099f994557b188b1bdef73490668dd45db.jpg"],
       "productFav": false,
       "productCar":false,
       "productWatch":true
@@ -195,7 +195,7 @@
       ],
       "precio": 950000,
       "stock": 35,
-      "img": "",
+      "img": ["https://casacuesta.com/media/catalog/product/cache/fde49a4ea9a339628caa0bc56aea00ff/3/3/3348139-1__1726032026.jpg","https://www.casadelaudio.com/Image/0/750_750-156-XIA-023_(12).png","https://holatelcel.com/wp-content/uploads/2024/03/Xiaomi-Redmi-Note-13-Pro.png"],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -228,7 +228,7 @@
       ],
       "precio": 1950000,
       "stock": 35,
-      "img": "",
+      "img": ["https://applestore.am/media/catalog/product/cache/524531ebd1cf3ec7d6ef9d414e811315/w/w/wwen_iphone14_q422_starlight_pdp_image_position-1a.jpg","https://www.radioshack.cr/media/catalog/product/5/0/5001111054-y-5001111063-_3__qf5ud6scspc3qxib.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700","https://shareefcorner.sa/pub/media/catalog/product/mpiowebpcache/82d05cd6abfc8fcfb8bdbf5accf96e1b/a/p/apple_iphone_14_128gb_-_5g_-_starlight-3.webp"],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -263,7 +263,7 @@
       ],
       "precio": 1950000,
       "stock": 35,
-      "img": "",
+      "img": ["https://d1rlzxa98cyc61.cloudfront.net/catalog/product/cache/1801c418208f9607a371e61f8d9184d9/1/9/194217_2024_1_1.jpg","https://topcelular.es/1249-large_default/iphone-16-pro-128gb-negro.jpg","https://tv-it.com/storage/shada/iphone/iphone16-pro-desert-p5.webp"],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -415,4 +415,8 @@
       "productCar": false,
       "productWatch": false
     }
-  ]
+  ] 
+}
+    
+   
+
