@@ -98,8 +98,8 @@
       "stock": 50,
       "img": ["https://www.casadelaudio.com/Image/0/750_750-156-SAM-909_(2).png","https://tienda.personal.com.ar/images/720/webp/Samsung_Galaxy_A15_Blue_Black_5b0e3e23d8.png","https://shop.samsung.com/latin/cac/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/s/m/sm-a155_ep-ta800nbegmx.png"],
       "productFav": false,
-      "productCar":false,
-      "productWatch":false
+      "productCar": false,
+      "productWatch": false
     },
     {
       "id": "2",
@@ -126,8 +126,8 @@
       "stock": 45,
       "img": ["https://www.casadelaudio.com/Image/0/750_750-156-SAM-945%20(1)1.png","https://www.casadelaudio.com/Image/0/750_750-156-SAM-945_(2).png","https://www.casadelaudio.com/Image/0/750_750-156-SAM-945_(7).png"],
       "productFav": false,
-      "productCar":false,
-      "productWatch":false
+      "productCar": false,
+      "productWatch": false
     },
     {
       "id": "3",
@@ -159,6 +159,7 @@
       "productFav": false,
       "productCar":false,
       "productWatch":true
+
     },
     {
       "id": "4",
@@ -196,8 +197,8 @@
       "stock": 35,
       "img": ["https://casacuesta.com/media/catalog/product/cache/fde49a4ea9a339628caa0bc56aea00ff/3/3/3348139-1__1726032026.jpg","https://www.casadelaudio.com/Image/0/750_750-156-XIA-023_(12).png","https://holatelcel.com/wp-content/uploads/2024/03/Xiaomi-Redmi-Note-13-Pro.png"],
       "productFav": false,
-      "productCar":false,
-      "productWatch":false
+      "productCar": false,
+      "productWatch": false
     },
     {
       "id": "5",
@@ -229,8 +230,8 @@
       "stock": 35,
       "img": ["https://applestore.am/media/catalog/product/cache/524531ebd1cf3ec7d6ef9d414e811315/w/w/wwen_iphone14_q422_starlight_pdp_image_position-1a.jpg","https://www.radioshack.cr/media/catalog/product/5/0/5001111054-y-5001111063-_3__qf5ud6scspc3qxib.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700","https://shareefcorner.sa/pub/media/catalog/product/mpiowebpcache/82d05cd6abfc8fcfb8bdbf5accf96e1b/a/p/apple_iphone_14_128gb_-_5g_-_starlight-3.webp"],
       "productFav": false,
-      "productCar":false,
-      "productWatch":false
+      "productCar": false,
+      "productWatch": false
     },
     {
       "id": "6",
@@ -264,8 +265,158 @@
       "stock": 35,
       "img": ["https://d1rlzxa98cyc61.cloudfront.net/catalog/product/cache/1801c418208f9607a371e61f8d9184d9/1/9/194217_2024_1_1.jpg","https://topcelular.es/1249-large_default/iphone-16-pro-128gb-negro.jpg","https://tv-it.com/storage/shada/iphone/iphone16-pro-desert-p5.webp"],
       "productFav": false,
-      "productCar":false,
-      "productWatch":false
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "25",
+      "nombre": "Adidas Runfalcon 5",
+      "marca": "Adidas",
+      "descripcion": [
+        "Tanto en la pista como en la cinta de correr, alcanzá todas tus metas con estas zapatillas de running adidas. Incorporan una mediasuela con amortiguación Cloudfoam que te ofrece una pisada más cómoda y suave. La parte superior de malla transpirable y la suela Adiwear de gran resistencia al desgaste la convierten en una silueta perfecta para llevar durante todo el día.",
+        "Es importante que revises la Guía de Talles antes de realizar la compra para asegurarte de estar eligiendo el producto adecuado. Para verla, hacé clic donde dice Guía de Talles.",
+        "Tené en cuenta que nuestros talles de CALZADO están basados en valores AR, que es diferente al FR-EUR (Europeo). Aunque en algunas etiquetas o cajas de calzado aún podés ver el talle FR-EUR, en nuestra tienda online sólo usamos el talle AR: recordá no confundirlos."
+      ],
+      "caracteristicas": [
+        "Materiales de la suela: Sintético",
+        "Deportes recomendados: Deportivo",
+        "Materiales del exterior: Tela",
+        "Temporada de lanzamiento: Otoño/Invierno",
+        "No es impermeable."
+      ],
+      "precio": 85.499,
+      "stock": 45,
+      "img": "",
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "26",
+      "nombre": "Nike Air Zoom Pegasus",
+      "marca": "Nike",
+      "descripcion": [
+        "ENERGÍA DURANTE KILÓMETROS. El running es tu ritual diario; cada paso te lleva más cerca de tu objetivo personal. Ya sea en el entrenamiento o corriendo, llega a nuevas alturas con el Nike Air Zoom Pegasus 39 y su diseño intuitivo. Más ligero que el Pegasus 38 en la parte superior e ideal para usar todo el año, tiene una sensación de soporte para mantener los pies seguros; la amortiguación en la planta del pie y las unidades dobles Zoom Air (una más que el Peg 38) le dan un brillo adicional a tus pisadas. El caballo de batalla con alas en el que confías regresó. Es hora de volar.",
+        "Comodidad total. El acolchado adicional en la lengüeta y el cuello ayuda a mantener la comodidad en los pies. Además, hemos colocado malla diseñada estratégicamente, que es más fuerte y más flexible que la malla normal, en toda la parte superior para ofrecer una transpirabilidad ligera.",
+        "Pasos con soporte. La tecnología Flywire está integrada a una banda en el mediopié para brindar soporte total que ayuda a mantener los pies en su lugar.",
+        "Más beneficios. La lengüeta está separada de la parte superior para proporcionar espacio para las diferentes formas del pie, La suela tipo wafle ofrece una tracción excelente, Las ranuras en la suela de goma brindan un movimiento natural."
+      ],
+      "caracteristicas": [
+        "Materiales de la suela: Goma",
+        "Deportes recomendados: Running",
+        "Materiales del exterior: Sintético; Malla",
+        "Temporada de lanzamiento: Otoño/Invierno",
+        "No es impermeable."
+      ],
+      "precio": 104.384,
+      "stock": 15,
+      "img": "",
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "27",
+      "nombre": "Skyrocket Lite Puma",
+      "marca": "Puma",
+      "descripcion": [
+        "Descubrí las Zapatillas Puma Skyrocket Litet, de alto rendimiento diseñadas para impulsarte más allá de tus límites. Con la exclusiva suela Protread, estas zapatillas ofrecen una combinación perfecta de durabilidad y tracción, permitiéndote correr con confianza en cualquier terreno. La entresuela de EVA liviana brinda una comodidad excepcional sin agregar peso adicional, mientras que el empeine Skyrocket asegura una ventilación óptima y una sensación de comodidad incomparable gracias a sus materiales de malla de alta calidad.",
+        "Genero Unisex"
+      ],
+      "caracteristicas": [
+        "Materiales de la suela: Goma",
+        "Deportes recomendados: Running",
+        "Materiales del exterior: Malla",
+        "Temporada de lanzamiento: Primavera/Verano",
+        "No es impermeable.",
+        "Con suela antideslizante",
+        "Con lengüeta acolchada"
+      ],
+      "precio": 75.9,
+      "stock": 10,
+      "img": "",
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "28",
+      "nombre": "Adidas Court 24",
+      "marca": "Adidas",
+      "descripcion": [
+        "Expresá tu estilo deportivo cada vez que salgas a la calle. Estas zapatillas adidas llaman la atención con sus detalles llamativos y colores llamativos.",
+        "El exterior de cuero texturizado es estilizado, suave y está diseñado para usar a diario, mientras que la mediasuela Cloud Foam ofrece una pisada suave y estable.",
+        "La resistente suela de caucho le pone el toque final a este diseño de corte bajo, manteniendo tu pie firme en todo momento y lugar."
+      ],
+      "caracteristicas": [
+        "Materiales de la suela: Goma",
+        "Deportes recomendados: Casual; Urbano",
+        "Materiales del exterior: Sintético",
+        "Temporada de lanzamiento: Primavera/Verano",
+        "No es impermeable.",
+        "Con suela antideslizante",
+        "Con lengüeta acolchada"
+      ],
+      "precio": 119.999,
+      "stock": 16,
+      "img": "",
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "29",
+      "nombre": "Nike Air Max Excee",
+      "marca": "Nike",
+      "descripcion": [
+        "Inspirado por el modelo Nike Air Max 90, el Nike Air Max Excee celetop un clásico bajo una nueva óptica. Las líneas de diseño alargadas y las proporciones distorsionadas en la parte superior elevan a un ícono a un espacio moderno.",
+        "La unidad Air es visible a través de 3 ventanas para darte un look actualizado.",
+        "La entresuela de espuma y las almohadillas de espuma y goma de la suela ofrecen comodidad y durabilidad ligeras.",
+        "Las líneas de diseño alargadas rinden homenaje al Air Max 90 a la vez que lo modernizan de una forma provocativa."
+      ],
+      "caracteristicas": [
+        "Materiales de la suela: Goma",
+        "Deportes recomendados: Casual; Urbano",
+        "Materiales del exterior: Sintético; Malla",
+        "Temporada de lanzamiento: Primavera/Verano",
+        "No es impermeable.",
+        "Con suela antideslizante",
+        "Con lengüeta acolchada"
+      ],
+      "precio": 179.999,
+      "stock": 12,
+      "img": "",
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "30",
+      "nombre": "Puma Vis2k Sl Yos",
+      "marca": "Puma",
+      "descripcion": [
+        "Inspirados en estilos de nuestros archivos de fútbol, estas zapatillas están diseñadas para el explorador urbano de hoy.",
+        "Los detalles de gamuza y la entresuela de EVA brindan comodidad acolchada, mientras que la base transparente en el talón agrega un toque de estilo retro.",
+        "Ya sea que estés paseando por las calles de la ciudad o paseando por el parque, los Vis2k SL Year Of Sports son las zapatillas para vos."
+      ],
+      "caracteristicas": [
+        "Materiales de la suela: Goma",
+        "Deportes recomendados: Casual; Urbano",
+        "Materiales del exterior: Sintético",
+        "Temporada de lanzamiento: Todas las estaciones",
+        "No es impermeable.",
+        "Con suela antideslizante",
+        "Con lengüeta acolchada"
+      ],
+      "precio": 101.6,
+      "stock": 23,
+      "img": "",
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
     }
-  ]
+  ] 
 }
+    
+   
+
