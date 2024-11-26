@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />    
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Style CSS -->
     <link rel="stylesheet" href="../styles/misCompras.css">
     <!-- Index JS -->
@@ -19,6 +20,7 @@
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
+
 <body>
 
     <!-- =============== HEADER INICIO =============== -->
@@ -29,8 +31,9 @@
             <div class="container d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-center w-100">
                     <!-- Logo -->
-                    <a class="navbar-brand" href="/index.html"> 
-                        <img src="../assets/mercado-libre-logo.svg" class="logoMercadoLibre" alt="Logo Mercado Libre" style="width: 150px;">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="../assets/mercado-libre-logo.svg" class="logoMercadoLibre" alt="Logo Mercado Libre"
+                            style="width: 150px;">
                     </a>
 
                     <!-- Formulario de búsqueda -->
@@ -42,18 +45,20 @@
                             <i class="fa-solid fa-magnifying-glass iconoSearch"></i>
                         </button>
                     </form>
-        
+
                     <!-- Imagen promocional -->
                     <a class="navbar-brand promoDisney d-none d-lg-block" href="/index.html">
-                        <img src="../assets/D_NQ_780412-MLA80111423909_102024-OO.webp" style="width: 340px;" alt="Promo Disney +">
+                        <img src="../assets/D_NQ_780412-MLA80111423909_102024-OO.webp" style="width: 340px;"
+                            alt="Promo Disney +">
                     </a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
-                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-        
+
                 <!-- Menú de enlaces y opciones de cuenta -->
                 <div class="collapse navbar-collapse w-100 mt-3" id="navbarContent">
                     <div class="d-flex justify-content-between w-100">
@@ -61,7 +66,8 @@
                         <ul class="navbar-nav linksNavbar">
                             <!-- Categorías -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Categorías
                                 </a>
                                 <ul class="dropdown-menu">
@@ -69,14 +75,18 @@
                                     <li><a class="dropdown-item" href="./html/error404.html">Celulares</a></li>
                                     <li><a class="dropdown-item" href="./html/error404.html">Electrodomésticos</a></li>
                                     <li><a class="dropdown-item" href="./html/error404.html">Herramientas</a></li>
-                                    <li><a class="dropdown-item" href="./html/error404.html">Accesorios para Vehículos</a></li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Accesorios para
+                                            Vehículos</a></li>
                                     <li><a class="dropdown-item" href="./html/error404.html">Moda</a></li>
                                     <li><a class="dropdown-item" href="./html/error404.html">Deportes y Fitness</a></li>
-                                    <li><a class="dropdown-item" href="./html/error404.html">Articulos de Belleza</a></li>
-                                    <li><a class="dropdown-item" href="./html/error404.html">Hogar, Muebles y Jardín</a></li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Articulos de Belleza</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Hogar, Muebles y Jardín</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="./html/error404.html">Computación</a></li>
                                     <li><a class="dropdown-item" href="./html/error404.html">Inmuebles</a></li>
-                                    <li><a class="dropdown-item" href="./html/error404.html">Electrónica, Audio y Video</a></li>
+                                    <li><a class="dropdown-item" href="./html/error404.html">Electrónica, Audio y
+                                            Video</a></li>
                                 </ul>
                             </li>
 
@@ -90,8 +100,9 @@
                         </ul>
 
                         <ul class="navbar-nav ms-auto linksCuenta">
-                            <li class="nav-item"><a class="nav-link" href="./html/registro.html">Nombre Usuario</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./html/iniciaSesion.html">Cerrar Sesión</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./html/registro.html">Creá tu cuenta</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./html/login.html">Ingresa</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./html/misCompras.html">Mis compras</a></li>
                         </ul>
                     </div>
                 </div>
@@ -107,44 +118,162 @@
 
     <main>
 
-        <!-- Menu de Opciones -->
-        <div class="sidebarContainer">
+        <!-- Aside Menu de Opciones -->
+        <aside class="sidebarContainer">
             <button class="hamburger-menu" id="menuToggle">
-                <img src="https://img.icons8.com/?size=100&id=8113&format=png&color=737373EB" alt="Menu" width="30" height="30">
+                <img src="https://img.icons8.com/?size=100&id=8113&format=png&color=737373EB" alt="Menu" width="30"
+                    height="30">
             </button>
             <div class="sidebar" id="sidebar">
                 <h3>Mi Cuenta</h3>
                 <ul>
                     <li>
-                        <a href="#"><img src="https://img.icons8.com/?size=100&id=AgpNCyq2TYrv&format=png&color=A8A8A8" width="30" height="25"><span>Compras</span></a>
+                        <a href="#"><img src="https://img.icons8.com/?size=100&id=AgpNCyq2TYrv&format=png&color=A8A8A8"
+                                width="24" height="24"><span>Compras</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="https://img.icons8.com/?size=100&id=HTtSIrro5nLW&format=png&color=A8A8A8" width="30" height="25"><span>Ventas</span></a>
+                        <a href="#"><img src="https://img.icons8.com/?size=100&id=HTtSIrro5nLW&format=png&color=A8A8A8"
+                                width="24" height="24"><span>Ventas</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="https://img.icons8.com/?size=100&id=2uhRL59xjk3f&format=png&color=A8A8A8" width="30" height="25"><span>Préstamos</span></a>
+                        <a href="#"><img src="https://img.icons8.com/?size=100&id=2uhRL59xjk3f&format=png&color=A8A8A8"
+                                width="24" height="24"><span>Préstamos</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="https://img.icons8.com/?size=100&id=hwWsopzNm7N2&format=png&color=A8A8A8" width="30" height="25"><span>Subscripciones</span></a>
+                        <a href="#"><img src="https://img.icons8.com/?size=100&id=hwWsopzNm7N2&format=png&color=A8A8A8"
+                                width="24" height="24"><span>Subscripciones</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="https://img.icons8.com/?size=100&id=107767&format=png&color=A8A8A8" width="30" height="25"><span>Seguros</span></a>
+                        <a href="#"><img src="https://img.icons8.com/?size=100&id=107767&format=png&color=A8A8A8"
+                                width="24" height="24"><span>Seguros</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="https://img.icons8.com/?size=100&id=79126&format=png&color=A8A8A8" width="30" height="30"><span>Bio Libre</span></a>
+                        <a href="#"><img src="https://img.icons8.com/?size=100&id=79126&format=png&color=A8A8A8"
+                                width="24" height="24"><span>Bio Libre</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="https://img.icons8.com/?size=100&id=6Bc55nkIp44b&format=png&color=A8A8A8" width="30" height="30"><span>Facturación</span></a>
+                        <a href="#"><img src="https://img.icons8.com/?size=100&id=6Bc55nkIp44b&format=png&color=A8A8A8"
+                                width="24" height="24"><span>Facturación</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="https://img.icons8.com/?size=100&id=112512&format=png&color=A8A8A8" width="30" height="30"><span>Mi Perfil</span></a>
+                        <a href="#"><img src="https://img.icons8.com/?size=100&id=112512&format=png&color=A8A8A8"
+                                width="24" height="24"><span>Mi Perfil</span></a>
                     </li>
                     <li>
-                        <a href="#"><img src="https://img.icons8.com/?size=100&id=364&format=png&color=A8A8A8" width="30" height="25"><span>Configuración</span></a>
+                        <a href="#"><img src="https://img.icons8.com/?size=100&id=364&format=png&color=A8A8A8"
+                                width="24" height="24"><span>Configuración</span></a>
                     </li>
                 </ul>
             </div>
-        </div>
+        </aside>
+
+        <!-- Sección Productos Comprados -->
+
+        <section id="cardProductosComprado" class="container mt-5">
+            <div class="card-mercado-libre">
+                <div class="card-header">
+                    <p class="fecha">4 de abril</p>
+                </div>
+                <div class="card-body">
+                    <img src="https://http2.mlstatic.com/D_778436-MLA74163674293_012024-N.jpg" alt="Producto" class="product-image" />
+                    <div class="product-details">
+                        <p class="estado">Entregado</p>
+                        <p class="fecha-entrega">Llegó el <strong>10 de abril</strong></p>
+                        <p class="descripcion">
+                            Roku Premiere 3920 Standar 4k & Hdr & Full Hd 1080p C/ Control Remoto
+                        </p>
+                        <p class="cantidad">1 unidad</p>
+                    </div>
+                    <div class="card-actions">
+                        <p class="vendedor">DDOSNET S R L</p>
+                        <a href="#" class="link">Ver mensajes</a>
+                        <div class="botones">
+                            <button class="btn btn-primary">Ver compra</button>
+                            <button class="btn btn-secondary">Volver a comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-mercado-libre">
+                <div class="card-header">
+                    <p class="fecha">4 de abril</p>
+                </div>
+                <div class="card-body">
+                    <img src="https://http2.mlstatic.com/D_778436-MLA74163674293_012024-N.jpg" alt="Producto" class="product-image" />
+                    <div class="product-details">
+                        <p class="estado">Entregado</p>
+                        <p class="fecha-entrega">Llegó el <strong>10 de abril</strong></p>
+                        <p class="descripcion">
+                            Roku Premiere 3920 Standar 4k & Hdr & Full Hd 1080p C/ Control Remoto
+                        </p>
+                        <p class="cantidad">1 unidad</p>
+                    </div>
+                    <div class="card-actions">
+                        <p class="vendedor">DDOSNET S R L</p>
+                        <a href="#" class="link">Ver mensajes</a>
+                        <div class="botones">
+                            <button class="btn btn-primary">Ver compra</button>
+                            <button class="btn btn-secondary">Volver a comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-mercado-libre">
+                <div class="card-header">
+                    <p class="fecha">4 de abril</p>
+                </div>
+                <div class="card-body">
+                    <img src="https://http2.mlstatic.com/D_778436-MLA74163674293_012024-N.jpg" alt="Producto" class="product-image" />
+                    <div class="product-details">
+                        <p class="estado">Entregado</p>
+                        <p class="fecha-entrega">Llegó el <strong>10 de abril</strong></p>
+                        <p class="descripcion">
+                            Roku Premiere 3920 Standar 4k & Hdr & Full Hd 1080p C/ Control Remoto
+                        </p>
+                        <p class="cantidad">1 unidad</p>
+                    </div>
+                    <div class="card-actions">
+                        <p class="vendedor">DDOSNET S R L</p>
+                        <a href="#" class="link">Ver mensajes</a>
+                        <div class="botones">
+                            <button class="btn btn-primary">Ver compra</button>
+                            <button class="btn btn-secondary">Volver a comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="row">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="card cardSubscripcion w-100">
+                        <div class="d-flex align-items-center justify-content-between tituloSubscripcion rounded-top">
+                            <h5 class="card-title">Suscribite al nivel 6 por $5.999/mes</h5>
+                            <button class="btn btnSubscripcion">Suscribirse</button>
+                        </div>
+                        
+                        <div class="spanSubscripcion">
+                            <span>Conseguí los mejores beneficios en Mercado Libre</span>
+                        </div>
+                        <div class="row cardBodySubscripcion">
+                            <div class="col-xl-6 d-flex align-items-center">
+                                <img src="./assets/Disney.png" class="border border-1 rounded-1" alt="" style="height: 56px; width: 56px;">
+                                <p class="ms-3 mb-0">Disney+ incluido</p>
+                            </div>
+                            <div class="col-xl-3 d-flex align-items-center mt-xl-0 mt-3">
+                                <img src="./assets/Envío Card.png" class="border border-1 rounded-1" alt="" style="height: 56px; width: 56px;">
+                                <p class="ms-3 mb-0">Envíos gratis y rápidos desde $30.000 y 45% OFF en envíos desde $6.000</p>
+                            </div>
+                            <div class="col-xl-3 d-flex align-items-center mt-xl-0 mt-3">
+                                <img src="./assets/Envío Card.png" class="border border-1 rounded-1" alt="" style="height: 56px; width: 56px;">
+                                <p class="ms-3 mb-0">Envíos gratis y rápidos desde $30.000 y 45% OFF en envíos desde $6.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -152,31 +281,41 @@
 
 
     <!-- =============== FOOTER INICIO =============== -->
-    
+
     <footer>
-        
+
         <div class="container">
             <ul class="linksFooter row">
-                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Trábaja con nosotros</a></li>
-                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Términos y condiciones</a></li>
-                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Promociones</a></li>
-                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Cómo cuidamos tu privacidad</a></li>
-                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Información sobre seguros</a></li>
-                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Información al usuario financiero</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Trábaja con
+                        nosotros</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Términos y
+                        condiciones</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Promociones</a>
+                </li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Cómo cuidamos tu
+                        privacidad</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Información sobre
+                        seguros</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Información al
+                        usuario financiero</a></li>
                 <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Ayuda</a></li>
-                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Defensa del consumidor</a></li>
-                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Accesibilidad</a></li>
-                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Libro de quejas online</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Defensa del
+                        consumidor</a></li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Accesibilidad</a>
+                </li>
+                <li class="col-12 col-xl-2 col-lg-3 col-md-4 col-sm-6"><a href="./html/error404.html">Libro de quejas
+                        online</a></li>
             </ul>
             <div class="textFooter">Copyright © 1999-2024 MercadoLibre S.R.L.</div>
-            <div class="textFooter" style="margin-bottom: 10px;">Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA</div>
+            <div class="textFooter" style="margin-bottom: 10px;">Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios,
+                CABA</div>
         </div>
-        
-            
-        
+
+
+
     </footer>
 
-    <!-- =============== FOOTER FIN =============== --> 
+    <!-- =============== FOOTER FIN =============== -->
 
 
 
@@ -198,6 +337,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
+
 </html>
