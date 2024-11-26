@@ -30,7 +30,7 @@
       "precioProducto": 12,
       "cantidadComprada": 1,
       "totalPagado": 4213
-    }
+    } 
   ],
   "vendedores": [
     {
@@ -204,13 +204,13 @@
         "Resistente al polvo y a las caídas."
       ],
       "precio": 950000,
-      "stock": 30,
+      "stock": 20,
       "img": [
         "https://casacuesta.com/media/catalog/product/cache/fde49a4ea9a339628caa0bc56aea00ff/3/3/3348139-1__1726032026.jpg",
         "https://www.casadelaudio.com/Image/0/750_750-156-XIA-023_(12).png",
         "https://holatelcel.com/wp-content/uploads/2024/03/Xiaomi-Redmi-Note-13-Pro.png"
       ],
-      "productFav": false,
+      "productFav": true,
       "productCar": false,
       "productWatch": true
     },

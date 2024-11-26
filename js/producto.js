@@ -132,9 +132,11 @@ setTimeout(() => {
 }, 1000);
 
 /* Agregar producto a favoritos */
-const agregarFav = async () => {
-  try {
+const agregarFav = async (event) => {
+ 
 
+  try {
+ 
     for (let i = 1; i < usuarios.data.length; i++) {
       if (usuarios.data[i].login === false) {
         alert("Debes iniciar sesion antes de realizar esta accion");
@@ -154,7 +156,8 @@ const agregarFav = async () => {
             denyButtonText: `Eliminar`,
           }).then((result) => {
             if (result.isDenied) {
-              productos.data[i].productFav = false;
+              event.preventDefault()
+              axios.patch(`http://localhost:3001/productos/${Id_product}`, { productFav : false });
               console.log( productos.data[i].productFav )
               Swal.fire("Producto eliminado correctamente!", "", "success");
             } 
@@ -167,7 +170,8 @@ const agregarFav = async () => {
             denyButtonText: `No agregar`,
           }).then((result) => {
             if (result.isConfirmed) {
-              productos.data[i].productFav = true;
+              event.preventDefault()
+              axios.patch(`http://localhost:3001/productos/${Id_product}`, { productFav : true });
               console.log( productos.data[i].productFav )
               Swal.fire("Producto agreado correctamente!", "", "success");
             } 
@@ -181,7 +185,7 @@ const agregarFav = async () => {
   }
 };
 /* Agregar producto a carrito */
-const agregarCar = async () => {
+const agregarCar = async (event) => {
   try {
     console.log(usuarios.data);
 
@@ -205,7 +209,8 @@ const agregarCar = async () => {
             denyButtonText: `Eliminar`,
           }).then((result) => {
             if (result.isDenied) {
-              productos.data[i].productCar = false;
+              event.preventDefault()
+              axios.patch(`http://localhost:3001/productos/${Id_product}`, { productCar : false });
               console.log( productos.data[i].productCar )
               Swal.fire("Producto eliminado correctamente!", "", "success");
             } 
@@ -218,7 +223,8 @@ const agregarCar = async () => {
             denyButtonText: `No agregar`,
           }).then((result) => {
             if (result.isConfirmed) {
-              productos.data[i].productCar = true;
+              event.preventDefault()
+              axios.patch(`http://localhost:3001/productos/${Id_product}`, { productCar : true });
               console.log( productos.data[i].productCar )
               Swal.fire("Producto agreado correctamente!", "", "success");
             } 
@@ -297,7 +303,7 @@ const mostrarInputDeb = ()=>{
 
 
 
-const realizarCompra = () => {
+const realizarCompra = async (event) => {
  try {
   cantidadAComprar = document.getElementById("cantidadAComprar").value;
   inputEfectivo = document.getElementById("efectivo").value;
@@ -324,7 +330,7 @@ const realizarCompra = () => {
             showDenyButton: true,
             confirmButtonText: "Si",
             denyButtonText: `No`,
-          }).then((result) => {
+          }).then( (result) => {
             if (result.isConfirmed) {
               /* Creando nueva venta */
               let ventaNueva ={
@@ -338,13 +344,17 @@ const realizarCompra = () => {
                 cantidadComprada: cantidadAComprar ,
                 totalPagado : totalAPagar
               }
-
-              let respone =  axios.post("http://localhost:3001/ventas", ventaNueva)
-              console.log(respone)
-              if (respone) {
-                Swal.fire("Felicidades, compra realizada!", "", "success");
-                axios.patch(`http://localhost:3001/productos/${Id_product}`, { stock: stockActualizado });
-              }
+                if (ventaNueva) {
+                  Swal.fire({
+                    title: "Felicidades, compra realizada!",
+                    confirmButtonText: "Ok",
+                  }).then(async (result) => {
+                    if (result.isConfirmed) {
+                      await axios.post("http://localhost:3001/ventas", ventaNueva)
+                      await axios.patch(`http://localhost:3001/productos/${Id_product}`, { stock: stockActualizado });
+                    }
+                  });
+                }
             } 
           });
         }else{
@@ -358,25 +368,28 @@ const realizarCompra = () => {
             }).then((result) => {
               if (result.isConfirmed) {
                 /* Creando nueva venta */
-              let ventaNueva ={
-                id_cliente: Id_cliente,
-                id_producto: Id_product,
-                id_vendedor: Id_vendedor,
-                cliente: nombre_usuario ,
-                vendedor : nombre_vendedor,
-                producto: productos.data[i].nombre,
-                precioProducto:productos.data[i].precio,
-                cantidadComprada: cantidadAComprar ,
-                totalPagado : totalAPagar
-              }
-
-              let respone =  axios.post("http://localhost:3001/ventas", ventaNueva)
-              console.log(respone)
-              if (respone) {
-                Swal.fire("Felicidades, compra realizada!", "", "success");
-                axios.patch(`http://localhost:3001/productos/${Id_product}`, { stock: stockActualizado });
-              }
-                
+                let ventaNueva ={
+                  id_cliente: Id_cliente,
+                  id_producto: Id_product,
+                  id_vendedor: Id_vendedor,
+                  cliente: nombre_usuario ,
+                  vendedor : nombre_vendedor,
+                  producto: productos.data[i].nombre,
+                  precioProducto:productos.data[i].precio,
+                  cantidadComprada: cantidadAComprar ,
+                  totalPagado : totalAPagar
+                }
+                if (ventaNueva) {
+                  Swal.fire({
+                    title: "Felicidades, compra realizada!",
+                    confirmButtonText: "Ok",
+                  }).then(async (result) => {
+                    if (result.isConfirmed) {
+                      await axios.post("http://localhost:3001/ventas", ventaNueva)
+                      await axios.patch(`http://localhost:3001/productos/${Id_product}`, { stock: stockActualizado });
+                    }
+                  });
+                }
               } 
             });
           }else{
@@ -401,12 +414,17 @@ const realizarCompra = () => {
                     cantidadComprada: cantidadAComprar ,
                     totalPagado : totalAPagar
                   }
-
-                  let respone =  axios.post("http://localhost:3001/ventas", ventaNueva)
-                  if (respone) {
-                    Swal.fire("Felicidades, compra realizada!", "", "success");
-                    axios.patch(`http://localhost:3001/productos/${Id_product}`, { stock: stockActualizado });
-                  }
+                    if (ventaNueva) {
+                      Swal.fire({
+                        title: "Felicidades, compra realizada!",
+                        confirmButtonText: "Ok",
+                      }).then(async (result) => {
+                        if (result.isConfirmed) {
+                          await axios.post("http://localhost:3001/ventas", ventaNueva)
+                          await axios.patch(`http://localhost:3001/productos/${Id_product}`, { stock: stockActualizado });
+                        }
+                      });
+                    }
                 } 
               });
             }else{
