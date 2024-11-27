@@ -1,0 +1,347 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+
+
+.navbar {
+    background-color: #ffe600 !important;
+    padding: 8px 10px 12px 10px;
+    box-sizing: border-box;
+}
+
+.logoMercadoLibre {
+    height: 34px;
+    width: 134px;
+}
+
+.form-control {
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+    height: 40px;
+    padding: 10px 60px 10px 15px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    width: 100%;
+}
+
+.form-control::placeholder {
+    color: #999999c9; 
+    opacity: 1;
+}
+
+
+.btnSearch {
+    border: none;
+    position: relative; 
+    background-color: transparent;
+}
+
+.btnSearch::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50%;
+    background-color: #ccc; 
+}
+
+.iconoSearch {
+    color: #999;
+}
+
+.dropdown-menu {
+    background-color: #333333;
+    border: none; 
+}
+
+.dropdown-item {
+    background-color: transparent; 
+    color: #ffffff; 
+    font-size: 14px;
+}
+
+.linksNavbar {
+    font-size: 14px;
+}
+
+.linksCuenta {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+    .formBuscador {
+        display: none !important;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .formBuscador {
+        margin-left: 165px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .promoDisney {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .linksNavbar {
+        margin-left: 250px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 40px; 
+    margin-top: 10px; */
+  
+}
+.product-section {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/*
+.div-principal-productos {
+    margin-bottom: 80px;
+
+
+    border: 1px solid #ccc; 
+    border-radius: 15px; 
+   
+    text-align: center; 
+
+}
+    */
+
+.vendedorProducto {
+    font-weight: bold;
+
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    
+}
+
+.product img {
+    width: 100px;
+    height: auto;
+}
+
+.product-info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.producto-titulo {
+    font-weight: bold;
+    margin: 0;
+}
+
+.product-details {
+    color: gray;
+    margin: 5px 0;
+}
+
+.actions button {
+    background: none; 
+    color: #007aff; 
+    border: none; 
+    padding: 0; 
+    margin: 0 10px; 
+    cursor: pointer;
+    font-size: 1rem; 
+    font-weight: normal; 
+    text-decoration: none; 
+}
+
+.actions button:hover {
+    font-weight: bold; 
+    color: #007aff; 
+    text-decoration: none; 
+}
+
+
+.product-price {
+    text-align: right;
+}
+
+.product-price p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+/*
+.quantity button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+*/
+.quantity span {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.quantity button {
+    background-color: #fff; 
+    border: none;
+    padding: 10px; 
+    cursor: pointer;
+    color: #007bff;  
+    font-size: 16px;
+    border-radius: 10%; 
+    width: 30px; 
+    height: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease; 
+}
+
+.quantity button:hover {
+    background-color: #c0dbf8; 
+}
+
+
+
+.botoncomprarahora {
+
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+.summary-section {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
+    margin-top: 30px;
+    max-height: 300px;
+}
+
+.TituloResumen {
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: bold;
+    padding-bottom: 15px; 
+}
+/*
+.summary-section h3, .summary-section h4 {
+    margin: 0 0 10px;
+
+    border-bottom: 1px solid #e0e0e0;
+}
+
+*/ 
+
+.summary-Producto {
+    margin-top: 20px;
+}
+.summary-section p {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.buy-btn {
+    background-color: #007bff; 
+    border: none; 
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px; 
+    cursor: pointer;
+    width: 100%; 
+    text-align: center;
+}
+
+.buy-btn:hover {
+    background-color: #0056b3; 
+    
+}
+
+.total-row {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 30px; 
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    margin-bottom: 30px;
+}
+
+
+.total-price {
+    color: #d40707; 
+    text-align: right; 
+}
+
+
+#gratis {
+    font-size: 85%;
+    color: rgb(8, 150, 3)
+}
+
+
+footer{
+    margin-top: auto;
+}
+
+.linksFooter a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
+}
+
+.linksFooter {
+    list-style: none;
+}
+
+.textFooter {
+    font-size: 12px;
+    color: #999999;
+    margin-left: 30px;
+}
+
+
