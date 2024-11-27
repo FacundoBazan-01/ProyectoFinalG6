@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === BOOTSTRAP === -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- === FONT-AWESOME === -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mercado Libre Argentina</title>
+    <!-- === STYLES === -->
+    <link rel="stylesheet" href="/styles/favorito.css">
+    <script src="/js/favorito.js"></script>
+</head>
+<body>
+    <div class="layout">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container"> 
+                <a class="navbar-brand" href="/styles/favorito.css"> 
+                    <img src="../assets/mercado-libre-logo.svg" class="logoMercadoLibre" alt="Logo Game Zone">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                    <div class="navbar-nav">
+                        <form class="d-flex position-relative" role="search" style="width: 511px;">
+                            <input class="form-control" type="search" placeholder="Buscar productos, marcas y más..."
+                                aria-label="Search" style="padding-right: 40px;">
+                            <button class="btn btnSearch" type="submit"
+                                style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+                                <i class="fa-solid fa-magnifying-glass iconoSearch"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div> 
+                        <a class="navbar-brand" href="/favorito.html">
+                            <img src="../assets/D_NQ_780412-MLA80111423909_102024-OO.webp" style="width: 340px;"
+                                alt="Promo Disney +">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <nav class="navbar navbar-expand-lg navBar2">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categorías
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Vehiculos</a></li>
+                                <li><a class="dropdown-item" href="#">Inmuebles</a></li>
+                                <li><a class="dropdown-item" href="#">Supermercado</a></li>
+                                <li><a class="dropdown-item" href="#">Tecnología</a></li>
+                                <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
+                                <li><a class="dropdown-item" href="#">Herramientas</a></li>
+                                <li><a class="dropdown-item" href="#">Moda</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/error404.html">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/error404.html">Cupones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/error404.html">Supermercado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/error404.html">Moda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/error404.html">Mercado Play</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/error404.html">Vender</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/error404.html">Ayuda</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/registro.html">Creá tu cuenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Usuario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Favorito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mis compras</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="div-sidebar">
+            <h3><img class="imagenMenu" src="https://img.icons8.com/?size=100&id=8113&format=png&color=737373EB" alt="" width="20" height="20">Mi Cuenta</h3>
+            <ul>
+              <li><a href="#"><img src="https://img.icons8.com/?size=100&id=AgpNCyq2TYrv&format=png&color=A8A8A8" width="30"
+                    height="25" alt="Compras">Compras <img class="flechaNav"
+                    src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a>
+              </li>
+              <li><a href="../html/error404.html"><img src="https://img.icons8.com/?size=100&id=HTtSIrro5nLW&format=png&color=A8A8A8" width="30" height="25" alt="">Ventas<img class="flechaNav"
+                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
+              <li><a href="../html/error404.html"><img src="https://img.icons8.com/?size=100&id=2uhRL59xjk3f&format=png&color=A8A8A8" width="30" height="25" alt="">Prestamos<img class="flechaNav"
+                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
+              <li><a href="../html/error404.html"><img src=" https://img.icons8.com/?size=100&id=hwWsopzNm7N2&format=png&color=A8A8A8" width="30" height="25" alt="">Suscripciones<img class="flechaNav"
+                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
+              <li><a href="../html/error404.html"><img src="https://img.icons8.com/?size=100&id=107767&format=png&color=A8A8A8" width="30" height="25" alt="">Seguros y garantías<img class="flechaNav"
+                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
+              <li><a href="../html/error404.html"><img src="https://img.icons8.com/?size=100&id=79126&format=png&color=A8A8A8" width="30" height="30" alt="">Bio libre<img class="flechaNav"
+                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
+              <li><a href="../html/error404.html"><img src="https://img.icons8.com/?size=100&id=6Bc55nkIp44b&format=png&color=A8A8A8" width="30" height="30" alt="">Facturación<img class="flechaNav"
+                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
+              <li><a href="../html/error404.html"><img src="https://img.icons8.com/?size=100&id=112512&format=png&color=A8A8A8" width="30" height="30" alt="">Mi perfil<img class="flechaNav"
+                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
+              <li><a href="../html/error404.html"><img src="https://img.icons8.com/?size=100&id=364&format=png&color=A8A8A8" width="30" height="25" alt="">Configuracion<img class="flechaNav"
+                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
+            </ul>
+          </div>
+<div class="div_conteiner">
+<div class="div_box">
+    <div class= "div_content">
+        <div class="div_h1">
+            <h3>Favorito</h3>
+        </div>
+        <div class="div_buttons">
+            <button style="box-shadow: none; border: none; background-color: #ededed;">
+                <div>
+                    <span style="color: #3483fa;">Mis favoritos</span>
+                </div>
+            </button>
+            <button style="box-shadow: none; border: none;background-color: #ededed;">
+                <div>
+                    <span>Listas</span>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="div_content-fav" id="listFav">
+    <div class="list-fav" id="listaFavorito" >
+    <div class="div_icons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+      </svg>
+    </div>
+    <div class="div_p">
+        <b>Aun no tenes producto favorito</b>
+        <p>Agregar haciendo clic en el corazon de la pagina de producto</p>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+
+    </main>
+    <footer class="footer">
+        <p style="font-size: 0.8em;">Copyright © 1999-2024 MercadoLibre S.R.L.</p>
+        <p style="font-size: 0.8em;">Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+    </div>
+</body>
+</html>
+

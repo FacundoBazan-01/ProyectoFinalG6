@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- === BOOTSTRAP === -->
+    <title>Mercado Libre Argentina</title>
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <!-- === FONT-AWESOME === -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Mercado Libre Argentina</title>
-    <!-- === STYLES === -->
+        crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <!-- Style CSS -->
     <link rel="stylesheet" href="./styles/index.css">
+    <!-- Index JS -->
+    <script src="./js/index.js" defer></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
 
@@ -87,8 +91,8 @@
 
                         <ul class="navbar-nav ms-auto linksCuenta">
                             <li class="nav-item"><a class="nav-link" href="./html/registro.html">Creá tu cuenta</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./html/iniciaSesion.html">Ingresa</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Mis compras</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./html/login.html">Ingresa</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./html/misCompras.html">Mis compras</a></li>
                         </ul>
                     </div>
                 </div>
@@ -237,6 +241,12 @@
                 </div>
             </div>
         </section>
+
+        <!-- Sección Productos -->
+
+        <section id="cardProducto" class="container mt-5">           
+            
+        </section>        
 
         <!-- Sección Categorías -->
 
@@ -421,7 +431,7 @@
         
     </footer>
 
-    <!-- =============== FOOTER FIN =============== -->
+    <!-- =============== FOOTER FIN =============== -->    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">

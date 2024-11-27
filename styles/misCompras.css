@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Proxima Nova', apple-system, Roboto, Arial, sans-serif, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* =============== NAV BAR INICIO =============== */
+
+.navbar {
+    background-color: #ffe600 !important;
+    padding: 8px 10px 12px 10px;
+    box-sizing: border-box;
+}
+
+.logoMercadoLibre {
+    height: 34px;
+    width: 134px;
+}
+
+.form-control {
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+    height: 40px;
+    padding: 10px 60px 10px 15px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    width: 100%;
+}
+
+.form-control::placeholder {
+    color: #999999c9;
+    opacity: 1;
+}
+
+.btnSearch {
+    border: none;
+    position: relative;
+    background-color: transparent;
+}
+
+.btnSearch::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50%;
+    background-color: #ccc;
+}
+
+.iconoSearch {
+    color: #999;
+}
+
+.dropdown-menu {
+    background-color: #333333;
+    border: none;
+}
+
+.dropdown-item {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.linksNavbar {
+    font-size: 14px;
+}
+
+.linksCuenta {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.dropdownUsuarios {
+    background-color: #fff;
+}
+
+.dropdownUsuarios a {
+    color: #333333;
+}
+
+.dropdownUsuarios button {
+    color: #333333;
+}
+
+@media (max-width: 991px) {
+    .formBuscador {
+        display: none !important;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .formBuscador {
+        margin-left: 165px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .promoDisney {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .linksNavbar {
+        margin-left: 250px;
+    }
+}
+
+/* =============== NAV BAR FIN =============== */
+
+
+/* =============== MAIN INICIO =============== */
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    background-color: #ededed;
+}
+
+/* -- Sidebar -- */
+
+.sidebarContainer {
+    flex-shrink: 0;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #f5f5f5;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.sidebarContainer {
+    display: flex;
+    position: relative;
+}
+
+.hamburger-menu {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    margin-left: 8px;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #f5f5f5;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.sidebar h3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 15px;
+    padding-right: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar.collapsed h3 {
+    display: none;
+}
+
+.sidebar.collapsed ul li a {
+    justify-content: center;
+    gap: 0;
+}
+
+.sidebar.collapsed ul li a span {
+    display: none;
+}
+
+.sidebar.collapsed ul li a img {
+    margin-right: 0;
+}
+
+.sidebar.collapsed ul {
+    margin-top: 50px;
+}
+
+/* -- Card Productos Comprados -- */
+
+#cardProductosComprados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espacio entre tarjetas */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.card-mercado-libre {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+.card-header {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fecha {
+    color: #666;
+    font-size: 12px;
+}
+
+.opinar {
+    height: 32px;
+    width: 128px;
+    background-color: var(--andes-color-blue-150, rgba(65, 137, 230, .15));
+    color: var(--andes-color-blue-500, #3483fa);
+    padding: 6px 12px ;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.producto {
+    display: flex;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 16px;
+}
+
+.info-producto {
+    flex-grow: 1;
+}
+
+.estado {
+    font-weight: bold;
+    color: #2d9a5f;
+}
+
+.fecha-entrega {
+    color: #333;
+    margin-top: 4px;
+}
+
+.nombre-producto {
+    color: #000000;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.cantidad {
+    color: #666;
+    font-size: 12px;
+}
+
+.vendedor {
+    text-align: right;
+}
+
+.vendedor p {
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.ver-mensajes {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.acciones {
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.acciones a {
+    text-decoration: none;
+}
+
+.btn-ver-compra,
+.btn-volver-comprar {
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-ver-compra {
+    background-color: #3483fa;
+    color: white;
+    font-size: 13px;
+}
+
+.btn-volver-comprar {
+    background-color: var(--andes-color-blue-150, rgba(65, 137, 230, .15));
+    color: #3498db;
+    font-size: 13px;
+}
+
+@media (max-width: 1400px) {
+    .sidebar.collapsed {
+        width: 60px;
+    }
+
+    #cardProductosComprados {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 250px;
+    }
+
+    .sidebar ul li a {
+        justify-content: center;
+    }
+
+    .sidebar ul li a img {
+        margin-right: 0;
+    }
+
+    .sidebar.collapsed ul li a span {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sidebar.collapsed {
+        width: 250px;
+    }
+
+    #cardProductosComprados {
+        margin-left: 250px;
+    }
+}
+
+/* =============== MAIN FIN =============== */
+
+
+/* =============== FOOTER INICIO =============== */
+
+footer {
+    margin-top: auto;
+}
+
+.linksFooter a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
+}
+
+.linksFooter {
+    list-style: none;
+}
+
+.textFooter {
+    font-size: 12px;
+    color: #999999;
+    margin-left: 30px;
+}
+
+@media (max-width: 645px) {
+    .linksFooter {
+        flex-direction: column;
+        margin-left: 70px;
+    }
+
+    .textFooter {
+        text-align: center;
+    }
+}
+
+/* =============== FOOTER FIN =============== */
