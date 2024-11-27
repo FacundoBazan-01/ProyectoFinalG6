@@ -42,6 +42,18 @@
       "precioProducto": 900000,
       "cantidadComprada": "2",
       "totalPagado": 1800000
+    },
+    {
+      "id": "1e64",
+      "id_cliente": "2",
+      "id_producto": "3",
+      "id_vendedor": "3",
+      "cliente": "",
+      "vendedor": "Juan",
+      "producto": "Xiaomi POCO M6 Pro",
+      "precioProducto": 900000,
+      "cantidadComprada": "1",
+      "totalPagado": 900000
     }
   ],
   "vendedores": [
@@ -173,13 +185,13 @@
         "Resistente al polvo"
       ],
       "precio": 900000,
-      "stock": 63,
+      "stock": 62,
       "img": [
         "https://tutiendabancor.com/media/catalog/product/cache/9c08c714c8eb7e564db9a133e4630037/1/7/17304638162e29e1add823bb91085b7cfcae262588.webp.jpg",
         "https://www.maxmovil.com/media/catalog/product/cache/2c055c968235f5bf43b443aee4bb62c6/x/i/xiaomi_poco_m6_pro_purpura_3_.jpg",
         "https://tutiendabancor.com/media/catalog/product/cache/9c08c714c8eb7e564db9a133e4630037/1/7/17304638099f994557b188b1bdef73490668dd45db.jpg"
       ],
-      "productFav": false,
+      "productFav": true,
       "productCar": false,
       "productWatch": false
     },
@@ -224,7 +236,7 @@
       ],
       "productFav": true,
       "productCar": true,
-      "productWatch": true
+      "productWatch": false
     },
     {
       "id": "5",

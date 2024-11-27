@@ -79,4 +79,14 @@ body{
     width: 50%;
 }
 
+#boton4{
+    text-align: center;
+    margin: auto;
+    display: none;
+}
+
+#productfavcarwatch {
+
+    display: none;
+}
 

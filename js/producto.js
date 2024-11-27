@@ -156,7 +156,7 @@ const agregarFav = async (event) => {
             denyButtonText: `Eliminar`,
           }).then((result) => {
             if (result.isDenied) {
-              event.preventDefault()
+              /* event.preventDefault() */
               axios.patch(`http://localhost:3001/productos/${Id_product}`, { productFav : false });
               console.log( productos.data[i].productFav )
               Swal.fire("Producto eliminado correctamente!", "", "success");
@@ -170,7 +170,7 @@ const agregarFav = async (event) => {
             denyButtonText: `No agregar`,
           }).then((result) => {
             if (result.isConfirmed) {
-              event.preventDefault()
+              /* event.preventDefault() */
               axios.patch(`http://localhost:3001/productos/${Id_product}`, { productFav : true });
               console.log( productos.data[i].productFav )
               Swal.fire("Producto agreado correctamente!", "", "success");
@@ -209,7 +209,7 @@ const agregarCar = async (event) => {
             denyButtonText: `Eliminar`,
           }).then((result) => {
             if (result.isDenied) {
-              event.preventDefault()
+              /* event.preventDefault() */
               axios.patch(`http://localhost:3001/productos/${Id_product}`, { productCar : false });
               console.log( productos.data[i].productCar )
               Swal.fire("Producto eliminado correctamente!", "", "success");
@@ -223,7 +223,7 @@ const agregarCar = async (event) => {
             denyButtonText: `No agregar`,
           }).then((result) => {
             if (result.isConfirmed) {
-              event.preventDefault()
+              /* event.preventDefault() */
               axios.patch(`http://localhost:3001/productos/${Id_product}`, { productCar : true });
               console.log( productos.data[i].productCar )
               Swal.fire("Producto agreado correctamente!", "", "success");
