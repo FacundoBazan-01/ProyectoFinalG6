@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Perfil - Mercado Libre</title>
+
+
+
+
+  <!-- === BOOTSTRAP === -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <!-- === FONT-AWESOME === -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Mercado Libre Argentina</title>
+  <link rel="stylesheet" href="/ProyectoFinalG6/styles/MiCuenta.css" />
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <!-- Logo -->
+          <a class="navbar-brand" href="/index.html">
+            <img src="../assets/mercado-libre-logo.svg" class="logoMercadoLibre" alt="Logo Mercado Libre"
+              style="width: 150px;">
+          </a>
+
+          <!-- Formulario de búsqueda -->
+          <form class="d-flex position-relative mx-auto formBuscador" role="search" style="width: 588px;">
+            <input class="form-control" type="search" placeholder="Buscar productos, marcas y más..."
+              aria-label="Search" style="padding-right: 40px;">
+            <button class="btn btnSearch" type="submit"
+              style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+              <i class="fa-solid fa-magnifying-glass iconoSearch"></i>
+            </button>
+          </form>
+
+          <!-- Imagen promocional -->
+          <a class="navbar-brand promoDisney d-none d-lg-block" href="/index.html">
+            <img src="../assets/D_NQ_780412-MLA80111423909_102024-OO.webp" style="width: 340px;" alt="Promo Disney +">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <!-- Menú de enlaces y opciones de cuenta -->
+        <div class="collapse navbar-collapse w-100 mt-3" id="navbarContent">
+          <div class="d-flex justify-content-between w-100">
+
+            <ul class="navbar-nav linksNavbar">
+              <!-- Categorías -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Categorías
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./html/error404.html">Vehìculos</a></li>
+                  <li><a class="dropdown-item" href="./html/error404.html">Celulares</a></li>
+                  <li><a class="dropdown-item" href="./html/error404.html">Electrodomésticos</a></li>
+                  <li><a class="dropdown-item" href="./html/error404.html">Herramientas</a></li>
+                  <li><a class="dropdown-item" href="./html/error404.html">Accesorios para Vehículos</a></li>
+                  <li><a class="dropdown-item" href="./html/error404.html">Moda</a></li>
+                  <li><a class="dropdown-item" href="./html/error404.html">Deportes y Fitness</a></li>
+                  <li><a class="dropdown-item" href="./html/error404.html">Articulos de Belleza</a></li>
+                  <li><a class="dropdown-item" href="./html/error404.html">Hogar, Muebles y Jardín</a></li>
+                  <li><a class="dropdown-item" href="./html/error404.html">Computación</a></li>
+                  <li><a class="dropdown-item" href="./html/error404.html">Inmuebles</a></li>
+                  <li><a class="dropdown-item" href="./html/error404.html">Electrónica, Audio y Video</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="./html/error404.html">Ofertas</a></li>
+              <li class="nav-item"><a class="nav-link" href="./html/error404.html">Cupones</a></li>
+              <li class="nav-item"><a class="nav-link" href="./html/error404.html">Supermercado</a></li>
+              <li class="nav-item"><a class="nav-link" href="./html/error404.html">Moda</a></li>
+              <li class="nav-item"><a class="nav-link" href="./html/error404.html">Mercado Play</a></li>
+              <li class="nav-item"><a class="nav-link" href="./html/error404.html">Vender</a></li>
+              <li class="nav-item"><a class="nav-link" href="./html/error404.html">Ayuda</a></li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto linksCuenta">
+              <li class="nav-item"><a class="nav-link" href="./html/registro.html">Creá tu cuenta</a></li>
+              <li class="nav-item"><a class="nav-link" href="./html/iniciaSesion.html">Ingresa</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Mis compras</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- <div class="header">
+    <div class="logo">
+      <img src="" alt="Logo acá" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Mis Compras</a></li>
+        <li><a href="#">Mi Perfil</a></li>
+        <li><a href="#">Salir</a></li>
+      </ul>
+    </nav>
+  </div> -->
+
+  <!--reemplazar todos los "#" de href por "./html/error404.html" "-->
+
+  <div class="div-contenedor">
+    <div class="div-sidebar">
+      <h3><img class="imagenMenu" src="https://img.icons8.com/?size=100&id=8113&format=png&color=737373EB" alt=""
+          width="20" height="20">Mi Cuenta</h3>
+      <ul>
+        <li><a href="/ProyectoFinalG6/html/error404.html"><img
+              src="https://img.icons8.com/?size=100&id=AgpNCyq2TYrv&format=png&color=A8A8A8" width="30" height="25"
+              alt="Compras">Compras <img class="flechaNav"
+              src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a>
+        </li>
+        <li><a href="/ProyectoFinalG6/html/error404.html"><img
+              src="https://img.icons8.com/?size=100&id=HTtSIrro5nLW&format=png&color=A8A8A8" width="30" height="25"
+              alt="">Ventas<img class="flechaNav" src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8"
+              alt="" width="15" height="15"></a></li>
+        <li><a href="/ProyectoFinalG6/html/error404.html"><img
+              src="https://img.icons8.com/?size=100&id=2uhRL59xjk3f&format=png&color=A8A8A8" width="30" height="25"
+              alt="">Prestamos<img class="flechaNav"
+              src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a>
+        </li>
+        <li><a href="/ProyectoFinalG6/html/error404.html"><img
+              src=" https://img.icons8.com/?size=100&id=hwWsopzNm7N2&format=png&color=A8A8A8" width="30" height="25"
+              alt="">Suscripciones<img class="flechaNav"
+              src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a>
+        </li>
+        <li><a href="/ProyectoFinalG6/html/error404.html"><img
+              src="https://img.icons8.com/?size=100&id=107767&format=png&color=A8A8A8" width="30" height="25"
+              alt="">Seguros y garantías<img class="flechaNav"
+              src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a>
+        </li>
+        <li><a href="/ProyectoFinalG6/html/error404.html"><img
+              src="https://img.icons8.com/?size=100&id=79126&format=png&color=A8A8A8" width="30" height="30" alt="">Bio
+            libre<img class="flechaNav" src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt=""
+              width="15" height="15"></a></li>
+        <li><a href="/ProyectoFinalG6/html/error404.html"><img
+              src="https://img.icons8.com/?size=100&id=6Bc55nkIp44b&format=png&color=A8A8A8" width="30" height="30"
+              alt="">Facturación<img class="flechaNav"
+              src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a>
+        </li>
+        <li><a href="/ProyectoFinalG6/html/MiCuenta.html"><img
+              src="https://img.icons8.com/?size=100&id=112512&format=png&color=A8A8A8" width="30" height="30" alt="">Mi
+            perfil<img class="flechaNav" src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt=""
+              width="15" height="15"></a></li>
+        <li><a href="/ProyectoFinalG6/html/error404.html"><img
+              src="https://img.icons8.com/?size=100&id=364&format=png&color=A8A8A8" width="30" height="25"
+              alt="">Configuracion<img class="flechaNav"
+              src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a>
+        </li>
+      </ul>
+    </div>
+    <!-- -->
+    <div class="div-principal">
+      <div class="div-perfil">
+        <h2><img src="https://img.icons8.com/?size=100&id=AjTPlMclWxjF&format=png&color=339AF0" alt="" width="80"
+            height="80">
+          <span> NombreUsuario</span>
+        </h2>
+        <span class="spanEmail">emaildeusuario@gmail.com</span>
+        <br>
+        <br>
+        <a href="/ProyectoFinalG6/html/error404.html" class="anclaMercadoPuntos">Estas en nivel 1 - Mercado Puntos</a>
+        </p>
+      </div>
+
+      <a href="/ProyectoFinalG6/html/error404.html">
+        <div class="div-informacion">
+          <p class="con-imagen">
+            <img src="https://img.icons8.com/?size=100&id=qEK2pqenBa22&format=png&color=339AF0" alt="info personal"
+              width="30" height="30">Información personal
+            <img class="flecha" src="https://img.icons8.com/?size=100&id=61&format=png&color=888888EB" alt="Flecha"
+              width="15" height="15">
+          </p>
+          <p class="subtitulos">Informacion de tu documento de identidad y tu actividad fiscal</p>
+          <p class="con-imagen">
+            <img src="https://img.icons8.com/?size=100&id=111473&format=png&color=339AF0" alt="Icono de cuenta"
+              width="30" height="30">
+            Datos de tu cuenta
+            <img class="flecha" src="https://img.icons8.com/?size=100&id=61&format=png&color=888888EB" alt="Flecha"
+              width="15" height="15">
+          <p class="subtitulos"> Datos que representan a la cuenta de Mercado Libre y Mercado Pago. </p>
+
+          </p>
+
+          <p class="con-imagen">
+            <img src="https://img.icons8.com/?size=100&id=94&format=png&color=339AF0" alt="candado" width="30"
+              height="30"> Seguridad
+            <img class="flecha" src="https://img.icons8.com/?size=100&id=61&format=png&color=888888EB" alt="Flecha"
+              width="15" height="15">
+          </p>
+          <p class="subtitulos"> Tenes configurada la seguridad de tu cuenta </p>
+          <p class="con-imagen">
+            <img src="https://img.icons8.com/?size=100&id=22128&format=png&color=339AF0" alt="tarjeta" width="30"
+              height="30">Tarjetas
+            <img class="flecha" src="https://img.icons8.com/?size=100&id=61&format=png&color=888888EB" alt="Flecha"
+              width="15" height="15">
+          </p>
+          <p class="subtitulos"> Tarjetas guardadas en tu cuenta </p>
+          <p class="con-imagen">
+            <img src="https://img.icons8.com/?size=100&id=N7h04Oiq15oB&format=png&color=339AF0" alt="ubicacion"
+              width="30" height="30">Direcciones
+            <img class="flecha" src="https://img.icons8.com/?size=100&id=61&format=png&color=888888EB" alt="Flecha"
+              width="15" height="15">
+          </p>
+          <p class="subtitulos"> Direcciones guardadas en tu cuenta </p>
+          <p class="con-imagen">
+            <img src="https://img.icons8.com/?size=100&id=vEeR8ji94WxO&format=png&color=339AF0" alt="privacidad"
+              width="30" height="30">Privacidad
+            <img class="flecha" src="https://img.icons8.com/?size=100&id=61&format=png&color=888888EB" alt="Flecha"
+              width="15" height="15">
+          </p>
+          <p class="subtitulos"> Preferencias y control sobre el uso de tus datos. </p>
+          <p class="con-imagen">
+            <img src="https://img.icons8.com/?size=100&id=16027&format=png&color=339AF0" alt="Icono de cuenta"
+              width="30" height="30">Comunicaciones
+            <img class="flecha" src="https://img.icons8.com/?size=100&id=61&format=png&color=888888EB" alt="Flecha"
+              width="15" height="15">
+          </p>
+          <p class="subtitulos"> Elegí que tipo de información querés recibir. </p>
+      </a>
+    </div>
+  </div>
+  </div>
+
+  <footer>
+    <p>
+      &copy; Copyright © 1999-2024 MercadoLibre S.R.L.
+
+    </p>
+  </footer>
+</body>
+
+</html>

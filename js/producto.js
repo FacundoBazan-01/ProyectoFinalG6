@@ -130,19 +130,19 @@ setTimeout(() => {
 /* Agregar producto a favoritos */
 const agregarFav = async () => {
   try {
-    let contador=0;
-     for (let i = 1; i < usuarios.data.length; i++) {
+    let contador = 0;
+    for (let i = 1; i < usuarios.data.length; i++) {
       if (usuarios.data[i].login === true) {
         Id_cliente = await usuarios.data[i].id;
-        contador=0;
+        contador = 0;
         break;
-      }else{
-        contador= contador+ 1
+      } else {
+        contador = contador + 1;
       }
     }
-    if (contador!=0) {
+    if (contador != 0) {
       alert("Debes iniciar sesion antes de realizar esta accion");
-        window.location.href = "./login.html";
+      window.location.href = "./login.html";
     }
 
     for (let i = 1; i < productos.data.length; i++) {
@@ -192,20 +192,20 @@ const agregarCar = async () => {
   try {
     console.log(usuarios.data);
 
-    let contador=0;
+    let contador = 0;
     for (let i = 1; i < usuarios.data.length; i++) {
-     if (usuarios.data[i].login === true) {
-       Id_cliente = await usuarios.data[i].id;
-       contador=0;
-       break;
-     }else{
-       contador= contador+ 1
-     }
-   }
-   if (contador!=0) {
-     alert("Debes iniciar sesion antes de realizar esta accion");
-       window.location.href = "./login.html";
-   }
+      if (usuarios.data[i].login === true) {
+        Id_cliente = await usuarios.data[i].id;
+        contador = 0;
+        break;
+      } else {
+        contador = contador + 1;
+      }
+    }
+    if (contador != 0) {
+      alert("Debes iniciar sesion antes de realizar esta accion");
+      window.location.href = "./login.html";
+    }
 
     for (let i = 1; i < productos.data.length; i++) {
       if (Id_product == productos.data[i].id) {
@@ -218,7 +218,6 @@ const agregarCar = async () => {
             denyButtonText: `Eliminar`,
           }).then((result) => {
             if (result.isDenied) {
-              
               axios.patch(`http://localhost:3001/productos/${Id_product}`, {
                 productCar: false,
               });
@@ -234,7 +233,6 @@ const agregarCar = async () => {
             denyButtonText: `No agregar`,
           }).then((result) => {
             if (result.isConfirmed) {
-             
               axios.patch(`http://localhost:3001/productos/${Id_product}`, {
                 productCar: true,
               });
@@ -253,20 +251,20 @@ const agregarCar = async () => {
 /* Validar user antes de iniciar la compra */
 const validarUserCompra = async () => {
   try {
-    let contador=0;
+    let contador = 0;
     for (let i = 1; i < usuarios.data.length; i++) {
-     if (usuarios.data[i].login === true) {
-       Id_cliente = await usuarios.data[i].id;
-       contador=0;
-       break;
-     }else{
-       contador= contador+ 1
-     }
-   }
-   if (contador!=0) {
-     alert("Debes iniciar sesion antes de realizar esta accion");
-       window.location.href = "./login.html";
-   }
+      if (usuarios.data[i].login === true) {
+        Id_cliente = await usuarios.data[i].id;
+        contador = 0;
+        break;
+      } else {
+        contador = contador + 1;
+      }
+    }
+    if (contador != 0) {
+      alert("Debes iniciar sesion antes de realizar esta accion");
+      window.location.href = "./login.html";
+    }
   } catch (error) {
     console.error(error);
   }
