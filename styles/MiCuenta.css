@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f5f6;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.navbar {
+    background-color: #ffe600 !important;
+    padding: 8px 10px 12px 10px;
+    box-sizing: border-box;
+}
+
+.logoMercadoLibre {
+    height: 34px;
+    width: 134px;
+}
+
+.form-control {
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+    height: 40px;
+    padding: 10px 60px 10px 15px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    width: 100%;
+}
+
+.form-control::placeholder {
+    color: #999999c9; 
+    opacity: 1;
+}
+
+.btnSearch {
+    border: none;
+    position: relative; 
+    background-color: transparent;
+}
+
+.btnSearch::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50%;
+    background-color: #ccc; 
+}
+
+.iconoSearch {
+    color: #999;
+}
+
+.dropdown-menu {
+    background-color: #333333;
+    border: none; 
+}
+
+.dropdown-item {
+    background-color: transparent; 
+    color: #ffffff; 
+    font-size: 14px;
+}
+
+.linksNavbar {
+    font-size: 14px;
+}
+
+.linksCuenta {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+    .formBuscador {
+        display: none !important;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .formBuscador {
+        margin-left: 165px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .promoDisney {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .linksNavbar {
+        margin-left: 250px;
+    }
+}
+
+/* =============== NAV BAR FIN =============== */
+
+
+
+
+
+
+/*  yo
+.header {
+    background-color: #FFE600;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;  "con esto hago que el header este arriba del todo (lo aseguro)" 
+}   
+    
+ 
+.header .logo img {
+    width: 120px;
+}
+
+.header nav ul {
+    display: flex;
+}
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+} end yo
+
+*/
+
+
+
+.div-contenedor {
+    display: flex;
+    margin-top: 0; 
+    width: 100%;
+    min-height: 100vh; /* con esto hago que el div ocupe toda la pantalla */
+    
+}
+
+.div-sidebar {
+   width: 300px; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: none; 
+    position:sticky;
+    top: 10px; 
+    left: 0;
+    z-index: 1; 
+    padding-top: 0; 
+    padding-bottom: 0; 
+   
+}
+
+.div-sidebar a {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;  
+    text-decoration: none;
+    color: black;  
+  }
+
+ .imagenMenu {
+    margin-right: 30px;
+ }
+
+.div-sidebar h3 {
+    font-size: 16px;
+    color: #777676;
+    margin-bottom: 15px;
+    margin-top: 80px;
+}
+
+.div-sidebar ul li {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.div-sidebar ul li a {
+    color: #8f8f8f;
+    font-size: 14px;
+    text-decoration: none; /* no tengo subrayado de los enlaces, ver si hace falta o quitar */
+
+}
+
+.div-sidebar ul li a img {
+    margin-right: 10px; 
+  }
+
+
+.div-principal {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;         
+    width: calc(100% - 270px); 
+    padding: 20px;
+}
+
+.div-perfil {
+    margin-top: 40px;
+    margin-bottom: 20px; /* para separar los divs */
+    margin-right: 100px; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.div-perfil h2 {                    
+    font-size: 24px;
+    color: #333;
+
+     display: flex;
+    align-items: center; 
+}
+
+.div-perfil h2 img {
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.spanEmail, .anclaMercadoPuntos {
+    margin-left: 100px;
+    
+}
+
+.div-perfil p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.spanEmail {
+    color:rgb(10, 9, 9);
+}
+.anclaMercadoPuntos  {
+    color: #0078D4; 
+    font-size: 12px; 
+}
+
+.div-informacion {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 100px;
+    border: 1px solid #ddd;
+}
+
+.con-imagen {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.con-imagen img {
+    margin-right: 10px; 
+}
+
+.flecha {
+    margin-left: auto; 
+    
+}
+
+.flechaNav {
+    margin-left: 60px;
+    
+}
+
+
+
+.div-informacion p {
+    font-size: 18px;
+    color: #131313;
+}
+
+.div-informacion .subtitulos {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+   }
+   
+
+
+footer {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 1px; /*dejo 1 px porque en la pag de ML esta tmb asi*/
+
+}
+
+footer p {
+    font-size: 14px;
+    color:rgb(112, 112, 112)
+}

@@ -55,6 +55,8 @@
       "cantidadComprada": "1",
       "totalPagado": 900000
     }
+  
+    
   ],
   "vendedores": [
     {
@@ -185,7 +187,7 @@
         "Resistente al polvo"
       ],
       "precio": 900000,
-      "stock": 62,
+      "stock": 65,
       "img": [
         "https://tutiendabancor.com/media/catalog/product/cache/9c08c714c8eb7e564db9a133e4630037/1/7/17304638162e29e1add823bb91085b7cfcae262588.webp.jpg",
         "https://www.maxmovil.com/media/catalog/product/cache/2c055c968235f5bf43b443aee4bb62c6/x/i/xiaomi_poco_m6_pro_purpura_3_.jpg",
@@ -228,14 +230,14 @@
         "Resistente al polvo y a las caídas."
       ],
       "precio": 950000,
-      "stock": 20,
+      "stock": 16,
       "img": [
         "https://casacuesta.com/media/catalog/product/cache/fde49a4ea9a339628caa0bc56aea00ff/3/3/3348139-1__1726032026.jpg",
         "https://www.casadelaudio.com/Image/0/750_750-156-XIA-023_(12).png",
         "https://holatelcel.com/wp-content/uploads/2024/03/Xiaomi-Redmi-Note-13-Pro.png"
       ],
-      "productFav": true,
-      "productCar": true,
+      "productFav": false,
+      "productCar": false,
       "productWatch": false
     },
     {
@@ -312,6 +314,174 @@
       ],
       "productFav": false,
       "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "7",
+      "nombre": "Samsung QLED Q80B",
+      "marca": "Samsung",
+      "descripcion": [
+        "Descubrí una experiencia visual inmersiva con el Samsung QLED Q80B.",
+        "Resolución 4K Ultra HD para imágenes nítidas y detalladas.",
+        "Tecnología Quantum Dot que ofrece colores vibrantes y realistas.",
+        "Panel con retroiluminación Direct Full Array para negros profundos y contrastes intensos.",
+        "Sonido envolvente Dolby Atmos para una experiencia cinematográfica.",
+        "Smart TV con acceso a tus aplicaciones favoritas como Netflix, YouTube y Disney+."
+      ],
+      "caracteristicas": [
+        "Resolución: 4K Ultra HD (3840 x 2160).",
+        "Tamaño de pantalla: 65 pulgadas.",
+        "Tecnología de pantalla: QLED.",
+        "Sistema operativo: Tizen.",
+        "Conectividad: Wi-Fi, Bluetooth, 4 puertos HDMI, 2 puertos USB.",
+        "Sonido: Dolby Atmos con altavoces de 60W.",
+        "Asistentes de voz integrados: Bixby, Alexa y Google Assistant."
+      ],
+      "precio": 450000,
+      "stock": 25,
+      "img": "",
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "8",
+      "nombre": "LG OLED C3",
+      "marca": "LG",
+      "descripcion": [
+        "El LG OLED C3 redefine la calidad de imagen con tecnología OLED.",
+        "Colores perfectos y negros puros gracias a los píxeles autoiluminados.",
+        "Compatible con Dolby Vision IQ y HDR10 Pro para una experiencia visual envolvente.",
+        "Procesador α9 Gen6 AI que optimiza el rendimiento y la calidad de imagen.",
+        "Diseño ultradelgado y elegante, ideal para cualquier espacio.",
+        "Compatible con NVIDIA G-SYNC para una experiencia gamer fluida."
+      ],
+      "caracteristicas": [
+        "Resolución: 4K Ultra HD (3840 x 2160).",
+        "Tamaño de pantalla: 55 pulgadas.",
+        "Tecnología de pantalla: OLED.",
+        "Sistema operativo: webOS.",
+        "Conectividad: Wi-Fi, Bluetooth, 4 puertos HDMI 2.1, 3 puertos USB.",
+        "Sonido: Dolby Atmos con altavoces de 40W.",
+        "Modo Filmmaker y modo Gaming optimizados."
+      ],
+      "precio": 600000,
+      "stock": 15,
+      "img": "",
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "9",
+      "nombre": "Sony BRAVIA XR X90K",
+      "marca": "Sony",
+      "descripcion": [
+        "La Sony BRAVIA XR X90K combina inteligencia y rendimiento para una calidad superior.",
+        "Procesador Cognitive XR que imita el enfoque humano para realzar colores y detalles.",
+        "Tecnología Full Array LED para un contraste mejorado.",
+        "Compatible con Dolby Vision y HDR10.",
+        "Altavoces integrados con Acoustic Multi-Audio para un sonido sincronizado.",
+        "Ideal para gaming con HDMI 2.1 y soporte VRR."
+      ],
+      "caracteristicas": [
+        "Resolución: 4K Ultra HD (3840 x 2160).",
+        "Tamaño de pantalla: 75 pulgadas.",
+        "Tecnología de pantalla: LED.",
+        "Sistema operativo: Google TV.",
+        "Conectividad: Wi-Fi, Bluetooth, 4 puertos HDMI 2.1, 2 puertos USB.",
+        "Sonido: Dolby Atmos con altavoces de 50W.",
+        "Compatibilidad con asistentes de voz: Google Assistant y Alexa."
+      ],
+      "precio": 580000,
+      "stock": 10,
+      "img": "",
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "10",
+      "nombre": "Philips Ambilight 8500",
+      "marca": "Philips",
+      "descripcion": [
+        "La Philips Ambilight 8500 transforma tu experiencia con tecnología Ambilight.",
+        "Iluminación trasera que se adapta al contenido en pantalla.",
+        "Resolución 4K HDR para imágenes brillantes y nítidas.",
+        "Sonido inmersivo con DTS Play-Fi.",
+        "Interfaz fluida y acceso a miles de aplicaciones con Android TV.",
+        "Perfecta para maratones de series y películas."
+      ],
+      "caracteristicas": [
+        "Resolución: 4K Ultra HD (3840 x 2160).",
+        "Tamaño de pantalla: 50 pulgadas.",
+        "Tecnología de pantalla: LED con Ambilight.",
+        "Sistema operativo: Android TV.",
+        "Conectividad: Wi-Fi, Bluetooth, 3 puertos HDMI, 2 puertos USB.",
+        "Sonido: Dolby Atmos y DTS Play-Fi.",
+        "Compatible con asistentes de voz."
+      ],
+      "precio": 350000,
+      "stock": 30,
+      "img": "",
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "11",
+      "nombre": "TCL QLED C635",
+      "marca": "TCL",
+      "descripcion": [
+        "El TCL QLED C635 ofrece entretenimiento sin límites.",
+        "Colores vivos y detalles sorprendentes con tecnología QLED.",
+        "Compatible con HDR10+ y Dolby Vision para un rango dinámico increíble.",
+        "Sonido premium con Dolby Atmos.",
+        "Integración con Google TV para un acceso rápido y personalizado.",
+        "Diseño sin bordes para una experiencia más inmersiva."
+      ],
+      "caracteristicas": [
+        "Resolución: 4K Ultra HD (3840 x 2160).",
+        "Tamaño de pantalla: 65 pulgadas.",
+        "Tecnología de pantalla: QLED.",
+        "Sistema operativo: Google TV.",
+        "Conectividad: Wi-Fi, Bluetooth, 4 puertos HDMI, 3 puertos USB.",
+        "Sonido: Dolby Atmos con altavoces de 35W.",
+        "Modo Gaming con latencia reducida."
+      ],
+      "precio": 400000,
+      "stock": 20,
+      "img": "",
+      "productFav": false,
+      "productCar": true,
+      "productWatch": false
+    },
+    {
+      "id": "12",
+      "nombre": "Hisense ULED U7H",
+      "marca": "Hisense",
+      "descripcion": [
+        "El Hisense ULED U7H lleva la tecnología ULED al siguiente nivel.",
+        "Contraste superior y colores vibrantes con Quantum Dot.",
+        "Soporte para Dolby Vision y HDR10+.",
+        "Altavoces integrados con Dolby Atmos.",
+        "Interfaz amigable y accesible con VIDAA Smart OS.",
+        "Diseño elegante y delgado."
+      ],
+      "caracteristicas": [
+        "Resolución: 4K Ultra HD (3840 x 2160).",
+        "Tamaño de pantalla: 55 pulgadas.",
+        "Tecnología de pantalla: ULED.",
+        "Sistema operativo: VIDAA U6.",
+        "Conectividad: Wi-Fi, Bluetooth, 4 puertos HDMI, 2 puertos USB.",
+        "Sonido: Dolby Atmos con altavoces de 30W.",
+        "Modo Gaming y Sports optimizados."
+      ],
+      "precio": 180000,
+      "stock": 35,
+      "img": "",
+      "productFav": false,
+      "productCar": true,
       "productWatch": false
     },
     {
@@ -805,7 +975,11 @@
       ],
       "precio": 85.499,
       "stock": 45,
-      "img": "",
+      "img": [
+        "https://sporting.vtexassets.com/arquivos/ids/1462898-1200-1200?v=638636525406470000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1462898-1200-1200?v=638636525406470000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1462898-1200-1200?v=638636525406470000&width=1200&height=1200&aspect=true"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -829,7 +1003,11 @@
       ],
       "precio": 104.384,
       "stock": 15,
-      "img": "",
+      "img": [
+        "https://sporting.vtexassets.com/arquivos/ids/1473914-1200-1200?v=638646795732370000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1473914-1200-1200?v=638646795732370000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1473914-1200-1200?v=638646795732370000&width=1200&height=1200&aspect=true"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -853,7 +1031,11 @@
       ],
       "precio": 75.9,
       "stock": 10,
-      "img": "",
+      "img": [
+        "https://sporting.vtexassets.com/arquivos/ids/1166263-1200-1200?v=638482860023300000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1166263-1200-1200?v=638482860023300000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1166263-1200-1200?v=638482860023300000&width=1200&height=1200&aspect=true"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -878,7 +1060,11 @@
       ],
       "precio": 119.999,
       "stock": 16,
-      "img": "",
+      "img": [
+        "https://sporting.vtexassets.com/arquivos/ids/1560685-1200-1200?v=638658238279430000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1560685-1200-1200?v=638658238279430000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1560685-1200-1200?v=638658238279430000&width=1200&height=1200&aspect=true"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -904,7 +1090,11 @@
       ],
       "precio": 179.999,
       "stock": 12,
-      "img": "",
+      "img": [
+        "https://sporting.vtexassets.com/arquivos/ids/1661656-1200-1200?v=638681563967100000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1661656-1200-1200?v=638681563967100000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1661656-1200-1200?v=638681563967100000&width=1200&height=1200&aspect=true"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -929,7 +1119,11 @@
       ],
       "precio": 101.6,
       "stock": 23,
-      "img": "",
+      "img": [
+        "https://sporting.vtexassets.com/arquivos/ids/1659153-1200-1200?v=638681336692000000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1659153-1200-1200?v=638681336692000000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1659153-1200-1200?v=638681336692000000&width=1200&height=1200&aspect=true"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false

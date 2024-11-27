@@ -1,17 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Proxima Nova', apple-system, Roboto, Arial, sans-serif, sans-serif;
-}
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
 
-/* =============== NAV BAR INICIO =============== */
+
 
 .navbar {
     background-color: #ffe600 !important;
@@ -37,13 +32,14 @@ body {
 }
 
 .form-control::placeholder {
-    color: #999999c9;
+    color: #999999c9; 
     opacity: 1;
 }
 
+
 .btnSearch {
     border: none;
-    position: relative;
+    position: relative; 
     background-color: transparent;
 }
 
@@ -51,11 +47,11 @@ body {
     content: '';
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 50%; 
     transform: translateY(-50%);
     width: 1px;
     height: 50%;
-    background-color: #ccc;
+    background-color: #ccc; 
 }
 
 .iconoSearch {
@@ -64,12 +60,12 @@ body {
 
 .dropdown-menu {
     background-color: #333333;
-    border: none;
+    border: none; 
 }
 
 .dropdown-item {
-    background-color: transparent;
-    color: #ffffff;
+    background-color: transparent; 
+    color: #ffffff; 
     font-size: 14px;
 }
 
@@ -80,18 +76,6 @@ body {
 .linksCuenta {
     font-size: 14px;
     margin-right: 10px;
-}
-
-.dropdownUsuarios {
-    background-color: #fff;
-}
-
-.dropdownUsuarios a {
-    color: #333333;
-}
-
-.dropdownUsuarios button {
-    color: #333333;
 }
 
 @media (max-width: 991px) {
@@ -118,117 +102,31 @@ body {
     }
 }
 
-/* =============== NAV BAR FIN =============== */
 
 
-/* =============== MAIN INICIO =============== */
-
-main {
-    display: flex;
-    flex-wrap: nowrap;
-    height: 100%;
-    width: 100%;
-    background-color: #ededed;
+footer{
+    margin-top: auto;
 }
 
-/* -- Sidebar -- */
-
-.sidebarContainer {
-    flex-shrink: 0;
-}
-
-.sidebar {
-    width: 250px;
-    height: 100vh;
-    background-color: #f5f5f5;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-}
-
-.sidebarContainer {
-    display: flex;
-    position: relative;
-}
-
-.hamburger-menu {
-    background: none;
-    border: none;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    cursor: pointer;
-    z-index: 1000;
-    margin-left: 8px;
-}
-
-.sidebar {
-    width: 250px;
-    height: 100vh;
-    background-color: #f5f5f5;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-}
-
-.sidebar h3 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 18px;
-    margin-top: 15px;
-    padding-right: 10px;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar ul li {
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-}
-
-.sidebar ul li a {
+.linksFooter a {
     text-decoration: none;
-    color: #666;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    font-size: 13px;
+    color: #333;
 }
 
-.sidebar.collapsed {
-    width: 60px;
+.linksFooter {
+    list-style: none;
 }
 
-.sidebar.collapsed h3 {
-    display: none;
+.textFooter {
+    font-size: 12px;
+    color: #999999;
+    margin-left: 30px;
 }
 
-.sidebar.collapsed ul li a {
-    justify-content: center;
-    gap: 0;
-}
 
-.sidebar.collapsed ul li a span {
-    display: none;
-}
 
-.sidebar.collapsed ul li a img {
-    margin-right: 0;
-}
 
-.sidebar.collapsed ul {
-    margin-top: 50px;
-}
-
-/* -- Card Productos Comprados -- */
 
 #cardProductosComprados {
     display: flex;
@@ -398,40 +296,5 @@ main {
     }
 }
 
-/* =============== MAIN FIN =============== */
 
 
-/* =============== FOOTER INICIO =============== */
-
-footer {
-    margin-top: auto;
-}
-
-.linksFooter a {
-    text-decoration: none;
-    font-size: 13px;
-    color: #333;
-}
-
-.linksFooter {
-    list-style: none;
-}
-
-.textFooter {
-    font-size: 12px;
-    color: #999999;
-    margin-left: 30px;
-}
-
-@media (max-width: 645px) {
-    .linksFooter {
-        flex-direction: column;
-        margin-left: 70px;
-    }
-
-    .textFooter {
-        text-align: center;
-    }
-}
-
-/* =============== FOOTER FIN =============== */
