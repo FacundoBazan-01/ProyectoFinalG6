@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+const enviarDatos = async () => {
+=======
 const enviarDatos = async (event) => {
+>>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
   let bandera = true;
   try {
     let email = document.getElementById("email").value;
@@ -41,6 +45,26 @@ const enviarDatos = async (event) => {
             contraseña: pass,
             email: email,
             telefono: telef,
+<<<<<<< HEAD
+            role: "user",
+            login:false,
+            };
+
+            let respone = await axios.post("http://localhost:3001/usuarios",usuarioNuevo);
+            if (respone) {
+                Swal.fire({
+                    title: "Bienvenido!",
+                    text: "Tu usuario fue creado correctamente!",
+                    icon: "success",
+                });
+            } else {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "El usuario no se pudo crear intentalo de nuevo!",
+            });
+            }
+=======
             rol: "user",
             login:false,
             };
@@ -64,6 +88,7 @@ const enviarDatos = async (event) => {
               });
             }
             
+>>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
       }
       
     } else {
@@ -78,8 +103,12 @@ const enviarDatos = async (event) => {
   }
 };
 
+<<<<<<< HEAD
+document.getElementById("btn").addEventListener("click", () => enviarDatos());
+=======
 
 document.getElementById("btn").addEventListener("click", () => enviarDatos());
 
 
 
+>>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
