@@ -15,7 +15,7 @@
       "email": "Pepito@gmail.com",
       "telefono": 3816171790,
       "rol": "user",
-      "login": true
+      "login": false
     }
   ],
   "ventas": [
