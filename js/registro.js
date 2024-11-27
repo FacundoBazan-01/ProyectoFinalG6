@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const enviarDatos = async () => {
+=======
+const enviarDatos = async (event) => {
+>>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
   let bandera = true;
   try {
     let email = document.getElementById("email").value;
@@ -41,6 +45,7 @@ const enviarDatos = async () => {
             contraseña: pass,
             email: email,
             telefono: telef,
+<<<<<<< HEAD
             role: "user",
             login:false,
             };
@@ -59,6 +64,31 @@ const enviarDatos = async () => {
                     text: "El usuario no se pudo crear intentalo de nuevo!",
             });
             }
+=======
+            rol: "user",
+            login:false,
+            };
+            if (usuarioNuevo) {
+              Swal.fire({
+                title: "Usuario creado correctamente, deseas iniciar sesion?",
+                showCancelButton: true,
+                confirmButtonText: "Si",
+              }).then(async (result) => {
+                if (result.isConfirmed) {
+                  await axios.post("http://localhost:3001/usuarios",usuarioNuevo);
+                  window.location.href="../html/login.html"
+                } 
+              });
+              
+            } else {
+              Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "El usuario no se pudo crear intentalo de nuevo!",
+              });
+            }
+            
+>>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
       }
       
     } else {
@@ -73,4 +103,12 @@ const enviarDatos = async () => {
   }
 };
 
+<<<<<<< HEAD
 document.getElementById("btn").addEventListener("click", () => enviarDatos());
+=======
+
+document.getElementById("btn").addEventListener("click", () => enviarDatos());
+
+
+
+>>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3

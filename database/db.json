@@ -15,7 +15,7 @@
       "email": "Pepito@gmail.com",
       "telefono": 3816171790,
       "rol": "user",
-      "login": false
+      "login": true
     }
   ],
   "ventas": [
@@ -27,9 +27,21 @@
       "cliente": "",
       "vendedor": "",
       "producto": "",
-      "precioProducto": "",
-      "cantidadComprada": "",
-      "totalPagado": ""
+      "precioProducto": 12,
+      "cantidadComprada": 1,
+      "totalPagado": 4213
+    },
+    {
+      "id": "7765",
+      "id_cliente": "2",
+      "id_producto": "3",
+      "id_vendedor": "5",
+      "cliente": "Pepito",
+      "vendedor": "Nicolas",
+      "producto": "Xiaomi POCO M6 Pro",
+      "precioProducto": 900000,
+      "cantidadComprada": "2",
+      "totalPagado": 1800000
     }
   ],
   "vendedores": [
@@ -95,7 +107,11 @@
       ],
       "precio": 20000,
       "stock": 50,
-      "img": "",
+      "img": [
+        "https://www.casadelaudio.com/Image/0/750_750-156-SAM-909_(2).png",
+        "https://tienda.personal.com.ar/images/720/webp/Samsung_Galaxy_A15_Blue_Black_5b0e3e23d8.png",
+        "https://shop.samsung.com/latin/cac/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/s/m/sm-a155_ep-ta800nbegmx.png"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -123,7 +139,11 @@
       ],
       "precio": 50000,
       "stock": 45,
-      "img": "https://i.imgur.com/JkDRgaj.jpg",
+      "img": [
+        "https://www.casadelaudio.com/Image/0/750_750-156-SAM-945%20(1)1.png",
+        "https://www.casadelaudio.com/Image/0/750_750-156-SAM-945_(2).png",
+        "https://www.casadelaudio.com/Image/0/750_750-156-SAM-945_(7).png"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -154,11 +174,7 @@
       ],
       "precio": 900000,
       "stock": 65,
-      "img": [
-        "https://castillo.vtexassets.com/arquivos/ids/157018/Celular-Samsung-Galaxy-A23-128GB-Negro--.jpg?v=638359092429670000",
-        "https://castillo.vtexassets.com/arquivos/ids/157018/Celular-Samsung-Galaxy-A23-128GB-Negro--.jpg?v=638359092429670000",
-        "https://castillo.vtexassets.com/arquivos/ids/157018/Celular-Samsung-Galaxy-A23-128GB-Negro--.jpg?v=638359092429670000"
-      ],
+      "img": "",
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -196,11 +212,15 @@
         "Resistente al polvo y a las caídas."
       ],
       "precio": 950000,
-      "stock": 35,
-      "img": "",
-      "productFav": false,
-      "productCar": false,
-      "productWatch": false
+      "stock": 20,
+      "img": [
+        "https://casacuesta.com/media/catalog/product/cache/fde49a4ea9a339628caa0bc56aea00ff/3/3/3348139-1__1726032026.jpg",
+        "https://www.casadelaudio.com/Image/0/750_750-156-XIA-023_(12).png",
+        "https://holatelcel.com/wp-content/uploads/2024/03/Xiaomi-Redmi-Note-13-Pro.png"
+      ],
+      "productFav": true,
+      "productCar": true,
+      "productWatch": true
     },
     {
       "id": "5",
@@ -230,7 +250,11 @@
       ],
       "precio": 1950000,
       "stock": 35,
-      "img": "",
+      "img": [
+        "https://applestore.am/media/catalog/product/cache/524531ebd1cf3ec7d6ef9d414e811315/w/w/wwen_iphone14_q422_starlight_pdp_image_position-1a.jpg",
+        "https://www.radioshack.cr/media/catalog/product/5/0/5001111054-y-5001111063-_3__qf5ud6scspc3qxib.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700",
+        "https://shareefcorner.sa/pub/media/catalog/product/mpiowebpcache/82d05cd6abfc8fcfb8bdbf5accf96e1b/a/p/apple_iphone_14_128gb_-_5g_-_starlight-3.webp"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -265,7 +289,484 @@
       ],
       "precio": 1950000,
       "stock": 35,
-      "img": "",
+      "img": [
+        "https://d1rlzxa98cyc61.cloudfront.net/catalog/product/cache/1801c418208f9607a371e61f8d9184d9/1/9/194217_2024_1_1.jpg",
+        "https://topcelular.es/1249-large_default/iphone-16-pro-128gb-negro.jpg",
+        "https://tv-it.com/storage/shada/iphone/iphone16-pro-desert-p5.webp"
+      ],
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "13",
+      "nombre": "Notebook Celeron N4020",
+      "marca": "X-view",
+      "descripcion": [
+        "Notebook Novabook V3 Cloudbook Intel 4GB RAM - 128 GB 14.1 Dark Blue",
+        "• Sistema operativo Windows 11",
+        " Intel Celeron N4020 (Máx. 2.8GHz)",
+        "• GPU Intel® UHD Graphics 600 (650MHz)",
+        "• Resolución 1366x768px",
+        "• Memoria RAM 4GB",
+        "• Memoria interna 128GB",
+        "• Pantalla 14.”TN",
+        "• Slot HDD expandible hasta 1TB",
+        "• Cámara 0.3mp",
+        "• Puerto Ethernet",
+        "• Batería recargable 4000 mAh 7.6V Lithium",
+        "CARACTERÍSTICAS DESTACADAS:",
+        "Sistema Operativo: Windows 11, la última versión que ofrece una experiencia de usuario mejorada",
+        "Procesador: Intel Gemini Lake N4020, con una velocidad máxima de 2.8GHz, ideal para tareas diarias",
+        "Gráficos: GPU Intel® UHD Graphics 600 (650MHz) para un rendimiento visual óptimo",
+        "Pantalla: 14.1 Panel TN con resolución de 1366x768px, perfecta para trabajo y entretenimiento",
+        "Memoria RAM: 4GB, suficiente para multitarea y uso de aplicaciones cotidianas",
+        "Almacenamiento interno: 128GB, con la posibilidad de expansión mediante un slot HDD que permite hasta 1TB adicional",
+        "Cámara: 0.3mp, ideal para videollamadas y tareas simples",
+        "Conectividad: Incluye puerto Ethernet para conexiones de red estables",
+        "Batería: Recargable de 4000 mAh 7.6V Lithium, que asegura una buena autonomía para tus actividades.",
+        "DISEÑO Y PORTABILIDAD:",
+        "Con un diseño liviano y portátil, la Notebook Novabook V3 es perfecta para llevar a todas partes. Su elegante color Dark Blue le da un toque moderno y profesional",
+        "INCLUYE:",
+        "Cargador",
+        "Guía de instrucciones",
+        "Esta notebook es la opción ideal para estudiantes y profesionales que buscan un dispositivo eficiente y accesible. ¡No te quedes sin la tuya",
+        "Aviso legal",
+        "• La duración de la batería depende del uso que se le dé al producto"
+      ],
+      "caracteristicas": [
+        "Tarjeta gráfica: UHD Graphics 600",
+        "Con pantalla táctil: No",
+        "Resolución de la pantalla: 1366 px x 768 px",
+        "Procesador: Intel Celeron N4020",
+        "Sistema operativo: Windows 11 Home",
+        "Capacidad del disco rígido: 128 GB",
+        "Memoria RAM: 4 GB",
+        "Resolución de 1366x768 px",
+        "Placa de video UHD Graphics 600"
+      ],
+      "precio": 266489,
+      "stock": 10,
+      "img": [
+        "https://http2.mlstatic.com/D_Q_NP_828402-MLA80195632032_112024-R.webp",
+        "https://http2.mlstatic.com/D_Q_NP_839130-MLA80195818234_112024-R.webp",
+        "https://http2.mlstatic.com/D_Q_NP_839130-MLA80195818234_112024-R.webp"
+      ],
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "14",
+      "nombre": "Notebook Asus Vivobook 14",
+      "marca": "Asus",
+      "descripcion": [
+        "Notebook ASUS Vivobook.",
+        "Disfrute de las actividades cotidianas con esta computadora portátil ASUS. El procesador Intel Core i3 y 8 GB de RAM le permiten ejecutar programas sin problemas.",
+        "Sistema operativo Windows 11 tiene toda la potencia y seguridad de Windows 10 con una apariencia rediseñada y renovada. También viene con nuevas herramientas, sonidos y aplicaciones. Cada detalle ha sido considerado. Todo esto se combina para brindarte una experiencia refrescante en tu PC.",
+        "Pantalla FHD de 14 pulgadas.",
+        "La resolución de 1920 x 1080 ofrece un color y una claridad impresionantes.",
+        "Resolución de 1920x1080 px.",
+        "Retroiluminación LED de bajo consumo.",
+        "Procesador:",
+        "Intel I3-1215U",
+        "Memoria del sistema de 8 GB para multitarea y juegos",
+        "SSD de 128 GB:",
+        "Guarde archivos rápidamente y almacene más datos. Con enormes cantidades de almacenamiento y potencia de comunicación avanzada.",
+        "Aviso legal ",
+        "• La duración de la batería depende del uso que se le dé al producto."
+      ],
+      "caracteristicas": [
+        "Con pantalla táctil: No",
+        "Resolución de la pantalla: 1920 px x 1080 px",
+        "Procesador: Intel Core i3 1215U",
+        "Memoria RAM de 8GB.",
+        "Pantalla LED de 14",
+        "Resolución de 1920x1080 px.",
+        "Conexión wifi y bluetooth",
+        "Cuenta con 4 puertos USB y puerto HDMI"
+      ],
+      "precio": 688000,
+      "stock": 20,
+      "img": [
+        "https://http2.mlstatic.com/D_Q_NP_930047-MLU76824471200_062024-R.webp",
+        "https://http2.mlstatic.com/D_Q_NP_813387-MLU77031181971_062024-R.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_721763-MLU77031181975_062024-O.webp"
+      ],
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "15",
+      "nombre": "Notebook Lenovo Ideapad 1",
+      "marca": "Lenovo",
+      "descripcion": [
+        "La Notebook LENOVO IDEAPAD (82V6005US) es exactamente lo que necesita una computadora portátil de uso diario. Vea programas en una pantalla HD de hasta 14 pulgadas con un marco extremadamente delgado. Escuche sonido claro desde altavoces Dolby Audio. Y con una batería de larga duración, puedes trabajar desde cualquier lugar mientras disfrutas de videollamada nítidas con una cámara web HD con obturador de privacidad y cancelación inteligente de ruido.",
+        "Esta diseñada para la productividad y el entretenimiento. Con una pantalla de 14” y una resolución 14,0” HD 1366 x 768 pixeles ofrece imágenes claras y colores brillantes. Cuenta con un procesador Intel Celeron N4020 (1,10 GHz).",
+        "Pantalla: 14 pulgadas",
+        "Resolución: 1366 x 768 pixeles",
+        "Sistema operativo: Windows 11s Home",
+        "Procesador: Intel Celeron N4020 Dual Core",
+        "Memoria RAM: 4GB",
+        "Memoria interna: 128 GB SSD",
+        "Cámara frontal: 720p HD",
+        "Puertos: Lector de tarjetas SD, USB-A 2.0, USB-A 3.2 generación 1, HDM, USB-C 3.2",
+        "Generación 1",
+        "Conectividad: WIFI, Bluetooth 4.2",
+        "Tarjeta de Gráficos: Intel UHD 600 integrados",
+        "Dimensiones: 32.53 x 21.65 x 1.79 cm",
+        "Peso: 1.4 kg",
+        "Aviso legal",
+        "• La duración de la batería depende del uso que se le dé al producto."
+      ],
+      "caracteristicas": [
+        "Tarjeta gráfica: Integrated Intel® UHD Graphics 600",
+        "Con pantalla táctil: No.",
+        "Resolución de la pantalla: 1366 px x 768 px",
+        "Procesador: Intel Celeron N4020",
+        "Sistema operativo: Windows 11S Home",
+        "Capacidad de disco SSD: 128 GB",
+        "Capacidad del disco rígido: 128 GB",
+        "Memoria RAM: 4 GB",
+        "Resolución de 1366x768 px.",
+        "Placa de video Integrated Intel® UHD Graphics 600.",
+        "Conexión wifi y bluetooth.",
+        "Cuenta con 3 puertos USB y puerto HDMI.",
+        "Incluye lector de tarjeta de memoria."
+      ],
+      "precio": 319199,
+      "stock": 10,
+      "img": [
+        "https://http2.mlstatic.com/D_Q_NP_763058-MLU73905263055_012024-R.webp",
+        "https://http2.mlstatic.com/D_Q_NP_913843-MLU73805813876_012024-R.webp",
+        "https://http2.mlstatic.com/D_Q_NP_821919-MLU73806066184_012024-R.webp"
+      ],
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "16",
+      "nombre": "Notebook Acer Aspire Ryzen 7 5700u",
+      "marca": "Acer",
+      "descripcion": [
+        "Acer Aspire 3 | 15.6 pantalla FHD | AMD Ryzen 7 5700U | 16GB de RAM | 512GB de SSD",
+        "Rendimiento Potente en un Diseño Plateado Elegante",
+        "La Notebook Acer Aspire 3 A315-44P-R7GS ofrece un rendimiento excepcional en un diseño plateado elegante, perfecto para usuarios que buscan potencia y estilo en un solo dispositivo. Con características avanzadas y una construcción cuidadosamente diseñada, esta notebook es la elección ideal para trabajar, jugar y todo lo demás.",
+        "Potencia Gamer:",
+        "Impulsada por el procesador AMD Ryzen 7 5700U, la Acer Aspire 3 A315-44P-R7GS ofrece un rendimiento excepcional para juegos y aplicaciones exigentes. Con 16 GB de memoria RAM DDR4, disfruta de una experiencia de juego fluida y multitarea sin esfuerzo.",
+        "Diseño Elegante y Portátil:",
+        "Con un peso de solo 1.78 kg, esta notebook es ligera y fácil de transportar, ideal para usuarios en movimiento. Además, su diseño plateado elegante agrega un toque de estilo a tu vida digital.",
+        "Características Avanzadas:",
+        "Equipada con micrófono integrado y un práctico pad numérico, la Acer Aspire 3 A315-44P-R7GS ofrece comodidad y funcionalidad en cada uso. Además, la cámara web integrada te permite realizar videollamadas con claridad.",
+        "Almacenamiento Espacioso:",
+        "Con un disco SSD de 512 GB, esta notebook ofrece un amplio espacio para tus archivos, aplicaciones y multimedia, al tiempo que garantiza tiempos de carga rápidos y un rendimiento ágil en todas tus actividades.",
+        "Pantalla Vibrante:",
+        "Disfruta de una experiencia visual inmersiva en la pantalla Full HD de 15.6 pulgadas de la Acer Aspire 3 A315-44P-R7GS. Con colores vivos y detalles nítidos, esta pantalla es perfecta para ver películas, jugar juegos y más.",
+        "Sistema Operativo Actualizado:",
+        "Preinstalado con Windows 11 Home, esta notebook ofrece acceso a las últimas funciones y mejoras de Windows para una experiencia informática moderna y sin complicaciones.",
+        "Conectividad Versátil:",
+        "Con puertos USB, HDMI, Wi-Fi, Bluetooth y salida para auriculares, la Acer Aspire 3 A315-44P-R7GS te mantiene conectado en todo momento, ya sea que estés en casa, en la oficina o en movimiento.",
+        "Descubre el poder y la versatilidad de la Notebook Acer Aspire 3 A315-44P-R7GS NX.KSJAA.002 y lleva tu experiencia informática al siguiente nivel. ¡Hazte con la tuya hoy mismo!",
+        "Aviso legal",
+        "• La duración de la batería depende del uso que se le dé al producto."
+      ],
+      "caracteristicas": [
+        "Con pantalla táctil: No",
+        "Procesador: AMD Ryzen 7 5700U",
+        "Sistema operativo: Windows 11 Home",
+        "Capacidad de disco SSD: 512 GB",
+        "Memoria RAM: 16 GB",
+        "Conexión wifi y bluetooth.",
+        "Cuenta con puerto USB y puerto HDMI",
+        "Posee pad numérico."
+      ],
+      "precio": 1295990,
+      "stock": 50,
+      "img": [
+        "https://http2.mlstatic.com/D_Q_NP_735859-MLU75755217597_042024-R.webp",
+        "https://http2.mlstatic.com/D_Q_NP_652682-MLU75660669383_042024-R.webp",
+        "https://http2.mlstatic.com/D_Q_NP_721584-MLU75501964028_042024-R.webp"
+      ],
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "17",
+      "nombre": "Notebook Gamer ROG Strix G15 G513RC-HN091W",
+      "marca": "Asus",
+      "descripcion": [
+        "Disfrutá de la perfecta combinación de rendimiento y diseño con esta notebook Asus ROG Strix G15(2022). Encontrarás en ella una excelente herramienta para tus trabajos de todos los días y para tus momentos de entretenimiento. Aprovechá la experiencia extraordinaria que la marca tiene para ofrecerte y optimizá la calidad de tus imágenes y videos.",
+        "Pantalla con gran impacto visual Su pantalla de 15.6 y 1920x1080px de resolución te brindará colores más vivos y definidos. Tus películas y series preferidas cobrarán vida, ya que ganarán calidad y definición en cada detalle.",
+        "Eficiencia a tu alcance",
+        "Su procesador AMD Ryzen 7 de 8 núcleos, te permitirá ejecutar programas variados y procesos indispensables para desenvolverte en el día a día, ya sea en tu trabajo o en los momentos de ocio en tu hogar.",
+        "Potente disco sólido",
+        "El disco sólido de 512 GB hace que el equipo funcione a gran velocidad y por lo tanto te brinda mayor agilidad para operar con diversos programas.",
+        "Un procesador exclusivo para los gráficos, Su placa de video NVIDIA GeForce RTX 3050 convierte a este dispositivo en una gran herramienta de trabajo para cualquier profesional del diseño. Te permitirá lograr una gran performance en todos tus juegos y en otras tareas cotidianas que impliquen procesamiento gráfico.",
+        "Aviso legal",
+        "• La duración de la batería depende del uso que se le dé al producto."
+      ],
+      "caracteristicas": [
+        "Tarjeta gráfica: NVIDIA GeForce RTX 3050",
+        "Con pantalla táctil: No",
+        "Resolución de la pantalla: 1920 px x 1080 px",
+        "Procesador: AMD Ryzen 7 6800H",
+        "Capacidad de disco SSD: 512 GB",
+        "Memoria RAM: 16 GB",
+        "Resolución de 1920x1080 px.",
+        "Placa de video NVIDIA GeForce RTX 3050.",
+        "Conexión wifi y bluetooth.",
+        "Cuenta con 4 puertos USB y puerto HDMI.",
+        "Modo de sonido Dolby Atmos.",
+        "Con teclado retroiluminado."
+      ],
+      "precio": 3031909,
+      "stock": 10,
+      "img": [
+        "https://http2.mlstatic.com/D_Q_NP_745763-MLU78730391329_082024-R.webp",
+        "https://http2.mlstatic.com/D_Q_NP_816846-MLU72893001986_112023-R.webp",
+        "https://http2.mlstatic.com/D_Q_NP_886854-MLA54692166506_032023-R.webp"
+      ],
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "18",
+      "nombre": "Notebook Cx Cx30482",
+      "marca": "Cx",
+      "descripcion": [
+        "Todo lo que necesitás… y un poco más.",
+        "¿No parás de moverte? La nueva Notebook CX de 15,6 FHD te brinda una solución completa. De diseño innovador y materiales livianos, está pensada para que la lleves a todas partes, sin descuidar desempeño y funcionalidad.",
+        "Pantalla Full HD Con una increíble Resolución de 1920Px x 1080 Px disfrute de la calidad máxima de su contenido multimedia.",
+        "La notebook CX CX30482 es una solución tanto para trabajar y estudiar como para entretenerte. Al ser portátil, el escritorio dejará de ser tu único espacio de uso para abrirte las puertas a otros ambientes ya sea en tu casa o en la oficina.",
+        "Eficiencia a tu alcance Su procesador Intel Core i3 de 4 núcleos, está pensado para aquellas personas generadoras y consumidoras de contenidos. En base a esto, permite el desempeño necesario para la edición de fotografías o videos en programas básicos.",
+        "Con un peso de solo 1.78 kg, esta notebook es ligera y fácil de transportar, ideal para usuarios en movimiento. Además, su diseño plateado elegante agrega un toque de estilo a tu vida digital.",
+        "Aviso legal",
+        "• La duración de la batería depende del uso que se le dé al producto."
+      ],
+      "caracteristicas": [
+        "Con pantalla táctil: No",
+        "Resolución de la pantalla: 1920 px x 1080 px",
+        "Procesador: Intel Core i3 1025G1",
+        "Sistema operativo: FreeDOS",
+        "Capacidad de disco SSD: 256 GB",
+        "Memoria RAM: 8 GB",
+        "Resolución de 1920x1080 px con retina display.",
+        "Conexión wifi y bluetooth.",
+        "Cuenta con puerto USB y puerto HDMI.",
+        "Incluye lector de tarjeta de memoria.",
+        "Posee pad numérico."
+      ],
+      "precio": 732263,
+      "stock": 50,
+      "img": [
+        "https://http2.mlstatic.com/D_Q_NP_700606-MLU76222418443_052024-R.webp",
+        "https://http2.mlstatic.com/D_Q_NP_815664-MLA78468543843_082024-R.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_845671-MLA78239577944_082024-O.webp"
+      ],
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "19",
+      "nombre": "PlayStation 5 Console 825GB with DualSense Wireless Controller",
+      "marca": "Sony",
+      "descripcion": [
+        "La PlayStation 5 ofrece una experiencia de gaming revolucionaria, llevando la velocidad, la inmersión y la calidad gráfica a nuevos niveles. Con el procesador de última generación, gráficos en 4K y una carga ultra rápida, podrás disfrutar de tus juegos favoritos de manera más dinámica y realista.",
+        "Diseño futurista y funcional, la PS5 destaca por su elegante diseño y tamaño que, además de ser visualmente impresionante, asegura un rendimiento eficiente. El diseño optimizado permite una refrigeración eficiente para largas sesiones de juego.",
+        "Potente rendimiento y velocidad, su potente procesador y SSD de 825 GB permiten tiempos de carga ultrarrápidos y un rendimiento increíblemente fluido. Esto hace que los juegos se sientan más vivos y dinámicos.",
+        "Gráficos impresionantes, con soporte para ray tracing y resolución en 4K, la PS5 ofrece detalles visuales sin precedentes que transforman cada juego en una experiencia envolvente.",
+        "Inmersión total, con el mando DualSense, disfrutarás de retroalimentación háptica avanzada y gatillos adaptativos que te permiten sentir cada acción, como nunca antes, ya sea que estés disparando, corriendo o saltando.",
+        "Aviso legal",
+        "• La duración de la batería del mando puede variar según el uso."
+      ],
+      "caracteristicas": [
+        "Almacenamiento: SSD de 825 GB",
+        "Resolución soportada: 4K",
+        "Conexión Wi-Fi: Sí",
+        "Conexión Bluetooth: Sí",
+        "Puertos: 1 puerto USB-C, 2 puertos USB-A, 1 puerto Ethernet, 1 puerto HDMI",
+        "Sonido 3D: Compatible",
+        "Mando: DualSense inalámbrico con retroalimentación háptica y gatillos adaptativos",
+        "Compatibilidad con PS4: Juega títulos de PS4 en PS5",
+        "Refrigeración avanzada: Sistema de refrigeración optimizado"
+      ],
+      "precio": 799999,
+      "stock": 15,
+      "img": [
+        "https://http2.mlstatic.com/D_Q_NP_123456-MLU90001234567_052022-R.webp"
+      ],
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "20",
+      "nombre": "Xbox One S 1TB Console + Controller",
+      "marca": "Microsoft",
+      "descripcion": [
+        "La Xbox One S te ofrece una experiencia de gaming de alto rendimiento con un diseño elegante y compacto. Con soporte para juegos en 4K Ultra HD para videos y transmisión, así como una increíble calidad de audio, es la consola ideal para tus momentos de entretenimiento.",
+        "Diseño compacto y elegante, la Xbox One S es más pequeña y eficiente, manteniendo la misma potencia de rendimiento de su predecesora. Su diseño blanco minimalista se adapta a cualquier espacio en tu hogar.",
+        "Gran capacidad de almacenamiento, con un disco duro de 1TB, tendrás suficiente espacio para guardar tus juegos, aplicaciones y contenidos multimedia, sin preocuparte por quedarte sin espacio.",
+        "Rendimiento de próxima generación, disfruta de tiempos de carga rápidos y un juego fluido con la Xbox One S. Su potente procesador y la capacidad de jugar a 1080p te proporcionan una experiencia visual impresionante.",
+        "Juega con amigos, comparte y transmite contenido en tiempo real con la Xbox Live. Con acceso a miles de juegos, incluyendo los exclusivos de Xbox y otros títulos populares, tu experiencia de juego nunca tendrá fin.",
+        "Aviso legal",
+        "• La duración de la batería del mando depende del uso y las condiciones del entorno."
+      ],
+      "caracteristicas": [
+        "Almacenamiento: Disco duro de 1TB",
+        "Resolución soportada: 1080p (Full HD), compatible con 4K para streaming y Blu-Ray",
+        "Conexión Wi-Fi: Sí",
+        "Conexión Bluetooth: Sí",
+        "Puertos: 3 puertos USB, 1 puerto HDMI, 1 puerto Ethernet",
+        "Sonido: Compatible con Dolby Digital y DTS 5.1",
+        "Mando: Mando inalámbrico Xbox One incluido",
+        "Acceso a Xbox Live: Conexión a servicios de transmisión y multijugador",
+        "Compatibilidad con juegos: Compatible con juegos de Xbox One, y algunos títulos de Xbox 360"
+      ],
+      "precio": 499999,
+      "stock": 20,
+      "img": [
+        "https://http2.mlstatic.com/D_Q_NP_876432-MLU74270381391_042020-R.webp"
+      ],
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "21",
+      "nombre": "Nintendo Switch 32GB Console with Joy-Con Controllers",
+      "marca": "Nintendo",
+      "descripcion": [
+        "La Nintendo Switch es la consola híbrida que te permite jugar en cualquier lugar, ya sea en modo portátil o conectada a tu televisor. Con su diseño versátil y una gran variedad de juegos exclusivos, es perfecta para jugadores de todas las edades.",
+        "Juego en cualquier lugar, en cualquier momento. Su diseño portátil permite que lleves tu consola contigo y juegues en donde quieras. Conecta los Joy-Con y disfruta de una experiencia de juego inmersiva, ya sea en modo portátil, sobremesa o conectado a tu televisor.",
+        "Variedad de juegos exclusivos, Nintendo Switch te ofrece acceso a una amplia gama de juegos exclusivos como *The Legend of Zelda: Breath of the Wild*, *Super Mario Odyssey*, y *Animal Crossing: New Horizons*, entre muchos otros.",
+        "Fácil de usar, la interfaz amigable y los controles intuitivos hacen que sea fácil sumergirse en la acción sin complicaciones. Los Joy-Con se pueden usar por separado para jugar con amigos o como un único mando.",
+        "Conectividad versátil, la Nintendo Switch ofrece conectividad en línea a través de Nintendo Switch Online, lo que te permite jugar multijugador, acceder a juegos retro y mucho más.",
+        "Aviso legal",
+        "• La duración de la batería depende de los juegos y la configuración de uso."
+      ],
+      "caracteristicas": [
+        "Almacenamiento: 32 GB (expandible con tarjeta microSD)",
+        "Pantalla: 6.2 pulgadas, resolución 1280x720",
+        "Conexión Wi-Fi: Sí",
+        "Conexión Bluetooth: Sí",
+        "Puertos: 1 puerto USB-C, 1 puerto HDMI, 1 puerto de tarjeta microSD",
+        "Controles: 2 Joy-Con desmontables, con vibración HD y sensores de movimiento",
+        "Modo de juego: Portátil, sobremesa, y conectado al televisor",
+        "Batería: Hasta 9 horas de duración (dependiendo del juego y uso)",
+        "Juegos exclusivos: Acceso a títulos como *Super Mario*, *The Legend of Zelda*, *Pokémon*"
+      ],
+      "precio": 499999,
+      "stock": 25,
+      "img": [
+        "https://http2.mlstatic.com/D_Q_NP_953748-MLU82581226747_082020-R.webp"
+      ],
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "22",
+      "nombre": "PlayStation 5 Digital Edition 825GB Console",
+      "marca": "Sony",
+      "descripcion": [
+        "La PlayStation 5 Digital Edition lleva la experiencia de gaming a un nivel completamente nuevo, con gráficos impresionantes, tiempos de carga ultrarrápidos y un mando innovador. Disfruta de una consola sin lector de discos, ideal para los jugadores que prefieren comprar juegos digitales y aprovechar al máximo la velocidad y la potencia de la nueva generación.",
+        "Diseño futurista y sin lecturas físicas, con un diseño más elegante y compacto en comparación con la versión estándar, la PS5 Digital Edition mantiene la misma potencia y rendimiento sin la necesidad de un lector de discos.",
+        "Experiencia visual de nueva generación, disfruta de gráficos en 4K y soporte para ray tracing, lo que te permitirá jugar con una calidad visual excepcional. Además, con la potencia de la PS5, los juegos cobran vida de una manera nunca antes vista.",
+        "Sonido 3D inmersivo, la consola cuenta con audio 3D para una experiencia de sonido envolvente. Juega con mayor realismo y claridad, escuchando cada detalle del entorno en tus juegos.",
+        "Rendimiento ultra rápido, con un SSD de 825 GB, los tiempos de carga son casi inexistentes, permitiéndote saltar rápidamente de una escena a otra sin interrupciones. Además, la consola es completamente digital, lo que facilita la descarga y gestión de juegos sin necesidad de discos físicos.",
+        "Aviso legal",
+        "• La duración de la batería del mando puede variar según el uso y las condiciones del entorno."
+      ],
+      "caracteristicas": [
+        "Almacenamiento: SSD de 825 GB",
+        "Resolución soportada: 4K, compatible con 8K a través de actualizaciones futuras",
+        "Conexión Wi-Fi: Sí, Wi-Fi 6",
+        "Conexión Bluetooth: Sí",
+        "Puertos: 1 puerto USB-C, 2 puertos USB-A, 1 puerto Ethernet, 1 puerto HDMI",
+        "Sonido 3D: Compatible con audio 3D para una experiencia inmersiva",
+        "Mando: DualSense inalámbrico con retroalimentación háptica y gatillos adaptativos",
+        "Juegos exclusivos: Acceso a títulos como *Demon's Souls*, *Ratchet & Clank: Rift Apart*, *Spider-Man: Miles Morales*",
+        "Compatibilidad con PS4: Juega muchos títulos de PS4 en PS5",
+        "Acceso a PS Store: Compra y descarga juegos directamente desde la PlayStation Store"
+      ],
+      "precio": 749999,
+      "stock": 30,
+      "img": [
+        "https://http2.mlstatic.com/D_Q_NP_812367-MLU82567117390_062020-R.webp"
+      ],
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "23",
+      "nombre": "Xbox Series X 1TB Console",
+      "marca": "Microsoft",
+      "descripcion": [
+        "La Xbox Series X es la consola de juegos más potente y rápida de Microsoft, diseñada para ofrecer una experiencia de gaming sin precedentes. Con gráficos 4K a 120 FPS, un SSD ultra rápido y compatibilidad con una gran biblioteca de juegos, es la elección perfecta para los jugadores que buscan lo mejor en rendimiento y calidad visual.",
+        "Rendimiento excepcional, equipada con un procesador de 8 núcleos y una GPU RDNA 2 de AMD, la Xbox Series X puede alcanzar una resolución de hasta 8K, brindando imágenes nítidas y fluidas que transforman la forma en que juegas.",
+        "Almacenamiento ultrarrápido, el SSD de 1TB integrado reduce drásticamente los tiempos de carga, permitiendo que te sumerjas en el juego de inmediato, sin esperas. Además, puedes expandir el almacenamiento mediante tarjetas de expansión propietarias de 1TB.",
+        "Disfruta de juegos a 4K, con soporte para 120 FPS, que ofrece un rendimiento increíblemente fluido y visualmente impresionante. La Xbox Series X es ideal para aquellos que buscan el máximo nivel de realismo en sus juegos.",
+        "Tecnología de retrocompatibilidad, juega títulos de generaciones anteriores de Xbox sin problemas. La Series X es compatible con juegos de Xbox One, Xbox 360 y Xbox Original, mejorando la calidad visual y de rendimiento de muchos de ellos.",
+        "Aviso legal",
+        "• La duración de la batería del mando puede variar según el uso y las condiciones del entorno."
+      ],
+      "caracteristicas": [
+        "Almacenamiento: SSD de 1TB (expandible con tarjeta de expansión)",
+        "Resolución soportada: 4K hasta 120 FPS, compatible con 8K",
+        "Conexión Wi-Fi: Wi-Fi 6",
+        "Conexión Bluetooth: Sí",
+        "Puertos: 3 puertos USB-A, 1 puerto HDMI 2.1, 1 puerto Ethernet, 1 puerto de expansión de almacenamiento",
+        "Sonido: Compatible con Dolby Atmos y DTS:X",
+        "Mando: Mando inalámbrico Xbox Series X con tecnología de baja latencia",
+        "Retrocompatibilidad: Juega títulos de Xbox One, Xbox 360 y Xbox Original",
+        "Acceso a Xbox Game Pass: Accede a una biblioteca de más de 100 juegos con Xbox Game Pass"
+      ],
+      "precio": 849999,
+      "stock": 20,
+      "img": [
+        "https://http2.mlstatic.com/D_Q_NP_844320-MLU82637785973_062020-R.webp"
+      ],
+      "productFav": false,
+      "productCar": false,
+      "productWatch": false
+    },
+    {
+      "id": "24",
+      "nombre": "Nintendo Switch OLED Model 64GB Console",
+      "marca": "Nintendo",
+      "descripcion": [
+        "La Nintendo Switch OLED Model lleva la experiencia de juego portátil a otro nivel. Con una pantalla OLED más grande y vibrante, sonido mejorado y un diseño elegante, es la opción perfecta para los jugadores que desean disfrutar de sus juegos favoritos en cualquier lugar con mayor claridad y detalles visuales.",
+        "Pantalla OLED de 7 pulgadas, disfruta de colores más vibrantes y negros más profundos en la nueva pantalla OLED de 7 pulgadas. Ya sea que juegues en modo portátil o sobremesa, tendrás una experiencia visual más inmersiva y realista.",
+        "Almacenamiento mejorado, la Nintendo Switch OLED ahora cuenta con 64 GB de almacenamiento interno, lo que te brinda más espacio para tus juegos y aplicaciones. Además, puedes expandir la memoria con tarjetas microSD para una mayor capacidad de almacenamiento.",
+        "Mayor comodidad y sonido, los altavoces de la Nintendo Switch OLED Model ofrecen un sonido más rico y claro, ideal para jugar sin auriculares mientras estás de viaje o en cualquier lugar. El soporte ajustable también mejora la estabilidad para jugar en modo sobremesa.",
+        "Juega de muchas maneras, con los Joy-Con removibles, puedes disfrutar de la consola en modo portátil, sobremesa o conectarla a tu televisor para una experiencia de juego de mayor escala.",
+        "Aviso legal",
+        "• La duración de la batería puede variar dependiendo de los juegos y las condiciones de uso."
+      ],
+      "caracteristicas": [
+        "Almacenamiento: 64 GB (expandible con tarjeta microSD)",
+        "Pantalla: OLED de 7 pulgadas, resolución 1280x720",
+        "Conexión Wi-Fi: Sí",
+        "Conexión Bluetooth: Sí",
+        "Puertos: 1 puerto USB-C, 1 puerto HDMI, 1 puerto para tarjeta microSD",
+        "Controles: 2 Joy-Con desmontables con vibración HD y sensores de movimiento",
+        "Modo de juego: Portátil, sobremesa, y conectado al televisor",
+        "Sonido: Mejores altavoces para sonido más claro y envolvente",
+        "Batería: Hasta 9 horas de duración (dependiendo del juego y uso)",
+        "Juegos exclusivos: Acceso a títulos como *The Legend of Zelda: Breath of the Wild*, *Super Mario Odyssey*, *Pokémon Sword & Shield*"
+      ],
+      "precio": 629999,
+      "stock": 20,
+      "img": [
+        "https://http2.mlstatic.com/D_Q_NP_932544-MLU82795111862_072021-R.webp"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
