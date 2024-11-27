@@ -16,14 +16,32 @@
       "telefono": 3816171790,
       "rol": "user",
       "login": true
+    }
+  ],
+  "ventas": [
+    {
+      "id": "1",
+      "id_cliente": "1",
+      "id_producto": "1",
+      "id_vendedor": "1",
+      "cliente": "Nico",
+      "vendedor": "Facundo",
+      "producto": "Samsung Galaxy A15",
+      "precioProducto": 12,
+      "cantidadComprada": 1,
+      "totalPagado": 4213
     },
     {
-      "id": "0c0f",
-      "email": "facubazan992009@gmail.com",
-      "usuario": "Facu",
-      "telefono": "3213432",
-      "contraseña": "czxv34231",
-      "role": "user"
+      "id": "2",
+      "id_cliente": "2",
+      "id_producto": "2",
+      "id_vendedor": "2",
+      "cliente": "Sofia",
+      "vendedor": "Tomás",
+      "producto": "Xiaomi POCO M6 Pro",
+      "precioProducto": 14,
+      "cantidadComprada": 21,
+      "totalPagado": 421
     }
   ],
   "vendedores": [
@@ -101,7 +119,13 @@
       "descripcion": [
         "Samsung Galaxy A35",
         "Capacidad y eficiencia: Con su potente procesador y memoria RAM de 8 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.",
-        "Capacidad de almacenamiento ilimitada: Olvidate de borrar. Con su memoria interna de 256 GB podrás descargar todos los archivos y aplicaciones que necesites, guardar fotos y almacenar tus películas, series y videos favoritos para reproducirlos cuando quieras."
+        "Capacidad de almacenamiento ilimitada: Olvidate de borrar. Con su memoria interna de 256 GB podrás descargar todos los archivos y aplicaciones que necesites, guardar fotos y almacenar tus películas, series y videos favoritos para reproducirlos cuando quieras.",
+        "Conectividad: Wi-Fi 802.11 a/b/g/n/ac, Bluetooth 5.2",
+        "Sensores: Huella digital (debajo de la pantalla, óptica), acelerómetro, giroscopio, brújula",
+        "GPS: Sí, GPS, GLONASS, GALILEO, BDS",
+        "USB: SB tipo C 2.0",
+        "Batería: 5000 mAh | 67W cableado",
+        "Medidas: 16.11 x 7.5 x 0.8 cm | Peso: 188 gr"
       ],
       "caracteristicas": [
         "Memoria RAM: 8 GB",
@@ -142,7 +166,11 @@
       ],
       "precio": 900000,
       "stock": 65,
-      "img": "",
+      "img": [
+        "https://castillo.vtexassets.com/arquivos/ids/157018/Celular-Samsung-Galaxy-A23-128GB-Negro--.jpg?v=638359092429670000",
+        "https://castillo.vtexassets.com/arquivos/ids/157018/Celular-Samsung-Galaxy-A23-128GB-Negro--.jpg?v=638359092429670000",
+        "https://castillo.vtexassets.com/arquivos/ids/157018/Celular-Samsung-Galaxy-A23-128GB-Negro--.jpg?v=638359092429670000"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -191,6 +219,7 @@
       "nombre": "Apple iPhone 14",
       "marca": "Apple",
       "descripcion": [
+        "Apple iPhone 14",
         "Fotografía profesional en tu bolsillo, descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.",
         "La pantalla tiene las esquinas redondeadas. Si se mide en forma de rectángulo, la pantalla tiene 6.06 pulgadas en diagonal. El área real de visualización es menor.",
         "La funcionalidad Emergencia SOS usa conexión celular o llamadas por Wi-Fi.",
@@ -223,6 +252,7 @@
       "nombre": "Apple iPhone 16 Pro",
       "marca": "Apple",
       "descripcion": [
+        "Apple iPhone 16 Pro",
         "Imponente diseño de titanio. Control de la Cámara. 4K Dolby Vision a 120 cps. Y el chip A18 Pro.",
         "IMPONENTE DISEÑO DE TITANIO — El iPhone 16 Pro tiene un diseño de titanio resistente y ligero con una pantalla Super Retina XDR más grande, de 6.3 pulgadas.¹ Es increíblemente duradero gracias al Ceramic Shield de última generación, que es dos veces más resistente que cualquier vidrio de smartphone.",
         "CONTROL DE LA CÁMARA — Con esta nueva funcionalidad podrás acceder fácilmente a las herramientas de la cámara, como el zoom o la profundidad de campo, para que no se te escape ni un momento.",
@@ -270,7 +300,11 @@
       ],
       "precio": 85.499,
       "stock": 45,
-      "img": "",
+      "img": [
+        "https://sporting.vtexassets.com/arquivos/ids/1462898-1200-1200?v=638636525406470000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1462898-1200-1200?v=638636525406470000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1462898-1200-1200?v=638636525406470000&width=1200&height=1200&aspect=true"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -294,7 +328,11 @@
       ],
       "precio": 104.384,
       "stock": 15,
-      "img": "",
+      "img": [
+        "https://sporting.vtexassets.com/arquivos/ids/1473914-1200-1200?v=638646795732370000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1473914-1200-1200?v=638646795732370000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1473914-1200-1200?v=638646795732370000&width=1200&height=1200&aspect=true"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -318,7 +356,11 @@
       ],
       "precio": 75.9,
       "stock": 10,
-      "img": "",
+      "img": [
+        "https://sporting.vtexassets.com/arquivos/ids/1166263-1200-1200?v=638482860023300000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1166263-1200-1200?v=638482860023300000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1166263-1200-1200?v=638482860023300000&width=1200&height=1200&aspect=true"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -343,7 +385,11 @@
       ],
       "precio": 119.999,
       "stock": 16,
-      "img": "",
+      "img": [
+        "https://sporting.vtexassets.com/arquivos/ids/1560685-1200-1200?v=638658238279430000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1560685-1200-1200?v=638658238279430000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1560685-1200-1200?v=638658238279430000&width=1200&height=1200&aspect=true"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -369,7 +415,11 @@
       ],
       "precio": 179.999,
       "stock": 12,
-      "img": "",
+      "img": [
+        "https://sporting.vtexassets.com/arquivos/ids/1661656-1200-1200?v=638681563967100000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1661656-1200-1200?v=638681563967100000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1661656-1200-1200?v=638681563967100000&width=1200&height=1200&aspect=true"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false
@@ -394,7 +444,11 @@
       ],
       "precio": 101.6,
       "stock": 23,
-      "img": "",
+      "img": [
+        "https://sporting.vtexassets.com/arquivos/ids/1659153-1200-1200?v=638681336692000000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1659153-1200-1200?v=638681336692000000&width=1200&height=1200&aspect=true",
+        "https://sporting.vtexassets.com/arquivos/ids/1659153-1200-1200?v=638681336692000000&width=1200&height=1200&aspect=true"
+      ],
       "productFav": false,
       "productCar": false,
       "productWatch": false

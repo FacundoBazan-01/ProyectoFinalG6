@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Proxima Nova', apple-system, Roboto, Arial, sans-serif, sans-serif;
 }
 
 body{
@@ -9,6 +10,166 @@ body{
     min-height: 100vh;
 }
 
+main{
+    background-color: #EDEDED;
+}
+
 footer{
     margin-top: auto;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #ffe600 !important;
+    padding: 8px 10px 12px 10px;
+    box-sizing: border-box;
+}
+
+.navBar2 {
+    font-size: 13px;
+}
+
+.logoMercadoLibre {
+    height: 34px;
+    width: 134px;
+}
+.form-control {
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+    height: 40px;
+    padding: 10px 60px 10px 15px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    width: 100%;
+}
+
+.form-control::placeholder {
+    color: #999999c9; 
+    opacity: 1;
+}
+
+.btnSearch {
+    border: none;
+    position: relative; 
+    background-color: transparent;
+}
+
+.btnSearch::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50%;
+    background-color: #ccc; 
+}
+
+.iconoSearch {
+    color: #999;
+}
+
+/* MAIN */
+
+.img-prod{
+    border: none;
+}
+
+.card-img1{
+    margin: 40px 200px 40px 260px;
+   
+}
+
+
+.divImg{
+    padding: 0px;
+}
+
+.img-chica{
+    border: 1.5px solid gray;
+    border-radius: 10%;
+}
+
+.img-chica:hover{
+    border: 2px solid blue;
+    border-radius: 10%;
+}
+
+.cantVendida{
+    font-size: 14px;
+    color: rgba(0, 0, 0, .55);
+}
+
+.corazonFav{
+    color: #3483fa;
+    font-size: 22px;
+}
+
+.card-Product-titulo{
+    font-size: 22px;
+    color: rgba(0, 0, 0, .9);
+    text-align: left;
+}
+
+.btnColorProduct{
+    height: 25px;
+    width: 25px;
+    border: 1.5px solid gray;
+    border-radius: 10%;
+}
+
+.btnCompra{
+    background-color: #3483fa;
+    font-weight: 550;
+    color: #EDEDED;
+    font-size: 16px;
+}
+
+.btnCompra:hover{
+    background-color: #2968c8;
+    color: #EDEDED;
+}
+
+.btnAddCarrito{
+    color: #3483fa;
+    font-size: 16px;
+    font-weight:550 ;
+    background-color: rgba(65, 137, 230, .15);
+}
+
+.btnAddCarrito:hover{
+    background-color:rgba(65, 137, 230, .2) ;
+    color: #3483fa;
+}
+
+.btnVendedor{
+    color: #3483fa;
+    font-size: 16px;
+    font-weight:550 ;
+    background-color: rgba(65, 137, 230, .15);
+}
+
+.btnVendedor:hover{
+    background-color:rgba(65, 137, 230, .2) ;
+    color: #3483fa;
+}
+
+/* Footer */
+.linksFooter a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
+}
+
+.linksFooter {
+    list-style: none;
+}
+
+.textFooter {
+    font-size: 12px;
+    color: #999999;
+    margin-left: 30px;
 }

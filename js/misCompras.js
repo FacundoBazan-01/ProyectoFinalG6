@@ -1,27 +1,23 @@
 const USERS_API_URL = 'http://localhost:3001/usuarios';
+const VENTAS_API_URL = 'http://localhost:3001/ventas';
 
 // Función para verificar usuarios logueados y cambiar el navbar
 const actualizarNavbarConUsuario = async () => {
     try {
-        // Obtengo los usuarios desde el backend
         const { data: usuarios } = await axios.get(USERS_API_URL);
 
-        // Busco el usuario con login=true
         const userLogueado = usuarios.find(usuario => usuario.login === true);
 
-        // Referencia a los elementos del navbar
         const crearCuentaLink = document.querySelector('.linksCuenta .nav-item:nth-child(1)');
         const loginLink = document.querySelector('.linksCuenta .nav-item:nth-child(2)');
         const misComprasLink = document.querySelector('.linksCuenta .nav-item:nth-child(3)');
         const linksCuenta = document.querySelector('.linksCuenta');
 
         if (userLogueado) {
-            // Oculta los enlaces "Creá tu cuenta" e "Ingresa"
             crearCuentaLink.style.display = "none";
             loginLink.style.display = "none";
             misComprasLink.style.display = "none";
 
-            // Crea un menú desplegable para el usuario logueado
             const userDropdown = document.createElement("li");
             userDropdown.classList.add("nav-item", "dropdown");
             userDropdown.innerHTML = `
@@ -40,26 +36,20 @@ const actualizarNavbarConUsuario = async () => {
                 </ul>
             `;
 
-            // Agrega el menú desplegable a la navbar
             linksCuenta.appendChild(userDropdown);
 
-            // Agrega el enlace "Mis compras" como un elemento independiente
-            const myPurchasesLink = document.createElement("li");
-            myPurchasesLink.classList.add("nav-item");
-            myPurchasesLink.innerHTML = `<a class="nav-link" href="./html/misCompras.html">Mis compras</a>`;
-            linksCuenta.appendChild(myPurchasesLink);
+            const linksMisCompras = document.createElement("li");
+            linksMisCompras.classList.add("nav-item");
+            linksMisCompras.innerHTML = `<a class="nav-link" href="./html/misCompras.html">Mis compras</a>`;
+            linksCuenta.appendChild(linksMisCompras);
 
-            console.log(`Usuario logueado: ${loggedInUser.usuario}`);
+            console.log(`Usuario logueado: ${userLogueado.usuario}`);
 
-            // Agrega evento al botón de "Cerrar Sesión"
             const logoutButton = document.getElementById("logoutButton");
             logoutButton.addEventListener("click", async () => {
                 try {
-                    // Actualiza el atributo login del usuario a false en el servidor
-                    await axios.patch(`${USERS_API_URL}/${loggedInUser.id}`, { login: false });
+                    await axios.patch(`${USERS_API_URL}/${userLogueado.id}`, { login: false });
                     console.log("Sesión cerrada exitosamente.");
-
-                    // Recarga la página para actualizar la navbar
                     window.location.reload();
                 } catch (error) {
                     console.error("Error al cerrar sesión:", error);
@@ -73,14 +63,83 @@ const actualizarNavbarConUsuario = async () => {
     }
 };
 
+const mostrarCompras = async () => {
+    try {
+        // Obtengo las ventas desde el backend
+        let response = await axios.get(VENTAS_API_URL);
+        const ventas = response.data;
+        console.log('Ventas obtenidas:', ventas);
+
+        // Selecciono la sección donde se mostrarán las compras
+        const sectionCompras = document.getElementById("cardProductosComprados");
+
+        // Verifico que haya ventas
+        if (ventas.length > 0) {
+            // Itero sobre cada venta para generar su card
+            ventas.forEach(venta => {
+                sectionCompras.innerHTML += `
+                    <div id="cardProductosComprados">
+                        <div class="card-mercado-libre">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between">
+                                    <p class="fecha">4 de abril</p>
+                                    <a href="../html/error404.html" class="opinar text-center">Opinar</a>
+                                </div>
+                            </div>
+                            <div class="producto">
+                                <img src="#" alt="${venta.producto}" class="product-image" />
+                                <div class="info-producto">
+                                    <p class="estado">Entregado</p>
+                                    <p class="fecha-entrega">Llegó el 10 de abril</p>
+                                    <p class="nombre-producto">${venta.producto}</p>
+                                    <p class="cantidad">${venta.cantidadComprada} unidad</p>
+                                </div>
+                            <div class="vendedor">
+                                <p>${venta.vendedor}</p>
+                                <a href="../html/error404.html" class="ver-mensajes">Ver mensajes</a>
+                            </div>
+                            </div>
+                            <div class="acciones">
+                                <a class="btn-ver-compra">Ver compra</a>
+                                <a class="btn-volver-comprar">Volver a comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        } else {
+            sectionCompras.innerHTML = `<p>No se encontraron compras.</p>`;
+        }
+    } catch (error) {
+        console.error('Error al obtener las compras:', error);
+    }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     actualizarNavbarConUsuario();
+    mostrarCompras();
 });
 
-// Funcion para colapsar el sidebar
-const menuToggle = document.getElementById('menuToggle');
-const sidebar = document.getElementById('sidebar');
+const sidebar = document.getElementById("sidebar");
+const menuToggle = document.getElementById("menuToggle");
 
-menuToggle.addEventListener('click', () => {
-    sidebar.classList.toggle('collapsed');
-});
+// Función para colapsar/expandir el sidebar
+const toggleSidebar = () => {
+    sidebar.classList.toggle("collapsed");
+};
+
+// Detectar cambios en el ancho de la ventana
+const handleResize = () => {
+    if (window.innerWidth < 1400) {
+        sidebar.classList.add("collapsed");
+    } else {
+        sidebar.classList.remove("collapsed");
+    }
+};
+
+// Eventos para la hamburguesa y cambio de tamaño de ventana
+menuToggle.addEventListener("click", toggleSidebar);
+window.addEventListener("resize", handleResize);
+
+// Inicializar estado según el tamaño actual
+handleResize();

@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* =============== NAV BAR INICIO =============== */
@@ -122,12 +123,34 @@ body {
 
 /* =============== MAIN INICIO =============== */
 
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    background-color: #ededed;
+}
+
+/* -- Sidebar -- */
+
+.sidebarContainer {
+    flex-shrink: 0;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #f5f5f5;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
 
 .sidebarContainer {
     display: flex;
     position: relative;
 }
-
 
 .hamburger-menu {
     background: none;
@@ -205,6 +228,148 @@ body {
     margin-top: 50px;
 }
 
+/* -- Card Productos Comprados -- */
+
+#cardProductosComprados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espacio entre tarjetas */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.card-mercado-libre {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+.card-header {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fecha {
+    color: #666;
+    font-size: 12px;
+}
+
+.opinar {
+    height: 32px;
+    width: 128px;
+    background-color: var(--andes-color-blue-150, rgba(65, 137, 230, .15));
+    color: var(--andes-color-blue-500, #3483fa);
+    padding: 6px 12px ;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.producto {
+    display: flex;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 16px;
+}
+
+.info-producto {
+    flex-grow: 1;
+}
+
+.estado {
+    font-weight: bold;
+    color: #2d9a5f;
+}
+
+.fecha-entrega {
+    color: #333;
+    margin-top: 4px;
+}
+
+.nombre-producto {
+    color: #000000;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.cantidad {
+    color: #666;
+    font-size: 12px;
+}
+
+.vendedor {
+    text-align: right;
+}
+
+.vendedor p {
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.ver-mensajes {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.acciones {
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.acciones a {
+    text-decoration: none;
+}
+
+.btn-ver-compra,
+.btn-volver-comprar {
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-ver-compra {
+    background-color: #3483fa;
+    color: white;
+    font-size: 13px;
+}
+
+.btn-volver-comprar {
+    background-color: var(--andes-color-blue-150, rgba(65, 137, 230, .15));
+    color: #3498db;
+    font-size: 13px;
+}
+
+@media (max-width: 1400px) {
+    .sidebar.collapsed {
+        width: 60px;
+    }
+
+    #cardProductosComprados {
+        margin-left: 60px;
+    }
+}
+
 @media (max-width: 992px) {
     .sidebar {
         width: 250px;
@@ -223,111 +388,14 @@ body {
     }
 }
 
+@media (min-width: 1400px) {
+    .sidebar.collapsed {
+        width: 250px;
+    }
 
-
-
-
-
-
-
-
-
-
-.card-mercado-libre {
-    width: 100%;
-    max-width: 800px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: #fff;
-    padding: 16px;
-    margin: 16px auto;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.card-header .fecha {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 8px;
-}
-
-.card-body {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.product-image {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    margin-right: 16px;
-}
-
-.product-details {
-    flex-grow: 1;
-}
-
-.product-details .estado {
-    color: #2d9a5f;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.product-details .fecha-entrega {
-    font-size: 14px;
-    margin: 4px 0;
-}
-
-.product-details .descripcion {
-    font-size: 14px;
-    color: #333;
-    margin: 4px 0;
-}
-
-.product-details .cantidad {
-    font-size: 14px;
-    color: #888;
-}
-
-.card-actions {
-    text-align: right;
-}
-
-.card-actions .vendedor {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 4px;
-}
-
-.card-actions .link {
-    font-size: 14px;
-    color: #3483fa;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 8px;
-}
-
-.card-actions .botones {
-    display: flex;
-    gap: 8px;
-}
-
-.card-actions .btn {
-    padding: 8px 16px;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.card-actions .btn-primary {
-    background-color: #3483fa;
-    color: #fff;
-}
-
-.card-actions .btn-secondary {
-    background-color: #f2f2f2;
-    color: #333;
+    #cardProductosComprados {
+        margin-left: 250px;
+    }
 }
 
 /* =============== MAIN FIN =============== */
@@ -353,6 +421,17 @@ footer {
     font-size: 12px;
     color: #999999;
     margin-left: 30px;
+}
+
+@media (max-width: 645px) {
+    .linksFooter {
+        flex-direction: column;
+        margin-left: 70px;
+    }
+
+    .textFooter {
+        text-align: center;
+    }
 }
 
 /* =============== FOOTER FIN =============== */
