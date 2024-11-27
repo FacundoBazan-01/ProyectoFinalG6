@@ -61,8 +61,6 @@ const mostrarDatosDivs = async () => {
       }
     );
 
-<<<<<<< HEAD
-=======
     productoEnVista.img.map((dato)=>{
       divCarosuel.innerHTML += `
       <div class="carousel-item active">
@@ -71,7 +69,6 @@ const mostrarDatosDivs = async () => {
       `
     })
 
->>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
     productoEnVista.caracteristicas.map((dato) =>{
       divCaractProduct.innerHTML +=`
       <ul>
@@ -135,17 +132,11 @@ setTimeout(() => {
 }, 1000);
 
 /* Agregar producto a favoritos */
-<<<<<<< HEAD
-const agregarFav = async () => {
-  try {
-
-=======
 const agregarFav = async (event) => {
  
 
   try {
  
->>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
     for (let i = 1; i < usuarios.data.length; i++) {
       if (usuarios.data[i].login === false) {
         alert("Debes iniciar sesion antes de realizar esta accion");
@@ -165,12 +156,8 @@ const agregarFav = async (event) => {
             denyButtonText: `Eliminar`,
           }).then((result) => {
             if (result.isDenied) {
-<<<<<<< HEAD
-              productos.data[i].productFav = false;
-=======
               event.preventDefault()
               axios.patch(`http://localhost:3001/productos/${Id_product}`, { productFav : false });
->>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
               console.log( productos.data[i].productFav )
               Swal.fire("Producto eliminado correctamente!", "", "success");
             } 
@@ -183,12 +170,8 @@ const agregarFav = async (event) => {
             denyButtonText: `No agregar`,
           }).then((result) => {
             if (result.isConfirmed) {
-<<<<<<< HEAD
-              productos.data[i].productFav = true;
-=======
               event.preventDefault()
               axios.patch(`http://localhost:3001/productos/${Id_product}`, { productFav : true });
->>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
               console.log( productos.data[i].productFav )
               Swal.fire("Producto agreado correctamente!", "", "success");
             } 
@@ -202,11 +185,7 @@ const agregarFav = async (event) => {
   }
 };
 /* Agregar producto a carrito */
-<<<<<<< HEAD
-const agregarCar = async () => {
-=======
 const agregarCar = async (event) => {
->>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
   try {
     console.log(usuarios.data);
 
@@ -230,12 +209,8 @@ const agregarCar = async (event) => {
             denyButtonText: `Eliminar`,
           }).then((result) => {
             if (result.isDenied) {
-<<<<<<< HEAD
-              productos.data[i].productCar = false;
-=======
               event.preventDefault()
               axios.patch(`http://localhost:3001/productos/${Id_product}`, { productCar : false });
->>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
               console.log( productos.data[i].productCar )
               Swal.fire("Producto eliminado correctamente!", "", "success");
             } 
@@ -248,12 +223,8 @@ const agregarCar = async (event) => {
             denyButtonText: `No agregar`,
           }).then((result) => {
             if (result.isConfirmed) {
-<<<<<<< HEAD
-              productos.data[i].productCar = true;
-=======
               event.preventDefault()
               axios.patch(`http://localhost:3001/productos/${Id_product}`, { productCar : true });
->>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
               console.log( productos.data[i].productCar )
               Swal.fire("Producto agreado correctamente!", "", "success");
             } 
@@ -332,11 +303,7 @@ const mostrarInputDeb = ()=>{
 
 
 
-<<<<<<< HEAD
-const realizarCompra =  () => {
-=======
 const realizarCompra = async (event) => {
->>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
  try {
   cantidadAComprar = document.getElementById("cantidadAComprar").value;
   inputEfectivo = document.getElementById("efectivo").value;
@@ -347,14 +314,6 @@ const realizarCompra = async (event) => {
   console.log(inputTarjetaCreV)
   console.log(inputTarjetaDebV)
 
-<<<<<<< HEAD
-
-  for (let i = 0; i < productos.data.length; i++) {
-    if (Id_product == productos.data[i].id) {
-      if (cantidadAComprar>0 && cantidadAComprar<= productos.data[i].stock) {
-        let totalAPagar = cantidadAComprar * productos.data[i].precio;
-
-=======
   
   for (let i = 0; i < productos.data.length; i++) {
     if (Id_product == productos.data[i].id) {
@@ -364,7 +323,6 @@ const realizarCompra = async (event) => {
         const stockActualizado = productos.data[i].stock - cantidadAComprar;
         console.log(stockActualizado)
         
->>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
         /* PAGO CON TARJETA DE CREDITO */
         if (inputTarjetaCreV !="") {
           Swal.fire({
@@ -372,11 +330,7 @@ const realizarCompra = async (event) => {
             showDenyButton: true,
             confirmButtonText: "Si",
             denyButtonText: `No`,
-<<<<<<< HEAD
-          }).then((result) => {
-=======
           }).then( (result) => {
->>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
             if (result.isConfirmed) {
               /* Creando nueva venta */
               let ventaNueva ={
@@ -390,14 +344,6 @@ const realizarCompra = async (event) => {
                 cantidadComprada: cantidadAComprar ,
                 totalPagado : totalAPagar
               }
-<<<<<<< HEAD
-
-              let respone =  axios.post("http://localhost:3001/ventas", ventaNueva)
-              console.log(respone)
-              if (respone) {
-                Swal.fire("Felicidades, compra realizada!", "", "success");
-              }
-=======
                 if (ventaNueva) {
                   Swal.fire({
                     title: "Felicidades, compra realizada!",
@@ -409,7 +355,6 @@ const realizarCompra = async (event) => {
                     }
                   });
                 }
->>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
             } 
           });
         }else{
@@ -422,9 +367,6 @@ const realizarCompra = async (event) => {
               denyButtonText: `No`,
             }).then((result) => {
               if (result.isConfirmed) {
-<<<<<<< HEAD
-                Swal.fire("Felicidades, compra realizada!", "", "success");
-=======
                 /* Creando nueva venta */
                 let ventaNueva ={
                   id_cliente: Id_cliente,
@@ -448,7 +390,6 @@ const realizarCompra = async (event) => {
                     }
                   });
                 }
->>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
               } 
             });
           }else{
@@ -461,9 +402,6 @@ const realizarCompra = async (event) => {
                 denyButtonText: `No`,
               }).then((result) => {
                 if (result.isConfirmed) {
-<<<<<<< HEAD
-                  Swal.fire("Felicidades, compra realizada!", "", "success");
-=======
                       /* Creando nueva venta */
                   let ventaNueva ={
                     id_cliente: Id_cliente,
@@ -487,7 +425,6 @@ const realizarCompra = async (event) => {
                         }
                       });
                     }
->>>>>>> ca1b76878c38058c400c8338c2d90957b127d6b3
                 } 
               });
             }else{
