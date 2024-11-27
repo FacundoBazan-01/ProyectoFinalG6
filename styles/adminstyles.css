@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    height: 70px;
+    padding: 0px;
+    background-color: #FFF159
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #EDEDED;
+}
+.table{
+    width: 70%;
+    margin: auto;
+}
+
+/* formulario 1 */
+#boton{
+    text-align: center;
+    margin: auto;
+    display: none;
+}
+
+#botonAgregar{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+#form{
+    text-align: center;
+    margin: auto;
+    display: none;
+    width: 50%;
+}
+
+/* formulario 2 */
+#boton2{
+    text-align: center;
+    margin: auto;
+    display: none;
+}
+
+#botonAgregar2{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+#form2{
+    text-align: center;
+    margin: auto;
+    display: none;
+    width: 50%;
+}
+
+/* formulario 3 */
+
+#boton3{
+    text-align: center;
+    margin: auto;
+    display: none;
+}
+
+#botonAgregar3{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+#form3{
+    text-align: center;
+    margin: auto;
+    display: none;
+    width: 50%;
+}
+
+
