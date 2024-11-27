@@ -20,28 +20,16 @@
   ],
   "ventas": [
     {
-      "id": "1",
-      "id_cliente": "1",
-      "id_producto": "1",
-      "id_vendedor": "1",
-      "cliente": "Nico",
-      "vendedor": "Facundo",
-      "producto": "Samsung Galaxy A15",
-      "precioProducto": 12,
-      "cantidadComprada": 1,
-      "totalPagado": 4213
-    },
-    {
-      "id": "2",
-      "id_cliente": "2",
-      "id_producto": "2",
-      "id_vendedor": "2",
-      "cliente": "Sofia",
-      "vendedor": "Tomás",
-      "producto": "Xiaomi POCO M6 Pro",
-      "precioProducto": 14,
-      "cantidadComprada": 21,
-      "totalPagado": 421
+      "id": "",
+      "id_cliente": "",
+      "id_producto": "",
+      "id_vendedor": "",
+      "cliente": "",
+      "vendedor": "",
+      "producto": "",
+      "precioProducto": "",
+      "cantidadComprada": "",
+      "totalPagado": ""
     }
   ],
   "vendedores": [
