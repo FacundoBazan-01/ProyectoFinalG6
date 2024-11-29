@@ -92,6 +92,18 @@ ul {
     margin-right: 10px;
 }
 
+.dropdownUsuarios{
+    background-color: #fff;
+}
+
+.dropdownUsuarios a {
+    color: #333333;
+}
+
+.dropdownUsuarios button {
+    color: #333333;
+}
+
 @media (max-width: 991px) {
     .formBuscador {
         display: none !important;
@@ -115,7 +127,6 @@ ul {
         margin-left: 250px;
     }
 }
-
 /* =============== NAV BAR FIN =============== */
 
 

@@ -28,7 +28,7 @@ body{
 #botonAgregar{
     text-align: center;
     margin: auto;
-    display: block;
+    display: none;
 }
 
 #form{
@@ -48,7 +48,7 @@ body{
 #botonAgregar2{
     text-align: center;
     margin: auto;
-    display: block;
+    display: none;
 }
 
 #form2{
@@ -69,7 +69,7 @@ body{
 #botonAgregar3{
     text-align: center;
     margin: auto;
-    display: block;
+    display: none;
 }
 
 #form3{
@@ -79,4 +79,67 @@ body{
     width: 50%;
 }
 
+#boton4{
+    text-align: center;
+    margin: auto;
+    display: none;
+}
 
+#productwatch2 {
+    display: none;
+}
+
+#loginproductfavcar{
+    display: none;
+}
+
+#boton5{
+    text-align: center;
+    margin: auto;
+    display: none;
+}
+
+#boton6{
+    text-align: center;
+    margin: auto;
+    display: none;
+}
+
+/* Estilos para el enlace Tablas */
+#userDropdown {
+    display: flex;
+    font-family: 'Arial', sans-serif; /* Cambiar la fuente */
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #2c3e50; /* Color de la letra */
+    font-weight: bold; /* Fuente en negrita */
+    text-transform: uppercase; /* Hacer la letra mayúscula */
+    text-decoration: none; /* Eliminar subrayado */
+    padding: 10px 15px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transición suave en el cambio de color */
+  }
+  
+  /* Efecto cuando se pasa el ratón sobre el enlace */
+  #userDropdown:hover {
+    color: #fff; /* Color de texto al hacer hover */
+    background-color: #e67e22; /* Cambiar fondo al hacer hover */
+  }
+
+  #h1{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Cambiar la fuente */
+    font-size: 24px; /* Tamaño de la fuente */
+    color: #000000; /* Color de la letra */
+    font-weight: bold; /* Fuente en negrita */
+    text-transform: uppercase; /* Hacer la letra mayúscula */
+    text-decoration: none; /* Eliminar subrayado */
+  }
+
+  #id{
+    display: none;
+  }
+
+
+  
