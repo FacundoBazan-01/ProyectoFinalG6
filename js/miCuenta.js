@@ -1,17 +1,19 @@
 const API_URL = 'http://localhost:3001/productos';
 const USERS_API_URL = 'http://localhost:3001/usuarios';
 
-
+let userLog = ""
 const actualizarNavbarConUsuario = async () => {
     try {
         const { data: usuarios } = await axios.get(USERS_API_URL);
   
         const userLogueado = usuarios.find(usuario => usuario.login === true);
-  
         const crearCuentaLink = document.querySelector('.linksCuenta .nav-item:nth-child(1)');
         const loginLink = document.querySelector('.linksCuenta .nav-item:nth-child(2)');
         const misComprasLink = document.querySelector('.linksCuenta .nav-item:nth-child(3)');
         const linksCuenta = document.querySelector('.linksCuenta');
+        const divUsuario =  document.getElementById("nombreUsuario");
+        const  divEmail = document.getElementById("emailUsuario");
+
   
         if (userLogueado) {
             crearCuentaLink.style.display = "none";
@@ -44,8 +46,15 @@ const actualizarNavbarConUsuario = async () => {
             linksMisCompras.classList.add("nav-item");
             linksMisCompras.innerHTML = `<a class="nav-link" href="../html/misCompras.html">Mis compras</a>`;
             linksCuenta.appendChild(linksMisCompras);
-  
+
+            //aca muestro el nombre y el email del usuario que este logeado
+            divUsuario.innerHTML = `${userLogueado.usuario} `;
+            divEmail.innerHTML = `${userLogueado.email} `;
+
             console.log(`Usuario logueado: ${userLogueado.usuario}`);
+            console.log(`Mail usuario: ${userLogueado.email}`);
+
+
   
             const logoutButton = document.getElementById("logoutButton");
             logoutButton.addEventListener("click", async () => {
@@ -67,4 +76,11 @@ const actualizarNavbarConUsuario = async () => {
   
   document.addEventListener('DOMContentLoaded', () => {
     actualizarNavbarConUsuario();
+
+
+
+
+
+    
   });
+
