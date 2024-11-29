@@ -9,30 +9,17 @@
       "rol": "admin"
     },
     {
-      "id": "c413",
-      "usuario": "ramon",
-      "contraseña": "123",
-      "email": "kjsdvkdsvbjk",
-      "telefono": "12312412",
-      "rol": "user"
-    },
-    {
-      "id": "00e4",
-      "usuario": "asd",
-      "contraseña": "asd",
-      "email": "fernandezjulian516@gmail.com",
-      "telefono": "03813591380",
+      "id": "2",
+      "usuario": "Pepito",
+      "contraseña": "pepito123",
+      "email": "Pepito@gmail.com",
+      "telefono": 3816171790,
       "rol": "user",
-      "login": true
-    },
-    {
-      "id": "4b18",
-      "usuario": "asdasd",
-      "contraseña": "asd",
-      "email": "asd",
-      "telefono": "2343432",
-      "rol": "user",
-      "login": false
+      "login": true,
+      "productFav": [],
+      "productCar": [
+        "4"
+      ]
     }
   ],
   "ventas": [
@@ -59,18 +46,6 @@
       "precioProducto": 900000,
       "cantidadComprada": "2",
       "totalPagado": 1800000
-    },
-    {
-      "id": "1e64",
-      "id_cliente": "2",
-      "id_producto": "3",
-      "id_vendedor": "3",
-      "cliente": "",
-      "vendedor": "Juan",
-      "producto": "Xiaomi POCO M6 Pro",
-      "precioProducto": 900000,
-      "cantidadComprada": "1",
-      "totalPagado": 900000
     }
   ],
   "vendedores": [
@@ -141,8 +116,6 @@
         "https://tienda.personal.com.ar/images/720/webp/Samsung_Galaxy_A15_Blue_Black_5b0e3e23d8.png",
         "https://shop.samsung.com/latin/cac/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/s/m/sm-a155_ep-ta800nbegmx.png"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -173,22 +146,40 @@
         "https://www.casadelaudio.com/Image/0/750_750-156-SAM-945_(2).png",
         "https://www.casadelaudio.com/Image/0/750_750-156-SAM-945_(7).png"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
+      "id": "3",
       "nombre": "Xiaomi POCO M6 Pro",
       "marca": "Xiaomi",
-      "descripcion": "Xiaomi POCO M6 Pro,Fotografía profesional en tu bolsillo: Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.,Experiencia visual increíble: Mirá tus series y películas favoritas con la mejor definición a través de su pantalla AMOLED de 6.67. Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.,Capacidad y eficiencia: Con su potente procesador y memoria RAM de 8 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.,Desbloqueo facial y dactilar: Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.,Batería de duración superior: ¡Desenchufate! Con la súper batería de 5100 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.",
-      "caracteristicas": "Memoria RAM: 12 GB,Dispositivo liberado para que elijas la compañía telefónica que prefieras.,Pantalla de 6.67,Tiene 3 cámaras traseras de 64Mpx/8Mpx/2Mpx.,Cámara delantera de 16Mpx.,Batería de 5000mAh.,Memoria interna de 512GB.,Resistente a las salpicaduras.,Con reconocimiento facial y sensor de huella dactilar.,Resistente al polvo",
-      "precio": "900000",
-      "stock": "150",
-      "img": "https://tutiendabancor.com/media/catalog/product/cache/9c08c714c8eb7e564db9a133e4630037/1/7/17304638162e29e1add823bb91085b7cfcae262588.webp.jpg,https://www.maxmovil.com/media/catalog/product/cache/2c055c968235f5bf43b443aee4bb62c6/x/i/xiaomi_poco_m6_pro_purpura_3_.jpg,https://tutiendabancor.com/media/catalog/product/cache/9c08c714c8eb7e564db9a133e4630037/1/7/17304638099f994557b188b1bdef73490668dd45db.jpg",
-      "productFav": "",
-      "productCar": "",
-      "productWatch": false,
-      "id": "3"
+      "descripcion": [
+        "Xiaomi POCO M6 Pro",
+        "Fotografía profesional en tu bolsillo: Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.",
+        "Experiencia visual increíble: Mirá tus series y películas favoritas con la mejor definición a través de su pantalla AMOLED de 6.67. Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.",
+        "Capacidad y eficiencia: Con su potente procesador y memoria RAM de 8 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.",
+        "Desbloqueo facial y dactilar: Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.",
+        "Batería de duración superior: ¡Desenchufate! Con la súper batería de 5100 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas."
+      ],
+      "caracteristicas": [
+        "Memoria RAM: 12 GB",
+        "Dispositivo liberado para que elijas la compañía telefónica que prefieras.",
+        "Pantalla de 6.67",
+        "Tiene 3 cámaras traseras de 64Mpx/8Mpx/2Mpx.",
+        "Cámara delantera de 16Mpx.",
+        "Batería de 5000mAh.",
+        "Memoria interna de 512GB.",
+        "Resistente a las salpicaduras.",
+        "Con reconocimiento facial y sensor de huella dactilar.",
+        "Resistente al polvo"
+      ],
+      "precio": 900000,
+      "stock": 65,
+      "img": [
+        "https://tutiendabancor.com/media/catalog/product/cache/9c08c714c8eb7e564db9a133e4630037/1/7/17304638162e29e1add823bb91085b7cfcae262588.webp.jpg",
+        "https://www.maxmovil.com/media/catalog/product/cache/2c055c968235f5bf43b443aee4bb62c6/x/i/xiaomi_poco_m6_pro_purpura_3_.jpg",
+        "https://tutiendabancor.com/media/catalog/product/cache/9c08c714c8eb7e564db9a133e4630037/1/7/17304638099f994557b188b1bdef73490668dd45db.jpg"
+      ],
+      "productWatch": false
     },
     {
       "id": "4",
@@ -229,9 +220,7 @@
         "https://www.casadelaudio.com/Image/0/750_750-156-XIA-023_(12).png",
         "https://holatelcel.com/wp-content/uploads/2024/03/Xiaomi-Redmi-Note-13-Pro.png"
       ],
-      "productFav": false,
-      "productCar": false,
-      "productWatch": false
+      "productWatch": true
     },
     {
       "id": "5",
@@ -266,8 +255,6 @@
         "https://www.radioshack.cr/media/catalog/product/5/0/5001111054-y-5001111063-_3__qf5ud6scspc3qxib.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700",
         "https://shareefcorner.sa/pub/media/catalog/product/mpiowebpcache/82d05cd6abfc8fcfb8bdbf5accf96e1b/a/p/apple_iphone_14_128gb_-_5g_-_starlight-3.webp"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -305,9 +292,7 @@
         "https://topcelular.es/1249-large_default/iphone-16-pro-128gb-negro.jpg",
         "https://tv-it.com/storage/shada/iphone/iphone16-pro-desert-p5.webp"
       ],
-      "productFav": true,
-      "productCar": true,
-      "productWatch": true
+      "productWatch": false
     },
     {
       "id": "7",
@@ -333,8 +318,6 @@
       "precio": 450000,
       "stock": 25,
       "img": "",
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -361,8 +344,6 @@
       "precio": 600000,
       "stock": 15,
       "img": "",
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -389,8 +370,6 @@
       "precio": 580000,
       "stock": 10,
       "img": "",
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -417,8 +396,6 @@
       "precio": 350000,
       "stock": 30,
       "img": "",
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -445,8 +422,6 @@
       "precio": 400000,
       "stock": 20,
       "img": "",
-      "productFav": false,
-      "productCar": true,
       "productWatch": false
     },
     {
@@ -473,8 +448,6 @@
       "precio": 180000,
       "stock": 35,
       "img": "",
-      "productFav": false,
-      "productCar": true,
       "productWatch": false
     },
     {
@@ -531,8 +504,6 @@
         "https://http2.mlstatic.com/D_Q_NP_839130-MLA80195818234_112024-R.webp",
         "https://http2.mlstatic.com/D_Q_NP_839130-MLA80195818234_112024-R.webp"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -572,8 +543,6 @@
         "https://http2.mlstatic.com/D_Q_NP_813387-MLU77031181971_062024-R.webp",
         "https://http2.mlstatic.com/D_NQ_NP_721763-MLU77031181975_062024-O.webp"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -621,8 +590,6 @@
         "https://http2.mlstatic.com/D_Q_NP_913843-MLU73805813876_012024-R.webp",
         "https://http2.mlstatic.com/D_Q_NP_821919-MLU73806066184_012024-R.webp"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -668,8 +635,6 @@
         "https://http2.mlstatic.com/D_Q_NP_652682-MLU75660669383_042024-R.webp",
         "https://http2.mlstatic.com/D_Q_NP_721584-MLU75501964028_042024-R.webp"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -708,8 +673,6 @@
         "https://http2.mlstatic.com/D_Q_NP_816846-MLU72893001986_112023-R.webp",
         "https://http2.mlstatic.com/D_Q_NP_886854-MLA54692166506_032023-R.webp"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -746,8 +709,6 @@
         "https://http2.mlstatic.com/D_Q_NP_815664-MLA78468543843_082024-R.webp",
         "https://http2.mlstatic.com/D_NQ_NP_845671-MLA78239577944_082024-O.webp"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -779,8 +740,6 @@
       "img": [
         "https://http2.mlstatic.com/D_Q_NP_123456-MLU90001234567_052022-R.webp"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -812,8 +771,6 @@
       "img": [
         "https://http2.mlstatic.com/D_Q_NP_876432-MLU74270381391_042020-R.webp"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -845,8 +802,6 @@
       "img": [
         "https://http2.mlstatic.com/D_Q_NP_953748-MLU82581226747_082020-R.webp"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -879,8 +834,6 @@
       "img": [
         "https://http2.mlstatic.com/D_Q_NP_812367-MLU82567117390_062020-R.webp"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -912,8 +865,6 @@
       "img": [
         "https://http2.mlstatic.com/D_Q_NP_844320-MLU82637785973_062020-R.webp"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -946,8 +897,6 @@
       "img": [
         "https://http2.mlstatic.com/D_Q_NP_932544-MLU82795111862_072021-R.webp"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -973,8 +922,6 @@
         "https://sporting.vtexassets.com/arquivos/ids/1462898-1200-1200?v=638636525406470000&width=1200&height=1200&aspect=true",
         "https://sporting.vtexassets.com/arquivos/ids/1462898-1200-1200?v=638636525406470000&width=1200&height=1200&aspect=true"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -1001,8 +948,6 @@
         "https://sporting.vtexassets.com/arquivos/ids/1473914-1200-1200?v=638646795732370000&width=1200&height=1200&aspect=true",
         "https://sporting.vtexassets.com/arquivos/ids/1473914-1200-1200?v=638646795732370000&width=1200&height=1200&aspect=true"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -1029,8 +974,6 @@
         "https://sporting.vtexassets.com/arquivos/ids/1166263-1200-1200?v=638482860023300000&width=1200&height=1200&aspect=true",
         "https://sporting.vtexassets.com/arquivos/ids/1166263-1200-1200?v=638482860023300000&width=1200&height=1200&aspect=true"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -1058,8 +1001,6 @@
         "https://sporting.vtexassets.com/arquivos/ids/1560685-1200-1200?v=638658238279430000&width=1200&height=1200&aspect=true",
         "https://sporting.vtexassets.com/arquivos/ids/1560685-1200-1200?v=638658238279430000&width=1200&height=1200&aspect=true"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -1088,8 +1029,6 @@
         "https://sporting.vtexassets.com/arquivos/ids/1661656-1200-1200?v=638681563967100000&width=1200&height=1200&aspect=true",
         "https://sporting.vtexassets.com/arquivos/ids/1661656-1200-1200?v=638681563967100000&width=1200&height=1200&aspect=true"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
     },
     {
@@ -1117,9 +1056,18 @@
         "https://sporting.vtexassets.com/arquivos/ids/1659153-1200-1200?v=638681336692000000&width=1200&height=1200&aspect=true",
         "https://sporting.vtexassets.com/arquivos/ids/1659153-1200-1200?v=638681336692000000&width=1200&height=1200&aspect=true"
       ],
-      "productFav": false,
-      "productCar": false,
       "productWatch": false
+    },
+    {
+      "nombre": "julian",
+      "marca": "asddasbasfb",
+      "descripcion": "jhviutgcjyhckuy",
+      "caracteristicas": "jkhkuckucvvujyucvuy",
+      "precio": "211234",
+      "stock": "3135135",
+      "img": "asbasbasfbasdfba",
+      "productWatch": "",
+      "id": "7534"
     }
   ]
 }
