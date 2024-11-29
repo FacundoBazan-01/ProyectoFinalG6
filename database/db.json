@@ -9,13 +9,30 @@
       "rol": "admin"
     },
     {
-      "id": "2",
-      "usuario": "Pepito",
-      "contraseña": "pepito123",
-      "email": "Pepito@gmail.com",
-      "telefono": 3816171790,
+      "id": "c413",
+      "usuario": "ramon",
+      "contraseña": "123",
+      "email": "kjsdvkdsvbjk",
+      "telefono": "12312412",
+      "rol": "user"
+    },
+    {
+      "id": "00e4",
+      "usuario": "asd",
+      "contraseña": "asd",
+      "email": "fernandezjulian516@gmail.com",
+      "telefono": "03813591380",
       "rol": "user",
       "login": true
+    },
+    {
+      "id": "4b18",
+      "usuario": "asdasd",
+      "contraseña": "asd",
+      "email": "asd",
+      "telefono": "2343432",
+      "rol": "user",
+      "login": false
     }
   ],
   "ventas": [
@@ -55,8 +72,6 @@
       "cantidadComprada": "1",
       "totalPagado": 900000
     }
-  
-    
   ],
   "vendedores": [
     {
@@ -163,39 +178,17 @@
       "productWatch": false
     },
     {
-      "id": "3",
       "nombre": "Xiaomi POCO M6 Pro",
       "marca": "Xiaomi",
-      "descripcion": [
-        "Xiaomi POCO M6 Pro",
-        "Fotografía profesional en tu bolsillo: Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.",
-        "Experiencia visual increíble: Mirá tus series y películas favoritas con la mejor definición a través de su pantalla AMOLED de 6.67. Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.",
-        "Capacidad y eficiencia: Con su potente procesador y memoria RAM de 8 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.",
-        "Desbloqueo facial y dactilar: Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.",
-        "Batería de duración superior: ¡Desenchufate! Con la súper batería de 5100 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas."
-      ],
-      "caracteristicas": [
-        "Memoria RAM: 12 GB",
-        "Dispositivo liberado para que elijas la compañía telefónica que prefieras.",
-        "Pantalla de 6.67",
-        "Tiene 3 cámaras traseras de 64Mpx/8Mpx/2Mpx.",
-        "Cámara delantera de 16Mpx.",
-        "Batería de 5000mAh.",
-        "Memoria interna de 512GB.",
-        "Resistente a las salpicaduras.",
-        "Con reconocimiento facial y sensor de huella dactilar.",
-        "Resistente al polvo"
-      ],
-      "precio": 900000,
-      "stock": 65,
-      "img": [
-        "https://tutiendabancor.com/media/catalog/product/cache/9c08c714c8eb7e564db9a133e4630037/1/7/17304638162e29e1add823bb91085b7cfcae262588.webp.jpg",
-        "https://www.maxmovil.com/media/catalog/product/cache/2c055c968235f5bf43b443aee4bb62c6/x/i/xiaomi_poco_m6_pro_purpura_3_.jpg",
-        "https://tutiendabancor.com/media/catalog/product/cache/9c08c714c8eb7e564db9a133e4630037/1/7/17304638099f994557b188b1bdef73490668dd45db.jpg"
-      ],
-      "productFav": true,
-      "productCar": false,
-      "productWatch": false
+      "descripcion": "Xiaomi POCO M6 Pro,Fotografía profesional en tu bolsillo: Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.,Experiencia visual increíble: Mirá tus series y películas favoritas con la mejor definición a través de su pantalla AMOLED de 6.67. Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.,Capacidad y eficiencia: Con su potente procesador y memoria RAM de 8 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.,Desbloqueo facial y dactilar: Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.,Batería de duración superior: ¡Desenchufate! Con la súper batería de 5100 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.",
+      "caracteristicas": "Memoria RAM: 12 GB,Dispositivo liberado para que elijas la compañía telefónica que prefieras.,Pantalla de 6.67,Tiene 3 cámaras traseras de 64Mpx/8Mpx/2Mpx.,Cámara delantera de 16Mpx.,Batería de 5000mAh.,Memoria interna de 512GB.,Resistente a las salpicaduras.,Con reconocimiento facial y sensor de huella dactilar.,Resistente al polvo",
+      "precio": "900000",
+      "stock": "150",
+      "img": "https://tutiendabancor.com/media/catalog/product/cache/9c08c714c8eb7e564db9a133e4630037/1/7/17304638162e29e1add823bb91085b7cfcae262588.webp.jpg,https://www.maxmovil.com/media/catalog/product/cache/2c055c968235f5bf43b443aee4bb62c6/x/i/xiaomi_poco_m6_pro_purpura_3_.jpg,https://tutiendabancor.com/media/catalog/product/cache/9c08c714c8eb7e564db9a133e4630037/1/7/17304638099f994557b188b1bdef73490668dd45db.jpg",
+      "productFav": "",
+      "productCar": "",
+      "productWatch": false,
+      "id": "3"
     },
     {
       "id": "4",
@@ -312,9 +305,9 @@
         "https://topcelular.es/1249-large_default/iphone-16-pro-128gb-negro.jpg",
         "https://tv-it.com/storage/shada/iphone/iphone16-pro-desert-p5.webp"
       ],
-      "productFav": false,
-      "productCar": false,
-      "productWatch": false
+      "productFav": true,
+      "productCar": true,
+      "productWatch": true
     },
     {
       "id": "7",

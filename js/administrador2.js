@@ -68,7 +68,9 @@ const handleDelete = async (id) => {
     document.getElementById("form").style.display = "block";
     document.getElementById("boton").style.display = "block";
   };
+  document.getElementById("botonAgregar").addEventListener("click", handleClick);
 
+  
   const handlebackClick = () => {
     document.getElementById("botonAgregar").style.display = "block";
     document.getElementById("form").style.display = "none";
@@ -77,7 +79,7 @@ const handleDelete = async (id) => {
 
   document.getElementById("volver").addEventListener("click", handlebackClick);
 
-  document.getElementById("botonAgregar").addEventListener("click", handleClick);
+  
 
   /* sacar formulario 2 y sus botones */
   document.getElementById("form2").style.display = "none";
@@ -422,20 +424,24 @@ const handleconfirmar = async () => {
     let email = document.getElementById("email").value;
     let telefono = document.getElementById("telefono").value;
     let rol = document.getElementById("rol").value;
+    if (rol === "admin") {
+      alert("No tienes permiso para crear otro admin")
+    }else{
+      let response = await axios.post("http://localhost:3001/usuarios", {
+        usuario,
+        contraseña,
+        email,
+        telefono,
+        rol,
+      });
 
-    let response = await axios.post("http://localhost:3001/usuarios", {
-      usuario,
-      contraseña,
-      email,
-      telefono,
-      rol,
-    });
-
-    if (response) {
-      alert("usuario agregado correctamente");
-    } else {
-      alert("usuario agregado incorrectamente");
+      if (response) {
+        alert("usuario agregado correctamente");
+      } else {
+        alert("usuario agregado incorrectamente");
+      }
     }
+
   } catch (error) {
     console.log(error);
   }
