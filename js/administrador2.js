@@ -1,23 +1,109 @@
-/* boton borrar usuario */
 let ID = ""
+let ID2 = ""
+let ID3= ""
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  Swal.fire({
+    title: 'Bienvenido! Aceptar para poder ver Tabla Usuario, Vendedores, Ventas y Productos ',
+    showCancelButton: true, 
+    confirmButtonText: 'Aceptar',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      TablaUsuario();
+    }
+  });
+});
+
+function volver (){
+
+  window.location.href = "../html/login.html";
+
+}
+
+/* boton borrar usuario */
 const handleDelete = async (id) => {
   try {
     let response = await axios.delete("http://localhost:3001/usuarios/"+id);
     if (response) {
       alert("usuario borrado correctamente")
-    }else{
-      alert("no se pudo borrar el usuario")
     }
   } catch (error) {
-    console.error(error)
+    console.error("no se pudo borrar el usuario",error)
   }
 
 }
 
+const handleActualizarUsuario = async () => {
+  try {
+    let usuario = document.getElementById("usuario").value;
+    let contraseña = document.getElementById("contraseña").value;
+    let email = document.getElementById("email").value;
+    let telefono = document.getElementById("telefono").value;
+    let rol = document.getElementById("rol").value;
+    let login = document.getElementById("login").value;
+    let productFav = document.getElementById("productFav1").value;
+    let productCar = document.getElementById("productCar1").value;
 
+  let response = await axios.put("http://localhost:3001/usuarios/"+ ID2,{
+    usuario,
+    contraseña,
+    email,
+    telefono,
+    rol,
+    login,
+    productFav,
+    productCar,
+  })
+
+  if (response) {
+    alert("el usuario se actualizo correctamente")
+  } else {
+    alert("el usuario no se actualizo")
+  }
+  } catch (error) {
+    console.error("Error al actualizar los usuarios:", error);
+  }
+
+};
+
+document.getElementById("actualizar2").addEventListener("click", handleActualizarUsuario);
+
+/* boton editar usuario */
+const handleEditUsuario = async (id,usuarios,contraseña,email,telefono,rol,login,productFav,productCar) => {
+  ID2=id;
+  document.getElementById("form").style.display = "block";
+  document.getElementById("botonAgregar").style.display = "none";
+  document.getElementById("boton5").style.display = "block";
+  document.getElementById("boton").style.display = "none";
+
+  document.getElementById("usuario").value = usuarios
+  document.getElementById("contraseña").value = contraseña
+  document.getElementById("email").value = email
+  document.getElementById("telefono").value = telefono
+  document.getElementById("rol").value = rol
+  document.getElementById("login").value = login
+  document.getElementById("productFav").value = productFav
+  document.getElementById("productCar").value = productCar
+}
+
+const handlebackClickUsuario = () => {
+  document.getElementById("botonAgregar").style.display = "block";
+  document.getElementById("form").style.display = "none";
+  document.getElementById("boton5").style.display = "none";
+};
+
+document.getElementById("volver5").addEventListener("click", handlebackClickUsuario);
 
 /* tabla usuario */
   function TablaUsuario() {
+    const encabezadoTitulo = document.getElementById("h1");
+    encabezadoTitulo.innerHTML = "";
+
+  h1.innerHTML = `
+          <h1 id="h1">Tabla usuario</h1>
+    `;
+
   const encabezadoUsuario = document.getElementById("thead");
   encabezadoUsuario.innerHTML = "";
 
@@ -47,6 +133,7 @@ const handleDelete = async (id) => {
                 <td>${usuarios.rol}</td>
                 <td>
                 <button type="button" class="btn btn-danger" onClick="handleDelete('${usuarios.id}')"><i class="bi bi-trash3-fill"></i></button>
+                <button type="button" class="btn btn-success" onClick="handleEditUsuario('${usuarios.id}','${usuarios.usuario}','${usuarios.contraseña}','${usuarios.email}','${usuarios.telefono}','${usuarios.rol}','${usuarios.login}','${usuarios.productFav}','${usuarios.productCar}')"><i class="bi bi-pencil-fill"></i></button>
                 </td>
           `)
       );
@@ -68,9 +155,7 @@ const handleDelete = async (id) => {
     document.getElementById("form").style.display = "block";
     document.getElementById("boton").style.display = "block";
   };
-  document.getElementById("botonAgregar").addEventListener("click", handleClick);
 
-  
   const handlebackClick = () => {
     document.getElementById("botonAgregar").style.display = "block";
     document.getElementById("form").style.display = "none";
@@ -79,7 +164,7 @@ const handleDelete = async (id) => {
 
   document.getElementById("volver").addEventListener("click", handlebackClick);
 
-  
+  document.getElementById("botonAgregar").addEventListener("click", handleClick);
 
   /* sacar formulario 2 y sus botones */
   document.getElementById("form2").style.display = "none";
@@ -95,9 +180,9 @@ const handleDeleteVendedores = async (id) => {
   try {
     let response = await axios.delete("http://localhost:3001/vendedores/"+id);
     if (response) {
-      alert("vendedores borrado correctamente")
+      alert("vendedo borrado correctamente")
     }else{
-      alert("no se pudo borrar el vendedores")
+      alert("no se pudo borrar el vendedor")
     }
   } catch (error) {
     console.error(error)
@@ -105,8 +190,65 @@ const handleDeleteVendedores = async (id) => {
 
 }
 
+const handleActualizarVendedores = async () => {
+  try {
+    let nombre = document.getElementById("nombre").value;
+    let apellido = document.getElementById("apellido").value;
+    let email = document.getElementById("email2").value;
+    let telefono = document.getElementById("telefono2").value;
+
+  let response = await axios.put("http://localhost:3001/vendedores/"+ ID3,{
+    nombre,
+    apellido,
+    email,
+    telefono,
+  })
+
+  if (response) {
+    alert("el vendedor se actualizo correctamente")
+  } else {
+    alert("el vendedor no se actualizo")
+  }
+  } catch (error) {
+    console.error("Error al actualizar los vendedores:", error);
+  }
+
+};
+
+document.getElementById("actualizar3").addEventListener("click", handleActualizarVendedores);
+
+/* boton editar vendedores */
+const handleEditVendedores = async (id,nombre,apellido,email,telefono) => {
+  ID3=id;
+  document.getElementById("form2").style.display = "block";
+  document.getElementById("botonAgregar2").style.display = "none";
+  document.getElementById("boton6").style.display = "block";
+  document.getElementById("boton2").style.display = "none";
+
+  document.getElementById("nombre").value = nombre
+  document.getElementById("apellido").value = apellido
+  document.getElementById("email2").value = email
+  document.getElementById("telefono2").value = telefono
+}
+
+const handlebackClickVendedores = () => {
+  document.getElementById("botonAgregar2").style.display = "block";
+  document.getElementById("form2").style.display = "none";
+  document.getElementById("boton6").style.display = "none";
+};
+
+document.getElementById("volver6").addEventListener("click", handlebackClickVendedores);
+
 /* tabla vendedores */
 function TablaVendedores() {
+
+  const encabezadoTitulo = document.getElementById("h1");
+    encabezadoTitulo.innerHTML = "";
+
+  h1.innerHTML = `
+          <h1 id="h1">Tabla vendedores</h1>
+    `;
+
   const encabezadoVendedores = document.getElementById("thead");
   encabezadoVendedores.innerHTML = "";
 
@@ -136,6 +278,7 @@ function TablaVendedores() {
                 <td>${vendedores.telefono}</td>
                 <td>
                 <button type="button" class="btn btn-danger" onClick="handleDeleteVendedores('${vendedores.id}')"><i class="bi bi-trash3-fill"></i></button>
+                <button type="button" class="btn btn-success" onClick="handleEditVendedores('${vendedores.id}','${vendedores.nombre}','${vendedores.apellido}','${vendedores.email}','${vendedores.telefono}')"><i class="bi bi-pencil-fill"></i></button>
                 </td>
           `)
       );
@@ -158,6 +301,8 @@ function TablaVendedores() {
     document.getElementById("boton2").style.display = "block";
   };
 
+  document.getElementById("botonAgregar2").addEventListener("click", handleClick);
+
   const handlebackClick = () => {
     document.getElementById("botonAgregar2").style.display = "block";
     document.getElementById("form2").style.display = "none";
@@ -166,9 +311,7 @@ function TablaVendedores() {
 
   document.getElementById("volver2").addEventListener("click", handlebackClick);
 
-  document
-    .getElementById("botonAgregar2")
-    .addEventListener("click", handleClick);
+  
 
   /* sacar formulario 1 y sus botones */
   document.getElementById("form").style.display = "none";
@@ -187,6 +330,8 @@ const handleEdit = async (id,nombre,marca,descripcion,caracteristicas,precio,sto
   document.getElementById("form3").style.display = "block";
   document.getElementById("botonAgregar3").style.display = "none";
   document.getElementById("boton4").style.display = "block";
+  document.getElementById("boton3").style.display = "none";
+
 
   document.getElementById("nombre2").value = nombre
   document.getElementById("marca").value = marca
@@ -196,6 +341,8 @@ const handleEdit = async (id,nombre,marca,descripcion,caracteristicas,precio,sto
   document.getElementById("stock").value = stock
   document.getElementById("img").value = img
 }
+
+
 
 const handlebackClick = () => {
   document.getElementById("botonAgregar3").style.display = "block";
@@ -214,8 +361,6 @@ const handleActualizar = async () => {
     let precio = document.getElementById("precio").value;
     let stock = document.getElementById("stock").value;
     let img = document.getElementById("img").value;
-    let productFav = document.getElementById("productFav").value;
-    let productCar = document.getElementById("productCar").value;
     let productWatch = document.getElementById("productWatch").value;
 
   let response = await axios.put("http://localhost:3001/productos/"+ ID,{
@@ -226,8 +371,6 @@ const handleActualizar = async () => {
     precio,
     stock,
     img,
-    productFav,
-    productCar,
     productWatch,
   })
 
@@ -261,6 +404,15 @@ const handleDeleteProductos = async (id) => {
 
 /* tabla productos */
 function TablaProductos() {
+
+  const encabezadoTitulo = document.getElementById("h1");
+    encabezadoTitulo.innerHTML = "";
+
+  h1.innerHTML = `
+          <h1 id="h1">Tabla productos</h1>
+    `;
+
+
   const encabezadoProductos = document.getElementById("thead");
   encabezadoProductos.innerHTML = "";
 
@@ -290,7 +442,7 @@ function TablaProductos() {
                 <td>${productos.stock}</td>
                 <td>
                 <button type="button" class="btn btn-danger" onClick="handleDeleteProductos('${productos.id}')"><i class="bi bi-trash3-fill"></i></button>
-                <button type="button" class="btn btn-success" onClick="handleEdit('${productos.id}','${productos.nombre}','${productos.marca}','${productos.descripcion}','${productos.caracteristicas}','${productos.precio}','${productos.stock}','${productos.img}')"><i class="bi bi-pencil-fill"></i></button>
+                <button type="button" class="btn btn-success" id="handleedit" onClick="handleEdit('${productos.id}','${productos.nombre}','${productos.marca}','${productos.descripcion}','${productos.caracteristicas}','${productos.precio}','${productos.stock}','${productos.img}')"><i class="bi bi-pencil-fill"></i></button>
                 </td>
           `)
       );
@@ -337,6 +489,16 @@ function TablaProductos() {
 
 /* tabla ventas */
 function TablaVentas () {
+
+  
+  const encabezadoTitulo = document.getElementById("h1");
+    encabezadoTitulo.innerHTML = "";
+
+  h1.innerHTML = `
+          <h1 id="h1">Tabla ventas</h1>
+    `;
+
+
   const encabezadoVentas = document.getElementById("thead");
   encabezadoVentas.innerHTML = "";
 
@@ -409,11 +571,6 @@ document.getElementById("boton2").style.display = "none";
 
 }
 
-/* mostrar ususario cuando abra la pagina */
-
-document.addEventListener("DOMContentLoaded", () => {
-  TablaUsuario();
-});
 
 /* para agregar un usuario con el boton confirmar */
 
@@ -424,26 +581,26 @@ const handleconfirmar = async () => {
     let email = document.getElementById("email").value;
     let telefono = document.getElementById("telefono").value;
     let rol = document.getElementById("rol").value;
-    if (rol === "admin") {
-      alert("No tienes permiso para crear otro admin")
-    }else{
-      let response = await axios.post("http://localhost:3001/usuarios", {
-        usuario,
-        contraseña,
-        email,
-        telefono,
-        rol,
-      });
+    let login = document.getElementById("login").value;
+    let productFav = document.getElementById("productFav1").value;
+    let productCar = document.getElementById("productCar1").value;
 
-      if (response) {
-        alert("usuario agregado correctamente");
-      } else {
-        alert("usuario agregado incorrectamente");
-      }
+  let response = await axios.post("http://localhost:3001/usuarios/"+ID2,{
+    usuario,
+    contraseña,
+    email,
+    telefono,
+    rol,
+    login,
+    productFav:[],
+    productCar:[],
+  })
+
+    if (response) {
+      alert("usuario agregado correctamente");
     }
-
   } catch (error) {
-    console.log(error);
+    console.log("usuario agregado incorrectamente",error);
   }
 };
 
@@ -458,7 +615,7 @@ const handleconfirmar2 = async () => {
     let email = document.getElementById("email2").value;
     let telefono = document.getElementById("telefono2").value;
 
-    let response = await axios.post("http://localhost:3001/vendedores", {
+    let response = await axios.post("http://localhost:3001/vendedores"+ID3, {
       nombre,
       apellido,
       email,
@@ -466,12 +623,10 @@ const handleconfirmar2 = async () => {
     });
 
     if (response) {
-      alert("usuario agregado correctamente");
-    } else {
-      alert("usuario agregado incorrectamente");
-    }
+      alert("vendedor agregado correctamente");
+    } 
   } catch (error) {
-    console.log(error);
+    console.log("vendedor agregado incorrectamente",error);
   }
 };
 
@@ -488,11 +643,8 @@ const handleconfirmar3 = async () => {
     let precio = document.getElementById("precio").value;
     let stock = document.getElementById("stock").value;
     let img = document.getElementById("img").value;
-    let productFav = document.getElementById("productFav").value;
-    let productCar = document.getElementById("productCar").value;
-    let productWatch = document.getElementById("productWatch").value;
 
-    let response = await axios.post("http://localhost:3001/productos/", {
+    let response = await axios.post("http://localhost:3001/productos/"+ID,{
       nombre,
       marca,
       descripcion,
@@ -500,13 +652,11 @@ const handleconfirmar3 = async () => {
       precio,
       stock,
       img,
-      productFav:false,
-      productCar:false,
       productWatch:false,
     });
 
     if (response) {
-      alert("usuario agregado correctamente");
+      alert("producto agregado correctamente");
     }
   } catch (error) {
     console.log(error);
@@ -514,9 +664,8 @@ const handleconfirmar3 = async () => {
   }
 };
 
-document
-  .getElementById("confirmar3")
-  .addEventListener("click", handleconfirmar3);
+document.getElementById("confirmar3").addEventListener("click", handleconfirmar3);
+
 
 
   
