@@ -1,24 +1,17 @@
-*{
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Proxima Nova', apple-system, Roboto, Arial, sans-serif, sans-serif;
+    background-color: #f5f5f5;
 }
 
-body{
-   
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-}
+
 
 .navbar {
     background-color: #ffe600 !important;
     padding: 8px 10px 12px 10px;
     box-sizing: border-box;
-}
-
-.navBar2 {
-    font-size: 13px;
 }
 
 .logoMercadoLibre {
@@ -43,6 +36,7 @@ body{
     opacity: 1;
 }
 
+
 .btnSearch {
     border: none;
     position: relative; 
@@ -64,121 +58,243 @@ body{
     color: #999;
 }
 
+.dropdown-menu {
+    background-color: #333333;
+    border: none; 
+}
+
+.dropdown-item {
+    background-color: transparent; 
+    color: #ffffff; 
+    font-size: 14px;
+}
+
+.linksNavbar {
+    font-size: 14px;
+}
+
+.linksCuenta {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+    .formBuscador {
+        display: none !important;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .formBuscador {
+        margin-left: 165px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .promoDisney {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .linksNavbar {
+        margin-left: 250px;
+    }
+}
+
+
+
 footer{
-    
+    margin-top: auto;
 }
-.main{
-    display: flex;
-    flex: 1;
 
+.linksFooter a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
 }
-.div_conteiner{
-    font-family: sans-serif;
-    background-color: #ededed;
+
+.linksFooter {
+    list-style: none;
+}
+
+.textFooter {
+    font-size: 12px;
+    color: #999999;
+    margin-left: 30px;
+}
+
+
+
+
+
+#cardProductosComprados {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;  /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espacio entre tarjetas */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.card-mercado-libre {
     width: 100%;
-    justify-content: start;
-    align-items: center;
-
-    
-}
-.div_box{
-   
-   flex: 1;
-    width: 100%;
-}
-.div_buttons{
-    padding-bottom: 25px;
-}
-.div_icons{
-    display: flex;
-    justify-content: center;
-}
-.div_p{
-    display: flex;
-    padding-top: 20px;
-    flex-direction: column;
-    align-items: center;
-    
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
 }
 
-.list-group-item{
+.card-header {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fecha {
+    color: #666;
+    font-size: 12px;
+}
+
+.opinar {
+    height: 32px;
+    width: 128px;
+    background-color: var(--andes-color-blue-150, rgba(65, 137, 230, .15));
+    color: var(--andes-color-blue-500, #3483fa);
+    padding: 6px 12px ;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.producto {
+    display: flex;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 16px;
+}
+
+.info-producto {
+    flex-grow: 1;
+}
+
+.estado {
+    font-weight: bold;
+    color: #2d9a5f;
+}
+
+.fecha-entrega {
+    color: #333;
+    margin-top: 4px;
+}
+
+.nombre-producto {
+    color: #000000;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.cantidad {
+    color: #666;
+    font-size: 12px;
+}
+
+.vendedor {
+    text-align: right;
+}
+
+.vendedor p {
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.ver-mensajes {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.acciones {
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.acciones a {
+    text-decoration: none;
+}
+
+.btn-ver-compra,
+.btn-volver-comprar {
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 4px;
     border: none;
+    cursor: pointer;
 }
 
-.layout{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-}
-.list-fav{
-    width: 100%;
-    height: 20%;
-    margin-top: 200px;
-}
-.div_content-fav{
-    display: flex;
-    height: 88%;
-    width: 100%;
-    flex-direction: column;
-    
+.btn-ver-compra {
+    background-color: #3483fa;
+    color: white;
+    font-size: 13px;
 }
 
-.div-sidebar {
-    width: 300px; 
-     background-color: #fff;
-     padding: 20px;
-     border-radius: 0;
-     box-shadow: none; 
-     position:sticky;
-     top: 10px; 
-     left: 0;
-     z-index: 1; 
-     padding-top: 0; 
-     padding-bottom: 0; 
-    
- }
- 
- .div-sidebar a {
-     display: flex;
-     align-items: center;  
-     justify-content: space-between;  
-     text-decoration: none;
-     color: black;  
-   }
- 
-  .imagenMenu {
-     margin-right: 30px;
-  }
- 
- .div-sidebar h3 {
-     font-size: 16px;
-     color: #777676;
-     margin-bottom: 15px;
-     margin-top: 80px;
- }
- 
- .div-sidebar ul li {
-     margin-top: 30px;
-     margin-bottom: 20px;
- }
- 
- .div-sidebar ul li a {
-     color: #8f8f8f;
-     font-size: 14px;
-     text-decoration: none; /* no tengo subrayado de los enlaces, ver si hace falta o quitar */
- 
- }
- 
- .div-sidebar ul li a img {
-     margin-right: 10px; 
-   }
-
-   .flechaNav {
-    margin-left: 60px;
-    
+.btn-volver-comprar {
+    background-color: var(--andes-color-blue-150, rgba(65, 137, 230, .15));
+    color: #3498db;
+    font-size: 13px;
 }
+
+@media (max-width: 1400px) {
+    .sidebar.collapsed {
+        width: 60px;
+    }
+
+    #cardProductosComprados {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 250px;
+    }
+
+    .sidebar ul li a {
+        justify-content: center;
+    }
+
+    .sidebar ul li a img {
+        margin-right: 0;
+    }
+
+    .sidebar.collapsed ul li a span {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sidebar.collapsed {
+        width: 250px;
+    }
+
+    #cardProductosComprados {
+        margin-left: 250px;
+    }
+}
+
+
+

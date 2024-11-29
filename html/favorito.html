@@ -7,10 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <!-- === FONT-AWESOME === -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Mercado Libre Argentina</title>
     <!-- === STYLES === -->
     <link rel="stylesheet" href="/styles/favorito.css">
@@ -94,69 +98,15 @@
             </nav>
         </header>
 
-    <main class="main">
-        <div class="div-sidebar">
-            <h3><img class="imagenMenu" src="https://img.icons8.com/?size=100&id=8113&format=png&color=737373EB" alt="" width="20" height="20">Mi Cuenta</h3>
-            <ul>
-              <li><a href="#"><img src="https://img.icons8.com/?size=100&id=AgpNCyq2TYrv&format=png&color=A8A8A8" width="30"
-                    height="25" alt="Compras">Compras <img class="flechaNav"
-                    src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a>
-              </li>
-              <li><a href="../html/error404.html"><img src="https://img.icons8.com/?size=100&id=HTtSIrro5nLW&format=png&color=A8A8A8" width="30" height="25" alt="">Ventas<img class="flechaNav"
-                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
-              <li><a href="../html/error404.html"><img src="https://img.icons8.com/?size=100&id=2uhRL59xjk3f&format=png&color=A8A8A8" width="30" height="25" alt="">Prestamos<img class="flechaNav"
-                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
-              <li><a href="../html/error404.html"><img src=" https://img.icons8.com/?size=100&id=hwWsopzNm7N2&format=png&color=A8A8A8" width="30" height="25" alt="">Suscripciones<img class="flechaNav"
-                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
-              <li><a href="../html/error404.html"><img src="https://img.icons8.com/?size=100&id=107767&format=png&color=A8A8A8" width="30" height="25" alt="">Seguros y garantías<img class="flechaNav"
-                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
-              <li><a href="../html/error404.html"><img src="https://img.icons8.com/?size=100&id=79126&format=png&color=A8A8A8" width="30" height="30" alt="">Bio libre<img class="flechaNav"
-                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
-              <li><a href="../html/error404.html"><img src="https://img.icons8.com/?size=100&id=6Bc55nkIp44b&format=png&color=A8A8A8" width="30" height="30" alt="">Facturación<img class="flechaNav"
-                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
-              <li><a href="../html/error404.html"><img src="https://img.icons8.com/?size=100&id=112512&format=png&color=A8A8A8" width="30" height="30" alt="">Mi perfil<img class="flechaNav"
-                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
-              <li><a href="../html/error404.html"><img src="https://img.icons8.com/?size=100&id=364&format=png&color=A8A8A8" width="30" height="25" alt="">Configuracion<img class="flechaNav"
-                src="https://img.icons8.com/?size=100&id=2760&format=png&color=A8A8A8" alt="" width="15" height="15"></a></li>
-            </ul>
-          </div>
-<div class="div_conteiner">
-<div class="div_box">
-    <div class= "div_content">
-        <div class="div_h1">
-            <h3>Favorito</h3>
-        </div>
-        <div class="div_buttons">
-            <button style="box-shadow: none; border: none; background-color: #ededed;">
-                <div>
-                    <span style="color: #3483fa;">Mis favoritos</span>
-                </div>
-            </button>
-            <button style="box-shadow: none; border: none;background-color: #ededed;">
-                <div>
-                    <span>Listas</span>
-                </div>
-            </button>
-        </div>
-    </div>
-    <div class="div_content-fav" id="listFav">
-    <div class="list-fav" id="listaFavorito" >
-    <div class="div_icons">
-        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-      </svg>
-    </div>
-    <div class="div_p">
-        <b>Aun no tenes producto favorito</b>
-        <p>Agregar haciendo clic en el corazon de la pagina de producto</p>
-    </div>
-</div>
-</div>
-</div>
+        <main>
+            <section>
+              <div class="d-flex align-items-center justify-content-center">
+                <div id="cardFav" class="row"></div>
+              </div>
+            </section>
+      
+          </main>
 
-</div>
-
-    </main>
     <footer class="footer">
         <p style="font-size: 0.8em;">Copyright © 1999-2024 MercadoLibre S.R.L.</p>
         <p style="font-size: 0.8em;">Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA</p>

@@ -18,7 +18,8 @@
       "login": true,
       "productFav": [],
       "productCar": [
-        "4"
+        "4",
+        "5"
       ]
     }
   ],
@@ -36,16 +37,16 @@
       "totalPagado": 4213
     },
     {
-      "id": "7765",
+      "id": "9d9a",
       "id_cliente": "2",
-      "id_producto": "3",
-      "id_vendedor": "5",
+      "id_producto": "5",
+      "id_vendedor": 4,
       "cliente": "Pepito",
       "vendedor": "Nicolas",
-      "producto": "Xiaomi POCO M6 Pro",
-      "precioProducto": 900000,
-      "cantidadComprada": "2",
-      "totalPagado": 1800000
+      "producto": "Apple iPhone 14",
+      "precioProducto": 1950000,
+      "cantidadComprada": 1,
+      "totalPagado": 1950000
     }
   ],
   "vendedores": [
@@ -214,13 +215,13 @@
         "Resistente al polvo y a las caídas."
       ],
       "precio": 950000,
-      "stock": 16,
+      "stock": 24,
       "img": [
         "https://casacuesta.com/media/catalog/product/cache/fde49a4ea9a339628caa0bc56aea00ff/3/3/3348139-1__1726032026.jpg",
         "https://www.casadelaudio.com/Image/0/750_750-156-XIA-023_(12).png",
         "https://holatelcel.com/wp-content/uploads/2024/03/Xiaomi-Redmi-Note-13-Pro.png"
       ],
-      "productWatch": true
+      "productWatch": false
     },
     {
       "id": "5",
@@ -249,7 +250,7 @@
         "iOS 16 ofrece aún más opciones de personalización y más formas de comunicarse y compartir."
       ],
       "precio": 1950000,
-      "stock": 35,
+      "stock": 23,
       "img": [
         "https://applestore.am/media/catalog/product/cache/524531ebd1cf3ec7d6ef9d414e811315/w/w/wwen_iphone14_q422_starlight_pdp_image_position-1a.jpg",
         "https://www.radioshack.cr/media/catalog/product/5/0/5001111054-y-5001111063-_3__qf5ud6scspc3qxib.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700",
@@ -292,7 +293,8 @@
         "https://topcelular.es/1249-large_default/iphone-16-pro-128gb-negro.jpg",
         "https://tv-it.com/storage/shada/iphone/iphone16-pro-desert-p5.webp"
       ],
-      "productWatch": false
+      "productWatch": false,
+      "productCar": true
     },
     {
       "id": "7",
@@ -1066,7 +1068,7 @@
       "precio": "211234",
       "stock": "3135135",
       "img": "asbasbasfbasdfba",
-      "productWatch": "",
+      "productWatch": false,
       "id": "7534"
     }
   ]
